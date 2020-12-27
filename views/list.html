@@ -3,16 +3,58 @@
   <head>
     <%- include('partials/head.html', {}); %>
   </head>
-  <body class="bg-dark text-white pt-5">
-  <%- include('partials/nav.html', {}); %>
+  <body class="pt-5">
+  <!-- <%- include('partials/nav.html', {}); %> -->
+
   <main class="container">
-    <div class="starter-template text-center py-5 px-3">
-      <h1>Bootstrap starter template <%= ip %></h1>
-      <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <%- include('user.html', {}); %>
+
+    <div class="row">
+
+
+      <div class="col">
+          <% posts.forEach(function(post, index){ %>
+
+
+
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <a href="/read/<%= post.counter %>"><img src="/image/lg-<%= post.image %>" class="card-img-top" alt="<%= post.title %>"></a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <a href="/read/<%= post.counter %>" class="text-decoration-none"><h5 class="card-title text-warning">#<%= post.counter %>: <%= post.title %></h5></a>
+                      <p class="card-text small"><%= post.text %></p>
+                      <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="btn btn-warning">Listen</a><% } %>
+                     <a href="/read/<%= post.counter %>" class="btn btn-outline-warning">Read</a>
+                    </div>
+                    <!-- <div class="card-footer text-muted small">
+                      <%= post.timestamp %>
+                    </div> -->
+                    <div class="card-footer text-muted small">
+                      &laquo; <%= post.forward %> &middot; <%= post.backward %> &raquo;
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+          <% }); %>
+        </div>
+
+
     </div>
 
+
+
+
+
   </main><!-- /.container -->
+
   <%- include('partials/foot.html', {}); %>
   </body>
 </html>

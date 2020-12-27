@@ -11,15 +11,15 @@
     <div class="row row-cols-1 row-cols-md-2 g-4">
 
 
-          <% [].concat(posts).reverse().forEach(function(post){ %>
+          <% posts.forEach(function(post,index){ %>
             <div class="col">
              <div class="card bg-dark text-white shadow mb-5">
-               <a href="/read/<%= post.id %>"><img src="/image/lg-<%= post.image %>" class="card-img-top" alt="<%= post.title %>"></a>
+               <a href="/read/<%= post.counter %>"><img src="/image/lg-<%= post.image %>" class="card-img-top" alt="<%= post.title %>"></a>
                <div class="card-body">
-                 <a href="/read/<%= post.id %>" class="text-decoration-none"><h5 class="card-title text-warning">#<%= post.counter %>: <%= post.title %></h5></a>
+                 <a href="/read/<%= post.counter %>" class="text-decoration-none"><h5 class="card-title text-warning">#<%= post.counter %>: <%= post.title %></h5></a>
                  <p class="card-text small"><%= post.text %></p>
                  <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="btn btn-warning">Listen</a><% } %>
-                <a href="/read/<%= post.id %>" class="btn btn-outline-warning">Read</a>
+                <a href="/read/<%= post.counter %>" class="btn btn-outline-warning">Read</a>
                </div>
                <div class="card-footer text-muted small">
                  <%= post.timestamp %>
@@ -33,9 +33,9 @@
 
     <div class="row">
       <div class="col">
-        <% if(pagination.last){ %>
+        <% if(pagination.first){ %>
           <div class="alert alert-info" role="alert">
-            You are amazing, you have reached the last page. Thank You.
+            You are amazing, you have reached the oldest page. Thank You.
           </div>
         <% } %>
       </div>
@@ -45,13 +45,13 @@
       <div class="col">
         <nav aria-label="Page navigation example">
           <ul class="pagination">
-            <% if(!pagination.first){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.prev %>">Previous Page</a></li><% } %>
+            <% if(!pagination.first){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.prev %>">Older Posts</a></li><% } %>
             <!-- <li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/">Home</a></li> -->
             <% if(pagination.second){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/0">Home</a></li><% } %>
             <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li> -->
-            <% if(!pagination.last){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.next %>">Next Page</a></li><% } %>
+            <% if(!pagination.last){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.next %>">Never Posts</a></li><% } %>
             <!-- <% if(pagination.last){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/0">Home</a></li><% } %> -->
           </ul>
         </nav>

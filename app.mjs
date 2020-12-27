@@ -36,25 +36,28 @@ const posts = fs.readdirSync(path.resolve(options.sourceDatabasePath), { withFil
 .map(fileObject => fileObject.name)
 .filter(name => name.endsWith(options.extension))
 .sort()
-.reverse()
 .map(name => fs.readFileSync( path.join(path.resolve(options.sourceDatabasePath), name) ).toString() )
-.map( string => JSON.parse(string) )
+.map( string => JSON.parse(string).reverse() )
 .flat()
 .map(data=>{
-
   data.html = data.data.html;
   data.text = data.data.text;
   data.text = truncate(data.text, {
   'length': 512,
   'separator': /,? +/
   });
-
   return data;
-});
+})
 
 posts.forEach((o,i)=>{
-  o.counter = i+1;
+  o.counter = (posts.length-i);
 })
+
+posts.forEach((o,i)=>{
+  o.forward = (i-1<0?posts.length:i-1);
+  o.backward = (i+1>posts.length?0:i+1);
+})
+
 
 
 
@@ -71,9 +74,10 @@ app.use(koaBody());
 router
   .get('/', index)
   .get('/browse/:page', index)
-  .get('/read/:id', read)
+  .get('/read/:counter', read)
 
-  .get('/post/new', add)
+  .get('/list', list)
+
   .get('/post/:id', show)
 
   .post('/post', create);
@@ -86,134 +90,59 @@ app.use(router.routes());
 
 
 async function index(ctx) {
-
+  // [].concat(posts).reverse()
   const limit = 10;
-  const page = parseInt(ctx.params.page)||0;
   const pages = Math.floor((posts.length)/limit);
+  const page = ctx.params.page?(parseInt(ctx.params.page)-1):pages;
+
   const prev = page-1;
   const next = page+1;
 
 
+  const sliced = lodash([].concat(posts).reverse()).drop(page * limit).take(limit).value(); //.orderBy(['title'], ['asc'])
+  const flipped = [].concat(sliced).reverse();
+
   await ctx.render('index', {
     pagination: {
-      prev: prev<0?pages:prev,
-      next: next>pages?0:next,
-      first: prev<0?true:false,
-      second: page>1?true:false,
-      last: next>pages?true:false,
-    },
 
-    posts: lodash([].concat(posts).reverse()).drop(page * limit).take(limit).reverse().value(), //.orderBy(['title'], ['asc'])
+      prev: (prev<0?pages:prev)+1,
+      next: (next>pages?0:next)+1,
+
+      first: page==1?true:false,
+      last: page==pages?true:false,
+      second: page==(pages-2)?true:false,
+    },
+    // [].concat(posts).reverse()
+    posts: flipped
   });
 }
+
+
+
+
+
 
 
 
 
 
 async function read(ctx) {
-  const id = ctx.params.id;
-
-  const post = lodash.find(posts, ['id', id]);
-  if (!post) ctx.throw(404, 'invalid post id');
-
-  // const index = lodash.findIndex(posts, ['id', id]);
-  // const count = posts.length - 1; // must be zero based
-  //
-  // const previousNumber = index-1; // WARNING: out of bounds is allowed
-  // const nextNumber = index+1; // WARNING: out of bounds is allowed
-  //
-  // const first = previousNumber<0?true:false;
-  // const last = nextNumber>count?true:false;
-  //
-  // const previousIndex = first?count:previousNumber;
-  // const nextIndex = last?0:nextNumber;
-  //
-  // const prev = posts[previousIndex].id;
-  // const next = posts[nextIndex].id;
-  // const curr = post.id;
-
-
-
-
-
-
-  const index = lodash.findIndex(posts, ['id', id]);
-  const count = posts.length;
-
-  const previousNumber = index-1;
-  const nextNumber = index+1;
-
-  const first = previousNumber<0?true:false;
-  const last = nextNumber>count-1?true:false;
-
-  const previousIndex = first?count-1:previousNumber;
-  const nextIndex = last?0:nextNumber;
-
-  const prev = posts[previousIndex].id;
-  const next = posts[nextIndex].id;
-  const curr = post.id;
-
-  const total = count;
-  const partial = index+1;
-  const percent = pct(partial, total)
-
-  await ctx.render('read', {
-    pagination: {
-      prev,
-      next,
-      curr,
-      first,
-      last,
-
-      partial,
-      total,
-      percent,
-
-    },
-    post,
-  });
-}
-
-
-
-
-
-
-async function readByIndex(ctx) {
-  const count = posts.length;
-  const index = ctx.params.index;
+  const size = posts.length;
+  const index = parseInt(ctx.params.counter)-1;
   const post = posts[index];
   if (!post) ctx.throw(404, 'invalid post id');
-
   const previousNumber = index-1;
   const nextNumber = index+1;
 
-  const first = previousNumber<0?true:false;
-  const last = nextNumber>count-1?true:false;
-
-  const previousIndex = first?count-1:previousNumber;
-  const nextIndex = last?0:nextNumber;
-
-  const prev = previousIndex
-  const next = nextIndex
-  const curr = post.id;
-
-  const total = count;
-  const partial = index+1;
-  const percent = pct(partial, total)
-
   await ctx.render('read', {
     pagination: {
-      prev,
-      next,
-      curr,
-      first,
-      last,
-
-      partial,
-      total,
-      percent,
+      index,
+      size,
+      prev: ((previousNumber<0)?size-1:previousNumber)+1,
+      next: ((nextNumber>size-1)?0:nextNumber)+1,
+      first: previousNumber<0?true:false,
+      last: nextNumber>size-1?true:false,
+      percent: pct(index+1, size),
 
     },
     post,
@@ -228,13 +157,12 @@ async function readByIndex(ctx) {
 
 
 async function list(ctx) {
-  ctx.state.now = new Date();
-  ctx.state.ip = ctx.ip;
-  ctx.state.version = '2.0.0';
   await ctx.render('list', {
     posts,
   });
 }
+
+
 
 /**
  * Show creation form.

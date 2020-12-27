@@ -67,22 +67,22 @@
       <div class="col">
         <nav aria-label="Page Navigation">
           <ul class="pagination">
-            <% if(!pagination.first){ %><li class="page-item"><a class="page-link bg-dark text-white border-info" href="/read/<%= pagination.prev %>">Previous Article</a></li><% } %>
+            <% if(!pagination.first){ %><li class="page-item"><a class="page-link bg-dark text-white border-info" href="/read/<%= pagination.prev %>">Previous Post</a></li><% } %>
             <li class="page-item"><a class="page-link bg-dark text-white border-info" href="/">Home</a></li>
             <!-- <% if(pagination.last){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/">Home</a></li><% } %> -->
-            <% if(!pagination.last){ %><li class="page-item"><a class="page-link bg-dark text-white border-info" href="/read/<%= pagination.next %>">Next Article</a></li><% } %>
+            <% if(!pagination.last){ %><li class="page-item"><a class="page-link bg-dark text-white border-info" href="/read/<%= pagination.next %>">Next Post</a></li><% } %>
           </ul>
         </nav>
       </div>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="col">
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: <%= pagination.percent %>%;" aria-valuenow="<%= pagination.percent %>" aria-valuemin="0" aria-valuemax="100"><%= pagination.partial %>/<%= pagination.total %> (<%= pagination.percent %>%)</div>
+          <div class="progress-bar" role="progressbar" style="width: <%= pagination.percent %>%;" aria-valuenow="<%= pagination.percent %>" aria-valuemin="0" aria-valuemax="100"><%= pagination.index+1 %>/<%= pagination.size %> (<%= pagination.percent %>%)</div>
         </div>
       </div>
-    </div>
+    </div> -->
 
   </main><!-- /.container -->
 
