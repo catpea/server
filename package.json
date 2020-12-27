@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Static site generation friendly koa based webserver.",
   "main": "app.js",
   "directories": {
