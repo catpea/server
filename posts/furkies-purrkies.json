@@ -1,4 +1,17 @@
-[
+{
+  "name": "furkies-purrkies",
+  "title": "Furkies Purrkies",
+  "subtitle": "Anthology of Inspirational Rhyme",
+  "description": "Just another dang old Audio Book about wisdom and growing up.",
+  "links":{
+    "Source Code":"https://github.com/catpea/poetry",
+    "Mirror":"https://catpea.github.io/poetry/",
+    "Bugs":"https://github.com/catpea/poetry/issues",
+    "YouTube":"https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW"
+  },
+  "order": "latest",
+
+  "data":[
   {
     "title": "The Squirrels Attack",
     "date": "2020-03-28T22:31:17.209Z",
@@ -5227,3 +5240,4 @@
     "oldestId": "poetry-0016"
   }
 ]
+}

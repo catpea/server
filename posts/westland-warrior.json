@@ -1,4 +1,16 @@
-[
+{
+  "name": "westland-warrior",
+  "title": "Westland Warrior",
+  "subtitle": "A Path To Greatness",
+  "description": "A small video book about the twistly little passages of growing up.",
+  "links":{
+    "Source Code":"https://github.com/westland-valhalla/warrior",
+    "Mirror":"https://westland-valhalla.github.io/warrior/",
+    "Bugs":"https://github.com/westland-valhalla/warrior/issues"
+  },
+  "order": "story",
+
+  "data":[
   {
     "title": "Foreword",
     "date": "2019-2020",
@@ -1512,3 +1524,4 @@
     "oldestId": "warrior-foreword"
   }
 ]
+}

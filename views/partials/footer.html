@@ -1,0 +1,38 @@
+<footer class="container mt-5 border-top border-warning">
+   <div class="row">
+
+     <div class="col-12 col-md-6 col-lg-3 p-0">
+       <img class="img-fluid" src="/logo.jpg">
+     </div>
+
+     <div class="col-12 col-md-6 col-lg-3 pt-3">
+       <% books.forEach(function(book,index){ %>
+         <h4 class="text-warning"><%= book.title %></h4>
+         <ul class="list-unstyled">
+           <li><a class="link-primary fs-5 text-decoration-none" href="/book/<%= book.name %>/<%= book.order %>">Home Page &raquo;</a></li>
+           <% for (const [name, url] of Object.entries(book.links)) { %>
+             <li><a class="link-secondary fs-6 text-decoration-none" href="<%= url %>"><%= name %> <span class="text-danger">&#129109;</span></a></li>
+           <% } %>
+         </ul>
+       <% }) %>
+     </div>
+
+     <div class="col-12 col-md-6 col-lg-3 pt-3">
+       <h5 class="text-warning">Social</h5>
+       <ul class="list-unstyled text-small">
+         <li><a class="link-secondary" href="#">Cat Pea on Github <span class="text-danger">&#129109;</span></a></li>
+       </ul>
+
+
+     </div>
+
+     <div class="col-12 col-md-6 col-lg-3 pt-3">
+       <h5 class="text-warning"><%= title %></h5>
+       <small class="d-block mb-3 text-muted"><%= description %></small>
+
+     </div>
+   </div>
+
+
+
+ </footer>

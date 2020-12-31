@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.html', {}); %>
+  </head>
+  <body class="pt-5">
+  <!-- <%- include('partials/nav.html', {}); %> -->
+
+  <main class="container">
+
+
+
+    <div class="row">
+      <div class="col">
+        <% if(pagination.last){ %>
+          <div class="alert alert-info" role="alert">
+            You appear to be reading the latest entry published <%= post.timestamp %>. You can <a class="alert-link" href="/">return to home page</a> to see if something new has been published since.
+          </div>
+        <% } %>
+      </div>
+    </div>
+
+    <div class="row">
+
+
+
+            <div class="col">
+             <div class="card bg-dark text-white shadow mb-5">
+
+               <div class="card-body">
+                 <h1 class="card-title text-warning">#<%= post.counter %>: <%= post.title %></h1>
+                 <p class="card-text text-muted small"><%= post.timestamp %></p>
+                 <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="card-link">Listen</a><% } %>
+               </div>
+               <img src="/image/md-<%= post.image %>" class="card-img-bottom" alt="<%= post.title %>">
+             </div>
+
+             <div class="card bg-dark text-white shadow mb-5">
+
+               <div class="card-header text-muted small">
+                 <%= post.title %> &middot; <%= post.timestamp %>
+               </div>
+
+               <div class="card-body">
+                 <div class="card-text pt-5"><%- post.html %></div>
+                 <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="card-link">Listen</a><% } %>
+               </div>
+
+             </div>
+           </div>
+
+
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <% if(pagination.last){ %>
+          <div class="alert alert-info" role="alert">
+            You appear to be reading the latest entry published <%= post.timestamp %>. You can <a class="alert-link" href="/">return to home page</a> to see if something new has been published since.
+          </div>
+        <% } %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <nav aria-label="Page Navigation">
+          <ul class="pagination">
+
+            <% if(!post.last){%>
+              <li class="page-item"><a class="page-link bg-dark text-white border-info" href="/read/<%= post.older %>">Older Post</a></li>
+            <% } %>
+
+            <!-- <li class="page-item"><a class="page-link bg-dark text-white border-info" href="/">Home</a></li> -->
+            <li class="page-item"><a class="page-link bg-dark text-white border-info" href="/">Return To Page #45</a></li>
+            <!-- <% if(pagination.last){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/">Home</a></li><% } %> -->
+
+            <% if(!post.first){ %>
+              <li class="page-item"><a class="page-link bg-dark text-white border-info" href="/read/<%= post.newer %>">Newer Post</a></li>
+            <% } %>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- <div class="row">
+      <div class="col">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: <%= pagination.percent %>%;" aria-valuenow="<%= pagination.percent %>" aria-valuemin="0" aria-valuemax="100"><%= pagination.index+1 %>/<%= pagination.size %> (<%= pagination.percent %>%)</div>
+        </div>
+      </div>
+    </div> -->
+
+  </main><!-- /.container -->
+
+  <%- include('partials/foot.html', {}); %>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.html', {}); %>
+  </head>
+  <body>
+
+  <%- include('partials/nav.html', {}); %>
+
+  <% if(pagination.pageFirst){ %>
+    <div class="container mb-5">
+      <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-light">
+        <h1 class="display-4"><%= pageName %></h1>
+        <p class="lead">
+          <%= pageDescription %>
+        </p>
+      </div>
+    </div>
+  <% } %>
+
+  <div class="container">
+    <div class="row my-3">
+      <div class="col text-end">
+        <% if(currentSort == 'story'){ %>
+        <a class="btn btn-link text-warning text-decoration-none ml-0" aria-current="page" href="/book/<%= bookName %>/story">Showing Author's Composition</a>
+        <a class="btn btn-link text-primary ml-0" href="/book/<%= bookName %>/latest">Show Most Recent First</a>
+        <% }else{ %>
+          <a class="btn btn-link text-primary ml-0" aria-current="page" href="/book/<%= bookName %>/story">Show Author's Arrangement</a>
+          <a class="btn btn-link text-warning text-decoration-none ml-0" href="/book/<%= bookName %>/latest">Showing Most Recent First</a>
+        <% } %>
+
+     </div>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <% posts.forEach(function(post,index){ %>
+        <div class="col">
+         <div class="card bg-dark text-white shadow mb-5">
+           <a href="/read/<%= post.bookName %>/<%= post.counter %>"><img src="/image/lg-<%= post.image %>" class="card-img-top" alt="<%= post.title %>"></a>
+           <div class="card-body">
+             <a href="/read/<%= post.bookName %>/<%= post.counter %>" class="text-decoration-none"><h5 class="card-title text-warning">#<%= post.counter %>: <%= post.title %></h5></a>
+             <p class="card-text small"><%= post.text %></p>
+             <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="btn btn-warning">Listen</a><% } %>
+            <a href="/read/<%= post.bookName %>/<%= post.counter %>" class="btn btn-outline-warning">Read</a>
+           </div>
+           <div class="card-footer text-muted small">
+             <%= post.timestamp %>
+           </div>
+         </div>
+       </div>
+      <% }); %>
+    </div>
+
+
+    <div class="row my-5">
+
+      <div class="col">
+        <nav aria-label="Page navigation example">
+
+          <% if(currentSort == 'story'){ %>
+            <ul class="pagination pagination-lg">
+              <% if(!pagination.pageFirst){ %>
+                <li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/book/<%= bookName %>/<%= currentSort %>/page/<%= pagination.pageOlder %>">&laquo; Previous Page</a></li>
+                <% } %>
+              <% if(!pagination.pageLast){ %>
+                <li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/book/<%= bookName %>/<%= currentSort %>/page/<%= pagination.pageNewer %>">Next Page &raquo;</a></li>
+              <% } %>
+
+
+            </ul>
+          <% }else{ %>
+            <ul class="pagination pagination-lg">
+              <% if(!pagination.pageLast){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/book/<%= bookName %>/<%= currentSort %>/page/<%= pagination.pageOlder %>">&laquo; Older Page</a></li><% } %>
+              <!-- <% if(!pagination.pageFirst){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/ %>">Latest Posts</a></li><% } %> -->
+              <% if(!pagination.pageFirst){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/book/<%= bookName %>/<%= currentSort %>/page/<%= pagination.pageNewer %>">Newer Page &raquo;</a></li><% } %>
+            </ul>
+
+          <% } %>
+
+        </nav>
+      </div>
+
+
+    </div>
+
+
+  </main><!-- /.container -->
+
+  <%- include('partials/footer.html', {}); %>
+  <%- include('partials/foot.html', {}); %>
+  </body>
+</html>
