@@ -26,7 +26,7 @@
          <div class="card bg-dark text-white shadow mb-5">
            <a href="/read/<%= post.bookName %>/<%= post.counter %>"><img src="/image/lg-<%= post.image %>" class="card-img-top" alt="<%= post.title %>"></a>
            <div class="card-body">
-             <a href="/read/<%= post.bookName %>/<%= post.counter %>" class="text-decoration-none"><h5 class="card-title text-warning">#<%= post.counter %>: <%= post.title %></h5></a>
+             <a href="/read/<%= post.bookName %>/<%= post.counter %>" class="text-decoration-none"><h5 class="card-title text-warning"><%= post.bookTitle %> #<%= post.counter %>: <%= post.title %></h5></a>
              <p class="card-text small"><%= post.text %></p>
              <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="btn btn-warning">Listen</a><% } %>
             <a href="/read/<%= post.bookName %>/<%= post.counter %>" class="btn btn-outline-warning">Read</a>

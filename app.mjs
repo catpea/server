@@ -43,7 +43,7 @@ const options = {
   debug: true,
   sourceDatabasePath: 'posts',
   extension: '.json',
-  limit: 10,
+  limit: 6,
 }
 
 const data = datasource(options);
