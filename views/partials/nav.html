@@ -20,9 +20,11 @@
 
             <li><h6 class="dropdown-header fw-light"><%= book.title %> Resources</h6></li>
 
-            <li><a class="dropdown-item text-warning" href="/book/<%= book.name %>/<%= book.order %>"><%= book.title %> Home Page</a></li>
+            <li><a class="dropdown-item text-warning" href="/book/<%= book.name %>/<%= book.order %>"><%= book.title %> Home Page &raquo;</a></li>
+            <li><a class="dropdown-item" href="/book/<%= book.name %>/toc/<%= book.order %>">Table Of Contents &raquo;</a></li>
+
             <% for (const [name, url] of Object.entries(book.links)) { %>
-              <li><a class="dropdown-item" href="<%= url %>"><%= name %></a></li>
+              <li><a class="dropdown-item" href="<%= url %>"><%= name %> &#129109;</a></li>
             <% } %>
           <% }) %>
 

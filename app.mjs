@@ -24,8 +24,8 @@ const app = new Koa();
 app.use(async (ctx,next) => {
 
 
-  ctx.state.title = 'Cat Pea University';
-  ctx.state.description = 'We offer the latest in teaching, learning, and research. Our aim is to inspire students to knowledge, wisdom, and greatness for the betterment of Human Kind.';
+  ctx.state.title = 'Cat Pea Manufacturing';
+  ctx.state.description = 'We believe in building a powerful presence.';
 
 
   await next();
@@ -63,6 +63,7 @@ app.use(koaBody());
 router
   .get('/', index)
 
+  .get('/book/:name/toc/:order', toc)
   .get('/book/:name/:order/read/:counter', book)
   .get('/book/:name/:order/page/:page', book)
   .get('/book/:name/:order', book)
@@ -162,6 +163,26 @@ async function read(ctx) {
 
 
 
+
+
+async function toc(ctx) {
+
+  const meta = data.meta.books.filter(o=>o.name === ctx.params.name).pop();
+  const order = ctx.params.order?ctx.params.order:meta.order;
+  const {pages, posts} = data[ctx.params.name][order];
+
+  await ctx.render('toc', {
+    bookName:        meta.name,
+    pageName:        `${meta.title}: ${meta.subtitle}`,
+    pageDescription: `${meta.description}`,
+
+    currentSort:      order,
+    defaultSort:      meta.order, // default
+
+    books: data.meta.books,
+    posts,
+  });
+}
 
 
 async function list(ctx) {
