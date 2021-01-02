@@ -1,15 +1,16 @@
 # server
 Static site generation friendly koa based webserver.
 
+This is a proof of concept approach to search engine and static host friendly website generation.
+This system still makes use of koa/express but in such a way that a scrape of the server results in a static host friendly website.
+
 ## Todo
 
-- Find broken links wget --spider -r -nd -nv -o run1.log black:3000 clear; grep -B1 'broken link!' run1.log
-- restore empty poems with folder poetry  (red red rose, if, invictus, etc) https://github.com/westland-valhalla/poems/tree/master/dist/poems-txt right now poems start with poetry-0016 so there are 16 empty slots in the beginning
-- utility to warn about missing resources
-monitor audio images, internal links, 404, etc.
+- Find broken links wget --spider -r -nd -nv -o run1.log black:3000 clear; grep -B1 'broken link!' run1.log utility to warn about missing resources monitor audio images, internal links, 404, etc.
 - add a book of favorite quotes on top of images just call it quotes, these are printer friendly
 
 #### Done
+- restore empty poems with folder poetry  (red red rose, if, invictus, etc) https://github.com/westland-valhalla/poems/tree/master/dist/poems-txt right now poems start with poetry-0016 so there are 16 empty slots in the beginning
 - fetch the updated dates with gist https://gist.github.com/catpea/0f2de6ed7008a97da6ecbe0b3559cb88
 - warrior origin needs to be responsible for creating images of content, that may mean YAML parsing.
 - Feeds need to have paths fixed, replace src=\"image/ with src=\"/image/
