@@ -213,7 +213,7 @@ async function list(ctx) {
 
 // listen
 app.listen(3000);
-
+console.log('Server Ready');
 }
 
 main();
