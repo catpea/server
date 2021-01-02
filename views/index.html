@@ -50,8 +50,8 @@
       <div class="col">
         <nav aria-label="Page navigation example">
           <ul class="pagination pagination-lg">
-            <% if(!pagination.pageLast){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.pageOlder %>">&laquo; Older Posts</a></li><% } %>
-            <% if(!pagination.pageFirst){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.pageNewer %>">Newer Posts &raquo;</a></li><% } %>
+            <% if(!pagination.pageLast){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.pageOlder %>">&laquo;&nbsp;Older</a></li><% } %>
+            <% if(!pagination.pageFirst){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.pageNewer %>">Newer&nbsp;&raquo;</a></li><% } %>
           </ul>
         </nav>
       </div>
