@@ -7,6 +7,7 @@ Static site generation friendly koa based webserver.
 
 ## Copy files and images
 cp /home/meow/Universe/Development/poetry/docs/image/* static/image/
+cp /home/meow/Universe/Development/poetry/docs/audio/* static/audio/
 cp /home/meow/Universe/Development/warrior/docs/images/* static/image/
 
 
@@ -30,7 +31,8 @@ monitor audio images, internal links, 404, etc.
 warrior origin needs to be responsible for creating images of content,
 that may mean YAML parsing.
 
-
+# fetch the updated dates with gist
+https://gist.github.com/catpea/0f2de6ed7008a97da6ecbe0b3559cb88
 
 # add a book of favorite quotes on top of images
 just call it quotes, these are printer friendly

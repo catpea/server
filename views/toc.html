@@ -21,7 +21,7 @@
     <div class="container">
       <div class="row my-3">
         <div class="col text-end">
-
+          <span class="d-inline-block bg-dark rounded shadow">
           <% if(currentSort == 'story'){ %>
           <a class="btn btn-link text-warning text-decoration-none ml-0" aria-current="page" href="/book/<%= bookName %>/toc/story">Showing Author's Composition</a>
           <a class="btn btn-link text-primary ml-0" href="/book/<%= bookName %>/toc/latest">Show Most Recent First</a>
@@ -30,7 +30,7 @@
             <a class="btn btn-link text-warning text-decoration-none ml-0" href="/book/<%= bookName %>/toc/latest">Showing Most Recent First</a>
           <% } %>
           <a class="btn btn-link text-primary ml-0" href="/book/<%= bookName %>/<%= defaultSort %>">View Home Page</a>
-
+          </span>
        </div>
       </div>
     </div>
@@ -39,14 +39,14 @@
       <% posts.forEach(function(post,index){ %>
         <div class="row mb-5 pt-3 rounded">
         <div class="col-2">
-          <% if(post.image){ %><a href="/read/<%= post.bookName %>/<%= post.counter %>"><img src="/image/xs-<%= post.image %>" class="card-img-top" alt="<%= post.title %>"></a><% } %>
+          <% if(post.image){ %><a href="/read/<%= post.bookName %>/<%= post.number %>"><img src="/image/sm-<%= post.image %>" class="card-img-top" alt="<%= post.title %>"></a><% } %>
         </div>
         <div class="col-10 text-light">
-          <h5 class="mb-1"><%= post.bookTitle %> #<%= post.counter %>: <%= post.title %></h5>
+          <h5 class="mb-1"><a href="/read/<%= post.bookName %>/<%= post.number %>" class="text-light text-decoration-none"><%= post.bookTitle %> #<%= post.number %>: <%= post.title %></a></h5>
           <small class="mb-3 d-inline-block text-muted"><%= post.timestamp %></small>
           <p class="mb-1 small fw-light"><%= post.text %></p>
           <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="text-warning d-inline-block me-3">Listen</a><% } %>
-          <a href="/read/<%= post.bookName %>/<%= post.counter %>" class="text-warning d-inline-block me-3">Read</a>
+          <a href="/read/<%= post.bookName %>/<%= post.number %>" class="text-warning d-inline-block me-3">Read</a>
         </div>
       </div>
       <% }); %>

@@ -22,12 +22,8 @@ async function main(){
 const app = new Koa();
 
 app.use(async (ctx,next) => {
-
-
-  ctx.state.title = 'Cat Pea Manufacturing';
-  ctx.state.description = 'We believe in building a powerful presence.';
-
-
+  ctx.state.title = 'Cat Pea University';
+  ctx.state.description = 'Home of Furkies Purrkies and Westland Warrior';
   await next();
 });
 
@@ -62,24 +58,15 @@ app.use(koaBody());
 
 router
   .get('/', index)
-
   .get('/book/:name/toc/:order', toc)
   .get('/book/:name/:order/read/:counter', book)
   .get('/book/:name/:order/page/:page', book)
   .get('/book/:name/:order', book)
 
-
-
-
-
   .get('/browse/:page', index)
   .get('/read/:name/:counter', read)
+  .get('/list', list);
 
-  .get('/list', list)
-
-  //.get('/post/:id', show)
-
-  //.post('/post', create);
 
 app.use(router.routes());
 
@@ -145,7 +132,7 @@ async function read(ctx) {
   const meta = data.meta.books.filter(o=>o.name === ctx.params.name).pop();
   const order = ctx.params.order?ctx.params.order:meta.order;
   const {pages, posts} = data[ctx.params.name][order];
-  const post = lodash.find(posts, function(o) { return o.counter == parseInt(ctx.params.counter) });
+  const post = lodash.find(posts, function(o) { return o.number == parseInt(ctx.params.counter) });
 
   if (!post) ctx.throw(404, 'invalid post id');
 

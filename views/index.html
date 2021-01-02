@@ -24,15 +24,22 @@
       <% posts.forEach(function(post,index){ %>
         <div class="col">
          <div class="card bg-dark text-white shadow mb-5">
-           <% if(post.image){ %><a href="/read/<%= post.bookName %>/<%= post.counter %>"><img src="/image/lg-<%= post.image %>" class="card-img-top" alt="<%= post.title %>"></a><% } %>
+           <% if(post.image){ %><a href="/read/<%= post.bookName %>/<%= post.number %>"><img src="/image/lg-<%= post.image %>" class="card-img-top" alt="<%= post.title %>"></a><% } %>
+           <!-- <div class="card-body">
+             <pre>
+             <code>
+               <%= "\n"+JSON.stringify(post, null, ' ') %>
+             </code>
+             </pre>
+           </div> -->
            <div class="card-body">
-             <a href="/read/<%= post.bookName %>/<%= post.counter %>" class="text-decoration-none"><h5 class="card-title text-warning"><%= post.bookTitle %> #<%= post.counter %>: <%= post.title %></h5></a>
+             <a href="/read/<%= post.bookName %>/<%= post.number %>" class="text-decoration-none"><h5 class="card-title text-warning"><%= post.bookTitle %> #<%= post.number %>: <%= post.title %></h5></a>
              <p class="card-text small"><%= post.text %></p>
              <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="btn btn-warning">Listen</a><% } %>
-            <a href="/read/<%= post.bookName %>/<%= post.counter %>" class="btn btn-outline-warning">Read</a>
+            <a href="/read/<%= post.bookName %>/<%= post.number %>" class="btn btn-outline-warning">Read</a>
            </div>
            <div class="card-footer text-muted small">
-             <%= post.timestamp %> (debug id <%= post.id %>)
+             <%= post.timestamp %>
            </div>
          </div>
        </div>
