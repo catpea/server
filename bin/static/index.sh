@@ -5,5 +5,5 @@ echo Creating static version
 rm -fr ./docs/
 mkdir -p docs
 
-wget --mirror --convert-links --html-extension --no-host-directories --show-progress -o ./docs/mirror.log --directory-prefix ./docs/ http://black:3000
-cp ./docs/index.html ./docs/404.html 
+wget --mirror --convert-links --html-extension --no-host-directories --directory-prefix ./docs/ http://black:3000
+cp ./docs/index.html ./docs/404.html
