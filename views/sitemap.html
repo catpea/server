@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.html', {}); %>
+  </head>
+  <body>
+
+  <%- include('partials/nav.html', {}); %>
+
+
+
+  <main class="container">
+
+    <div class="row">
+      <div class="col">
+
+
+        <% books.forEach(function(book,index){ %>
+          <div class="bg-dark rounded shadow p-2 mb-3">
+
+
+          <ul>
+
+            <li><h2 class="text-warning fw-light"><%= book.title %> Resources</h2></li>
+
+            <li><a class="btn btn-link text-secondary" href="/book/<%= book.name %>/<%= book.order %>"><%= book.title %> Home Page &raquo;</a></li>
+            <li><a class="btn btn-link text-secondary" href="/book/<%= book.name %>/toc/<%= book.order %>">Table Of Contents &raquo;</a></li>
+
+            <% for (const [name, url] of Object.entries(book.links)) { %>
+              <li><a class="btn btn-link text-secondary" href="<%= url %>"><%= name %> &#129109;</a></li>
+            <% } %>
+
+            <% data[book.name].story.posts.forEach(function(post,index){ %>
+              <li>
+                <a href="/read/<%= post.bookName %>/<%= post.number %>" class="btn btn-link text-secondary d-inline-block me-3"><small>#<%= post.number %></small>: <%= post.title %></a>
+                <!-- <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="btn btn-link text-secondary d-inline-block me-3"><small>Listen</small></a><% } %> -->
+              </li>
+            <% }); %>
+
+          </ul>
+          </div>
+          <% }) %>
+
+
+      </div>
+    </div>
+
+
+
+  </main><!-- /.container -->
+
+  <%- include('partials/footer.html', {}); %>
+  <%- include('partials/foot.html', {}); %>
+
+  </body>
+</html>

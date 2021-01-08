@@ -65,6 +65,7 @@ router
 
   .get('/browse/:page', index)
   .get('/read/:name/:counter', read)
+  .get('/sitemap', sitemap)
   .get('/list', list);
 
 
@@ -172,8 +173,17 @@ async function toc(ctx) {
 }
 
 
+async function sitemap(ctx) {
+  console.log(data);
+  await ctx.render('sitemap', {
+    books: data.meta.books,
+    data,
+  });
+}
+
 async function list(ctx) {
   await ctx.render('list', {
+    books: data.meta.books,
     posts: data.all.posts,
   });
 }
@@ -212,7 +222,7 @@ async function list(ctx) {
 // }
 
 // listen
-app.listen(3000);
+app.listen(7467);
 console.log('Server Ready');
 }
 
