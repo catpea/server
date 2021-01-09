@@ -3,6 +3,7 @@
   "title": "Westland Warrior",
   "subtitle": "A Path To Greatness",
   "description": "A small video book about the twisty little passages of growing up.",
+  "icon": "collection-play",
   "links": {
     "Source Code": "https://github.com/westland-valhalla/warrior",
     "Mirror": "https://westland-valhalla.github.io/warrior/",

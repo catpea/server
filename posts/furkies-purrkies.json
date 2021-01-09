@@ -3,6 +3,7 @@
   "title": "Furkies Purrkies",
   "subtitle": "Anthology of Inspirational Rhyme",
   "description": "Just another dang old Audio Book about wisdom and growing up.",
+  "icon": "earbuds",
   "links": {
     "Source Code": "https://github.com/catpea/poetry",
     "Mirror": "https://catpea.github.io/poetry/",
@@ -242,7 +243,8 @@
       "links": [
         {
           "title": "video tutorials",
-          "url": "http://catpea.com/"
+          "url": "http://catpea.com/",
+          "hostname": "catpea.com"
         }
       ]
     },
@@ -257,7 +259,8 @@
       "links": [
         {
           "title": "poem about taking chance",
-          "url": "https://www.youtube.com/watch?v=k6_QUhUPrF4"
+          "url": "https://www.youtube.com/watch?v=k6_QUhUPrF4",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -352,7 +355,8 @@
       "links": [
         {
           "title": "JavaScript Array",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+          "hostname": "developer.mozilla.org"
         }
       ]
     },
@@ -368,7 +372,8 @@
       "links": [
         {
           "title": "History of the World",
-          "url": "https://www.audible.com/pd/A-Short-History-of-Nearly-Everything-Audiobook/B002V0KFPW"
+          "url": "https://www.audible.com/pd/A-Short-History-of-Nearly-Everything-Audiobook/B002V0KFPW",
+          "hostname": "www.audible.com"
         }
       ]
     },
@@ -384,7 +389,8 @@
       "links": [
         {
           "title": "fun",
-          "url": "http://catpea.com/"
+          "url": "http://catpea.com/",
+          "hostname": "catpea.com"
         }
       ]
     },
@@ -521,79 +527,98 @@
       "links": [
         {
           "title": "Bash",
-          "url": "https://www.youtube.com/watch?v=2hz7-v2f1sA"
+          "url": "https://www.youtube.com/watch?v=2hz7-v2f1sA",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "non-capturing",
-          "url": "https://www.youtube.com/watch?v=xW4CdejMNPA"
+          "url": "https://www.youtube.com/watch?v=xW4CdejMNPA",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Regular Expression",
-          "url": "https://www.youtube.com/watch?v=ykSuHWhh5hc"
+          "url": "https://www.youtube.com/watch?v=ykSuHWhh5hc",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "sed",
-          "url": "https://www.youtube.com/watch?v=32waL1Z9XK0"
+          "url": "https://www.youtube.com/watch?v=32waL1Z9XK0",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Perl",
-          "url": "https://www.youtube.com/watch?v=E2JJZVqe97I"
+          "url": "https://www.youtube.com/watch?v=E2JJZVqe97I",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "CGI",
-          "url": "https://www.youtube.com/watch?v=9Zx1vEmaQMc"
+          "url": "https://www.youtube.com/watch?v=9Zx1vEmaQMc",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "ed",
-          "url": "https://www.youtube.com/watch?v=BNYpmLH6IjQ"
+          "url": "https://www.youtube.com/watch?v=BNYpmLH6IjQ",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "abandoning modes",
-          "url": "https://youtu.be/PUv66718DII?t=2490"
+          "url": "https://youtu.be/PUv66718DII?t=2490",
+          "hostname": "youtu.be"
         },
         {
           "title": "SASS",
-          "url": "https://www.youtube.com/watch?v=St5B7hnMLjg"
+          "url": "https://www.youtube.com/watch?v=St5B7hnMLjg",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "C++",
-          "url": "https://www.youtube.com/watch?v=kJkB_Tggk8U"
+          "url": "https://www.youtube.com/watch?v=kJkB_Tggk8U",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "CSS",
-          "url": "https://www.youtube.com/watch?v=gT0Lh1eYk78"
+          "url": "https://www.youtube.com/watch?v=gT0Lh1eYk78",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "async/await",
-          "url": "https://www.youtube.com/watch?v=PoRJizFvM7s"
+          "url": "https://www.youtube.com/watch?v=PoRJizFvM7s",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "JavaScript",
-          "url": "https://www.youtube.com/watch?v=9A_jkh2AKR8"
+          "url": "https://www.youtube.com/watch?v=9A_jkh2AKR8",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "language, of the web",
-          "url": "https://www.youtube.com/watch?v=nGvA92h9IbU"
+          "url": "https://www.youtube.com/watch?v=nGvA92h9IbU",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Python",
-          "url": "https://www.youtube.com/watch?v=Y8Tko2YC5hA"
+          "url": "https://www.youtube.com/watch?v=Y8Tko2YC5hA",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "PHP",
-          "url": "https://www.youtube.com/watch?v=mBL9Athx7ms"
+          "url": "https://www.youtube.com/watch?v=mBL9Athx7ms",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Dart",
-          "url": "https://www.youtube.com/watch?v=5KlnlCq2M5Q"
+          "url": "https://www.youtube.com/watch?v=5KlnlCq2M5Q",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Java",
-          "url": "https://www.youtube.com/watch?v=2Xa3Y4xz8_s"
+          "url": "https://www.youtube.com/watch?v=2Xa3Y4xz8_s",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "language, of the web",
-          "url": "https://www.youtube.com/watch?v=nGvA92h9IbU"
+          "url": "https://www.youtube.com/watch?v=nGvA92h9IbU",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -642,7 +667,8 @@
       "links": [
         {
           "title": "left off",
-          "url": "https://en.wikipedia.org/wiki/Category:Science_communicators"
+          "url": "https://en.wikipedia.org/wiki/Category:Science_communicators",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -724,7 +750,8 @@
       "links": [
         {
           "title": "The Warrior Book",
-          "url": "https://westland-valhalla.github.io/warrior/"
+          "url": "https://westland-valhalla.github.io/warrior/",
+          "hostname": "westland-valhalla.github.io"
         }
       ]
     },
@@ -751,67 +778,83 @@
       "links": [
         {
           "title": "Angela Davis",
-          "url": "https://www.youtube.com/results?search_query=Angela+Davis"
+          "url": "https://www.youtube.com/results?search_query=Angela+Davis",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Avital Ronell",
-          "url": "https://www.youtube.com/results?search_query=Avital+Ronell"
+          "url": "https://www.youtube.com/results?search_query=Avital+Ronell",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Ayaan Hirsi Ali",
-          "url": "https://www.youtube.com/results?search_query=Ayaan+Hirsi+Ali"
+          "url": "https://www.youtube.com/results?search_query=Ayaan+Hirsi+Ali",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Ayn Rand",
-          "url": "https://www.youtube.com/results?search_query=Ayn+Rand"
+          "url": "https://www.youtube.com/results?search_query=Ayn+Rand",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Friedrich Nietzsche",
-          "url": "https://www.youtube.com/results?search_query=Friedrich+Nietzsche"
+          "url": "https://www.youtube.com/results?search_query=Friedrich+Nietzsche",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Beloved Hypatia",
-          "url": "https://www.youtube.com/results?search_query=Hypatia"
+          "url": "https://www.youtube.com/results?search_query=Hypatia",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Immanuel Kant",
-          "url": "https://www.youtube.com/results?search_query=Immanuel+Kant"
+          "url": "https://www.youtube.com/results?search_query=Immanuel+Kant",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Simone de Beauvoir",
-          "url": "https://www.youtube.com/results?search_query=Simone+de+Beauvoir"
+          "url": "https://www.youtube.com/results?search_query=Simone+de+Beauvoir",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Ludwig Wittgenstein",
-          "url": "https://www.youtube.com/results?search_query=Ludwig+Wittgenstein"
+          "url": "https://www.youtube.com/results?search_query=Ludwig+Wittgenstein",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Martha Nussbaum",
-          "url": "https://www.youtube.com/results?search_query=Martha+Nussbaum"
+          "url": "https://www.youtube.com/results?search_query=Martha+Nussbaum",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Mary Wollstonecraft",
-          "url": "https://www.youtube.com/results?search_query=Mary+Wollstonecraft"
+          "url": "https://www.youtube.com/results?search_query=Mary+Wollstonecraft",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "René Descartes",
-          "url": "https://www.youtube.com/results?search_query=Rene+Descartes"
+          "url": "https://www.youtube.com/results?search_query=Rene+Descartes",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Socrates",
-          "url": "https://www.youtube.com/results?search_query=Socrates"
+          "url": "https://www.youtube.com/results?search_query=Socrates",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Silvia Federici",
-          "url": "https://www.youtube.com/results?search_query=Silvia+Federici"
+          "url": "https://www.youtube.com/results?search_query=Silvia+Federici",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Søren Kierkegaard",
-          "url": "https://www.youtube.com/results?search_query=S%C3%B8ren+Kierkegaard"
+          "url": "https://www.youtube.com/results?search_query=S%C3%B8ren+Kierkegaard",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "More",
-          "url": "https://en.wikipedia.org/wiki/Lists_of_philosophers"
+          "url": "https://en.wikipedia.org/wiki/Lists_of_philosophers",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -827,11 +870,13 @@
       "links": [
         {
           "title": "Here",
-          "url": "https://goo.gl/maps/U6ei19ABd6xffTcr6"
+          "url": "https://goo.gl/maps/U6ei19ABd6xffTcr6",
+          "hostname": "goo.gl"
         },
         {
           "title": "photo",
-          "url": "https://goo.gl/maps/kkGAfW13PLsA6H3D8"
+          "url": "https://goo.gl/maps/kkGAfW13PLsA6H3D8",
+          "hostname": "goo.gl"
         }
       ]
     },
@@ -847,7 +892,8 @@
       "links": [
         {
           "title": "Opte Project",
-          "url": "https://en.wikipedia.org/wiki/Opte_Project"
+          "url": "https://en.wikipedia.org/wiki/Opte_Project",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -890,15 +936,18 @@
       "links": [
         {
           "title": "crumbles",
-          "url": "https://en.wikipedia.org/wiki/Ozymandias"
+          "url": "https://en.wikipedia.org/wiki/Ozymandias",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Wanderer above the Sea of Fog",
-          "url": "https://en.wikipedia.org/wiki/Wanderer_above_the_Sea_of_Fog"
+          "url": "https://en.wikipedia.org/wiki/Wanderer_above_the_Sea_of_Fog",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Ozymandias Collossus",
-          "url": "https://en.wikipedia.org/wiki/Ramesseum"
+          "url": "https://en.wikipedia.org/wiki/Ramesseum",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -914,11 +963,13 @@
       "links": [
         {
           "title": "build",
-          "url": "https://www.youtube.com/watch?v=ZoqgAy3h4OM"
+          "url": "https://www.youtube.com/watch?v=ZoqgAy3h4OM",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "outside",
-          "url": "https://www.youtube.com/watch?v=68jy3_ABvRo"
+          "url": "https://www.youtube.com/watch?v=68jy3_ABvRo",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -934,11 +985,13 @@
       "links": [
         {
           "title": "audio-book",
-          "url": "https://librivox.org"
+          "url": "https://librivox.org",
+          "hostname": "librivox.org"
         },
         {
           "title": "local Museums",
-          "url": "https://www.dia.org/"
+          "url": "https://www.dia.org/",
+          "hostname": "www.dia.org"
         }
       ]
     },
@@ -1070,23 +1123,28 @@
       "links": [
         {
           "title": "Raccoon photo",
-          "url": "https://commons.wikimedia.org/wiki/File:Raccoon_(Procyon_lotor)_2.jpg"
+          "url": "https://commons.wikimedia.org/wiki/File:Raccoon_(Procyon_lotor)_2.jpg",
+          "hostname": "commons.wikimedia.org"
         },
         {
           "title": "author",
-          "url": "https://de.wikipedia.org/wiki/Benutzer:Darkone"
+          "url": "https://de.wikipedia.org/wiki/Benutzer:Darkone",
+          "hostname": "de.wikipedia.org"
         },
         {
           "title": "license",
-          "url": "https://creativecommons.org/licenses/by-sa/2.5/deed.en"
+          "url": "https://creativecommons.org/licenses/by-sa/2.5/deed.en",
+          "hostname": "creativecommons.org"
         },
         {
           "title": "https://goo.gl/maps/wsX31CTTXR4bzhza8",
-          "url": "https://goo.gl/maps/wsX31CTTXR4bzhza8"
+          "url": "https://goo.gl/maps/wsX31CTTXR4bzhza8",
+          "hostname": "goo.gl"
         },
         {
           "title": "https://goo.gl/maps/PhyA8hEuiAZnBmt1A",
-          "url": "https://goo.gl/maps/PhyA8hEuiAZnBmt1A"
+          "url": "https://goo.gl/maps/PhyA8hEuiAZnBmt1A",
+          "hostname": "goo.gl"
         }
       ]
     },
@@ -1102,15 +1160,18 @@
       "links": [
         {
           "title": "Everest photo",
-          "url": "https://en.wikipedia.org/wiki/Mount_Everest#/media/File:Sunrise_over_Everest.jpg"
+          "url": "https://en.wikipedia.org/wiki/Mount_Everest#/media/File:Sunrise_over_Everest.jpg",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "author",
-          "url": "https://www.flickr.com/people/69342394@N00"
+          "url": "https://www.flickr.com/people/69342394@N00",
+          "hostname": "www.flickr.com"
         },
         {
           "title": "license",
-          "url": "https://creativecommons.org/licenses/by/2.0/"
+          "url": "https://creativecommons.org/licenses/by/2.0/",
+          "hostname": "creativecommons.org"
         }
       ]
     },
@@ -1164,11 +1225,13 @@
       "links": [
         {
           "title": "https://www.youtube.com/results?search_query=content+management",
-          "url": "https://www.youtube.com/results?search_query=content+management"
+          "url": "https://www.youtube.com/results?search_query=content+management",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "https://www.youtube.com/results?search_query=stripe+wordpress",
-          "url": "https://www.youtube.com/results?search_query=stripe+wordpress"
+          "url": "https://www.youtube.com/results?search_query=stripe+wordpress",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -1234,7 +1297,8 @@
       "links": [
         {
           "title": "https://www.youtube.com/watch?v=lnuoHywbaR8",
-          "url": "https://www.youtube.com/watch?v=lnuoHywbaR8"
+          "url": "https://www.youtube.com/watch?v=lnuoHywbaR8",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -1250,11 +1314,13 @@
       "links": [
         {
           "title": "https://news.catpea.com/read/research-0097",
-          "url": "https://news.catpea.com/read/research-0097"
+          "url": "https://news.catpea.com/read/research-0097",
+          "hostname": "news.catpea.com"
         },
         {
           "title": "https://youtu.be/9XTjAm9H-vA",
-          "url": "https://youtu.be/9XTjAm9H-vA"
+          "url": "https://youtu.be/9XTjAm9H-vA",
+          "hostname": "youtu.be"
         }
       ]
     },
@@ -1316,15 +1382,18 @@
       "links": [
         {
           "title": "Moby Dick, or The Whale A BBC Radio Classic Drama",
-          "url": "https://www.youtube.com/watch?v=782PEqyjvzI"
+          "url": "https://www.youtube.com/watch?v=782PEqyjvzI",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Moby Dick; The Whale by Herman Melville Audiobook on Librivox",
-          "url": "https://www.gutenberg.org/ebooks/2701"
+          "url": "https://www.gutenberg.org/ebooks/2701",
+          "hostname": "www.gutenberg.org"
         },
         {
           "title": "Moby Dick; The Whale by Herman Melville on Project Gutenberg",
-          "url": "https://www.gutenberg.org/ebooks/2701"
+          "url": "https://www.gutenberg.org/ebooks/2701",
+          "hostname": "www.gutenberg.org"
         }
       ]
     },
@@ -1340,7 +1409,8 @@
       "links": [
         {
           "title": "make art",
-          "url": "https://github.com/fantasyui-com/mockup"
+          "url": "https://github.com/fantasyui-com/mockup",
+          "hostname": "github.com"
         }
       ]
     },
@@ -1388,7 +1458,8 @@
       "links": [
         {
           "title": "Camille Claudel",
-          "url": "https://en.wikipedia.org/wiki/Camille_Claudel"
+          "url": "https://en.wikipedia.org/wiki/Camille_Claudel",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -1448,7 +1519,8 @@
       "links": [
         {
           "title": "The Warrior",
-          "url": "https://westland-valhalla.github.io/warrior/the-trainer.html"
+          "url": "https://westland-valhalla.github.io/warrior/the-trainer.html",
+          "hostname": "westland-valhalla.github.io"
         }
       ]
     },
@@ -1497,11 +1569,13 @@
       "links": [
         {
           "title": "The Mist, (1899 Sculpture)",
-          "url": "https://en.wikipedia.org/wiki/Anna_Golubkina#/media/File:Golubkina_Fog.JPG"
+          "url": "https://en.wikipedia.org/wiki/Anna_Golubkina#/media/File:Golubkina_Fog.JPG",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Anna Golubkina (1864-1927)",
-          "url": "https://en.wikipedia.org/wiki/Anna_Golubkina"
+          "url": "https://en.wikipedia.org/wiki/Anna_Golubkina",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -1544,7 +1618,8 @@
       "links": [
         {
           "title": "Watch On YouTube",
-          "url": "https://youtu.be/2ctbaoGvikk"
+          "url": "https://youtu.be/2ctbaoGvikk",
+          "hostname": "youtu.be"
         }
       ]
     },
@@ -1604,19 +1679,23 @@
       "links": [
         {
           "title": "find",
-          "url": "https://www.goodreads.com/list/show/130.Best_Audiobooks_Ever"
+          "url": "https://www.goodreads.com/list/show/130.Best_Audiobooks_Ever",
+          "hostname": "www.goodreads.com"
         },
         {
           "title": "start your own company",
-          "url": "https://www.youtube.com/watch?v=_4JtyLKDjXk"
+          "url": "https://www.youtube.com/watch?v=_4JtyLKDjXk",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "co-founder",
-          "url": "https://www.youtube.com/watch?v=CRLzkbtKPGM"
+          "url": "https://www.youtube.com/watch?v=CRLzkbtKPGM",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Body Mass Index",
-          "url": "https://en.wikipedia.org/wiki/Body_mass_index"
+          "url": "https://en.wikipedia.org/wiki/Body_mass_index",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -1632,7 +1711,8 @@
       "links": [
         {
           "title": "A Life Of Wisdom, For In Wisdom We Grow Poem",
-          "url": "https://news.catpea.com/read/poetry-0105"
+          "url": "https://news.catpea.com/read/poetry-0105",
+          "hostname": "news.catpea.com"
         }
       ]
     },
@@ -1664,23 +1744,28 @@
       "links": [
         {
           "title": "south end",
-          "url": "https://goo.gl/maps/J7BhcUqsPx1wNJEBA"
+          "url": "https://goo.gl/maps/J7BhcUqsPx1wNJEBA",
+          "hostname": "goo.gl"
         },
         {
           "title": "actual ancient end of the trail",
-          "url": "https://goo.gl/maps/oRaowTwL1cdz5G549"
+          "url": "https://goo.gl/maps/oRaowTwL1cdz5G549",
+          "hostname": "goo.gl"
         },
         {
           "title": "go to the park",
-          "url": "https://goo.gl/maps/j93A21irtxaaRzd96"
+          "url": "https://goo.gl/maps/j93A21irtxaaRzd96",
+          "hostname": "goo.gl"
         },
         {
           "title": "turn right before",
-          "url": "https://goo.gl/maps/yDvAJg3dUWX2atPY9"
+          "url": "https://goo.gl/maps/yDvAJg3dUWX2atPY9",
+          "hostname": "goo.gl"
         },
         {
           "title": "Maple Beach",
-          "url": "https://goo.gl/maps/Uq1DXX5HRwXxYtcW7"
+          "url": "https://goo.gl/maps/Uq1DXX5HRwXxYtcW7",
+          "hostname": "goo.gl"
         }
       ]
     },
@@ -1831,7 +1916,8 @@
       "links": [
         {
           "title": "North Entry Point",
-          "url": "https://goo.gl/maps/AimpKxWarbhiX8zbA"
+          "url": "https://goo.gl/maps/AimpKxWarbhiX8zbA",
+          "hostname": "goo.gl"
         }
       ]
     },
@@ -1891,7 +1977,8 @@
       "links": [
         {
           "title": "Worldie McWorldface",
-          "url": "https://en.wikipedia.org/wiki/Boaty_McBoatface#Naming"
+          "url": "https://en.wikipedia.org/wiki/Boaty_McBoatface#Naming",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -1918,15 +2005,18 @@
       "links": [
         {
           "title": "Universal Declaration of Human Rights",
-          "url": "https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights"
+          "url": "https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Eleanor Roosevelt",
-          "url": "https://en.wikipedia.org/wiki/Eleanor_Roosevelt"
+          "url": "https://en.wikipedia.org/wiki/Eleanor_Roosevelt",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Universal Declaration of Human Rights",
-          "url": "https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights"
+          "url": "https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -1958,7 +2048,8 @@
       "links": [
         {
           "title": "little bicycle path that's really neat",
-          "url": "https://goo.gl/maps/En5tWm4Z93mmwtZ28"
+          "url": "https://goo.gl/maps/En5tWm4Z93mmwtZ28",
+          "hostname": "goo.gl"
         }
       ]
     },
@@ -1974,7 +2065,8 @@
       "links": [
         {
           "title": "Ring-billed Gull",
-          "url": "https://en.wikipedia.org/wiki/Ring-billed_gull"
+          "url": "https://en.wikipedia.org/wiki/Ring-billed_gull",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -2044,7 +2136,8 @@
       "links": [
         {
           "title": "Warrior Book",
-          "url": "https://westland-valhalla.github.io/warrior/"
+          "url": "https://westland-valhalla.github.io/warrior/",
+          "hostname": "westland-valhalla.github.io"
         }
       ]
     },
@@ -2071,11 +2164,13 @@
       "links": [
         {
           "title": "our humanity depends on everyone’s humanity",
-          "url": "https://www.youtube.com/watch?v=c2tOp7OxyQ8"
+          "url": "https://www.youtube.com/watch?v=c2tOp7OxyQ8",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Pirsig",
-          "url": "https://www.youtube.com/watch?v=k6IKu2wgm5I"
+          "url": "https://www.youtube.com/watch?v=k6IKu2wgm5I",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -2113,15 +2208,18 @@
       "links": [
         {
           "title": "achy bench",
-          "url": "https://www.google.com/maps/@40.7060248,-73.9967572,2a,75y,286.07h,64.46t/data=!3m6!1e1!3m4!1sGiVjQ4_lsY3jlLY0PM3KEA!2e0!7i13312!8i6656?hl=en"
+          "url": "https://www.google.com/maps/@40.7060248,-73.9967572,2a,75y,286.07h,64.46t/data=!3m6!1e1!3m4!1sGiVjQ4_lsY3jlLY0PM3KEA!2e0!7i13312!8i6656?hl=en",
+          "hostname": "www.google.com"
         },
         {
           "title": "her stairs",
-          "url": "https://www.google.com/maps/@40.714548,-74.0024396,3a,75y,102.05h,105.41t/data=!3m6!1e1!3m4!1smigFc8sXfFR7X-Jni_7Ogg!2e0!7i16384!8i8192?hl=en"
+          "url": "https://www.google.com/maps/@40.714548,-74.0024396,3a,75y,102.05h,105.41t/data=!3m6!1e1!3m4!1smigFc8sXfFR7X-Jni_7Ogg!2e0!7i16384!8i8192?hl=en",
+          "hostname": "www.google.com"
         },
         {
           "title": "old bench",
-          "url": "https://www.google.com/maps/@40.7060248,-73.9967572,2a,75y,286.07h,64.46t/data=!3m6!1e1!3m4!1sGiVjQ4_lsY3jlLY0PM3KEA!2e0!7i13312!8i6656?hl=en"
+          "url": "https://www.google.com/maps/@40.7060248,-73.9967572,2a,75y,286.07h,64.46t/data=!3m6!1e1!3m4!1sGiVjQ4_lsY3jlLY0PM3KEA!2e0!7i13312!8i6656?hl=en",
+          "hostname": "www.google.com"
         }
       ]
     },
@@ -2192,7 +2290,8 @@
       "links": [
         {
           "title": "Mokele-mbembe",
-          "url": "https://en.wikipedia.org/wiki/Mokele-mbembe"
+          "url": "https://en.wikipedia.org/wiki/Mokele-mbembe",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -2219,19 +2318,23 @@
       "links": [
         {
           "title": "The Story of Philosophy: The Lives and Opinions of the Greater Philosophers",
-          "url": "https://en.wikipedia.org/wiki/The_Story_of_Philosophy"
+          "url": "https://en.wikipedia.org/wiki/The_Story_of_Philosophy",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "The Giants of Philosophy Series",
-          "url": "https://duckduckgo.com/?t=ffab&q=The+Giants+of+Philosophy+Series"
+          "url": "https://duckduckgo.com/?t=ffab&q=The+Giants+of+Philosophy+Series",
+          "hostname": "duckduckgo.com"
         },
         {
           "title": "Friedrich Nietzsche",
-          "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche"
+          "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Amor Fati",
-          "url": "https://en.wikipedia.org/wiki/Amor_fati"
+          "url": "https://en.wikipedia.org/wiki/Amor_fati",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -2424,63 +2527,78 @@
       "links": [
         {
           "title": "Sir Ken Robinson",
-          "url": "https://www.youtube.com/results?search_query=Sir+Ken+Robinson"
+          "url": "https://www.youtube.com/results?search_query=Sir+Ken+Robinson",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Bill Bryson",
-          "url": "https://www.youtube.com/results?search_query=Bill+Bryson"
+          "url": "https://www.youtube.com/results?search_query=Bill+Bryson",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Richard Dawkins",
-          "url": "https://www.youtube.com/results?search_query=Richard+Dawkins"
+          "url": "https://www.youtube.com/results?search_query=Richard+Dawkins",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Sam Harris",
-          "url": "https://www.youtube.com/results?search_query=Sam+Harris"
+          "url": "https://www.youtube.com/results?search_query=Sam+Harris",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Lawrence Krauss",
-          "url": "https://www.youtube.com/results?search_query=Lawrence+Krauss"
+          "url": "https://www.youtube.com/results?search_query=Lawrence+Krauss",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "PZ Myers",
-          "url": "https://www.youtube.com/results?search_query=PZ+Myers"
+          "url": "https://www.youtube.com/results?search_query=PZ+Myers",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Lord Martin Rees",
-          "url": "https://www.youtube.com/results?search_query=Lord+Martin+Rees"
+          "url": "https://www.youtube.com/results?search_query=Lord+Martin+Rees",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Jill Tarter",
-          "url": "https://www.youtube.com/results?search_query=Jill+Tarter"
+          "url": "https://www.youtube.com/results?search_query=Jill+Tarter",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Seth Shostak",
-          "url": "https://www.youtube.com/results?search_query=Seth+Shostak"
+          "url": "https://www.youtube.com/results?search_query=Seth+Shostak",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Alex Filippenko",
-          "url": "https://www.youtube.com/results?search_query=Alex+Filippenko"
+          "url": "https://www.youtube.com/results?search_query=Alex+Filippenko",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Sean Carroll",
-          "url": "https://www.youtube.com/results?search_query=Sean+Carroll"
+          "url": "https://www.youtube.com/results?search_query=Sean+Carroll",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Craig Venter",
-          "url": "https://www.youtube.com/results?search_query=Craig+Venter"
+          "url": "https://www.youtube.com/results?search_query=Craig+Venter",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Howard Zinn",
-          "url": "https://www.youtube.com/results?search_query=Howard+Zinn"
+          "url": "https://www.youtube.com/results?search_query=Howard+Zinn",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Noam Chomsky",
-          "url": "https://www.youtube.com/results?search_query=Noam+Chomsky"
+          "url": "https://www.youtube.com/results?search_query=Noam+Chomsky",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Jared Diamond",
-          "url": "https://www.youtube.com/results?search_query=Jared+Diamond"
+          "url": "https://www.youtube.com/results?search_query=Jared+Diamond",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -2507,19 +2625,23 @@
       "links": [
         {
           "title": "Bill Bryson",
-          "url": "https://en.wikipedia.org/wiki/Bill_Bryson"
+          "url": "https://en.wikipedia.org/wiki/Bill_Bryson",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "A Short History of Nearly Everything",
-          "url": "https://en.wikipedia.org/wiki/A_Short_History_of_Nearly_Everything"
+          "url": "https://en.wikipedia.org/wiki/A_Short_History_of_Nearly_Everything",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Notes from a Big Country",
-          "url": "https://en.wikipedia.org/wiki/Notes_from_a_Big_Country"
+          "url": "https://en.wikipedia.org/wiki/Notes_from_a_Big_Country",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Charles Kuralt's America",
-          "url": "https://www.audible.com/pd/Charles-Kuralts-America-Audiobook/B002UZL5BG"
+          "url": "https://www.audible.com/pd/Charles-Kuralts-America-Audiobook/B002UZL5BG",
+          "hostname": "www.audible.com"
         }
       ]
     },
@@ -2535,11 +2657,13 @@
       "links": [
         {
           "title": "Megaloceros",
-          "url": "https://en.wikipedia.org/wiki/Megaloceros"
+          "url": "https://en.wikipedia.org/wiki/Megaloceros",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Lascaux",
-          "url": "https://en.wikipedia.org/wiki/Lascaux"
+          "url": "https://en.wikipedia.org/wiki/Lascaux",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -2555,15 +2679,18 @@
       "links": [
         {
           "title": "Frank Drake",
-          "url": "https://en.wikipedia.org/wiki/Frank_Drake"
+          "url": "https://en.wikipedia.org/wiki/Frank_Drake",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Ms. Tarter",
-          "url": "https://en.wikipedia.org/wiki/Jill_Tarter"
+          "url": "https://en.wikipedia.org/wiki/Jill_Tarter",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Seth",
-          "url": "https://en.wikipedia.org/wiki/Seth_Shostak"
+          "url": "https://en.wikipedia.org/wiki/Seth_Shostak",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -2579,7 +2706,8 @@
       "links": [
         {
           "title": "Melbourne Shuffle",
-          "url": "https://en.wikipedia.org/wiki/Melbourne_shuffle"
+          "url": "https://en.wikipedia.org/wiki/Melbourne_shuffle",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -2639,23 +2767,28 @@
       "links": [
         {
           "title": "Raw Milk",
-          "url": "https://en.wikipedia.org/wiki/United_States_raw_milk_debate"
+          "url": "https://en.wikipedia.org/wiki/United_States_raw_milk_debate",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Homeopathy",
-          "url": "https://en.wikipedia.org/wiki/Homeopathy"
+          "url": "https://en.wikipedia.org/wiki/Homeopathy",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Chiropractic Treatments",
-          "url": "https://en.wikipedia.org/wiki/Chiropractic"
+          "url": "https://en.wikipedia.org/wiki/Chiropractic",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Vaccine Hesitancy",
-          "url": "https://en.wikipedia.org/wiki/Vaccine_hesitancy"
+          "url": "https://en.wikipedia.org/wiki/Vaccine_hesitancy",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Pseudoscienific Garbage",
-          "url": "https://en.wikipedia.org/wiki/List_of_topics_characterized_as_pseudoscience"
+          "url": "https://en.wikipedia.org/wiki/List_of_topics_characterized_as_pseudoscience",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -2803,7 +2936,8 @@
       "links": [
         {
           "title": "Giordano Bruno",
-          "url": "https://en.wikipedia.org/wiki/Giordano_Bruno"
+          "url": "https://en.wikipedia.org/wiki/Giordano_Bruno",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -2973,7 +3107,8 @@
       "links": [
         {
           "title": "Love Letters to Strangers",
-          "url": "https://www.ted.com/talks/hannah_brencher_love_letters_to_strangers?language=en"
+          "url": "https://www.ted.com/talks/hannah_brencher_love_letters_to_strangers?language=en",
+          "hostname": "www.ted.com"
         }
       ]
     },
@@ -2989,11 +3124,13 @@
       "links": [
         {
           "title": "tragedy of organized education",
-          "url": "https://www.youtube.com/watch?v=mCbdS4hSa0s"
+          "url": "https://www.youtube.com/watch?v=mCbdS4hSa0s",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Startup Accelerator",
-          "url": "https://www.youtube.com/results?search_query=What+is+a+Startup+Accelerator"
+          "url": "https://www.youtube.com/results?search_query=What+is+a+Startup+Accelerator",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3064,7 +3201,8 @@
       "links": [
         {
           "title": "here Mother Nature and The Kindness of Strangers, and Trail Magic will be your teacher",
-          "url": "https://www.youtube.com/watch?v=hPSvdKTEZug"
+          "url": "https://www.youtube.com/watch?v=hPSvdKTEZug",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3080,15 +3218,18 @@
       "links": [
         {
           "title": "Meditations by Marcus Aurelius",
-          "url": "https://en.wikipedia.org/wiki/Meditations"
+          "url": "https://en.wikipedia.org/wiki/Meditations",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "The Art of War by Sun Tzu",
-          "url": "https://en.wikipedia.org/wiki/The_Art_of_War"
+          "url": "https://en.wikipedia.org/wiki/The_Art_of_War",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Hagakure by Yamamoto Tsunetomo",
-          "url": "https://en.wikipedia.org/wiki/Hagakure"
+          "url": "https://en.wikipedia.org/wiki/Hagakure",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -3137,7 +3278,8 @@
       "links": [
         {
           "title": "Fake Grades",
-          "url": "https://www.youtube.com/watch?v=DzSnvxejenY"
+          "url": "https://www.youtube.com/watch?v=DzSnvxejenY",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3175,31 +3317,38 @@
       "links": [
         {
           "title": "express",
-          "url": "https://expressjs.com/"
+          "url": "https://expressjs.com/",
+          "hostname": "expressjs.com"
         },
         {
           "title": "Ward Cunningham",
-          "url": "https://github.com/WardCunningham"
+          "url": "https://github.com/WardCunningham",
+          "hostname": "github.com"
         },
         {
           "title": "Alice and Bob",
-          "url": "https://en.wikipedia.org/wiki/Alice_and_Bob"
+          "url": "https://en.wikipedia.org/wiki/Alice_and_Bob",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "MUD",
-          "url": "https://en.wikipedia.org/wiki/MUD"
+          "url": "https://en.wikipedia.org/wiki/MUD",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "line 26",
-          "url": "https://github.com/hubotio/hubot-rules/blob/master/src/rules.js#L26"
+          "url": "https://github.com/hubotio/hubot-rules/blob/master/src/rules.js#L26",
+          "hostname": "github.com"
         },
         {
           "title": "Node.js",
-          "url": "https://nodejs.org/en/"
+          "url": "https://nodejs.org/en/",
+          "hostname": "nodejs.org"
         },
         {
           "title": "search for video tutorials",
-          "url": "https://www.youtube.com/results?search_query=nodejs%20tutorial"
+          "url": "https://www.youtube.com/results?search_query=nodejs%20tutorial",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3226,7 +3375,8 @@
       "links": [
         {
           "title": "Father Gregory Boyle",
-          "url": "https://www.youtube.com/watch?v=ipR0kWt1Fkc"
+          "url": "https://www.youtube.com/watch?v=ipR0kWt1Fkc",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3242,11 +3392,13 @@
       "links": [
         {
           "title": "Appalachian Trail",
-          "url": "https://www.youtube.com/watch?v=hPSvdKTEZug"
+          "url": "https://www.youtube.com/watch?v=hPSvdKTEZug",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "mild discontent",
-          "url": "https://www.youtube.com/watch?v=mmtEiOs50u0"
+          "url": "https://www.youtube.com/watch?v=mmtEiOs50u0",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3273,59 +3425,73 @@
       "links": [
         {
           "title": "Panama Papers",
-          "url": "https://en.wikipedia.org/wiki/Panama_Papers"
+          "url": "https://en.wikipedia.org/wiki/Panama_Papers",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "you will still need an education",
-          "url": "https://www.youtube.com/watch?v=xGoZZvfEd6A"
+          "url": "https://www.youtube.com/watch?v=xGoZZvfEd6A",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Bill Bryson",
-          "url": "https://www.youtube.com/results?search_query=Bill+Bryson"
+          "url": "https://www.youtube.com/results?search_query=Bill+Bryson",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Richard Dawkins",
-          "url": "https://www.youtube.com/results?search_query=Richard+Dawkins"
+          "url": "https://www.youtube.com/results?search_query=Richard+Dawkins",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Sam Harris",
-          "url": "https://www.youtube.com/results?search_query=Sam+Harris"
+          "url": "https://www.youtube.com/results?search_query=Sam+Harris",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "PZ Myers",
-          "url": "https://www.youtube.com/results?search_query=PZ+Myers"
+          "url": "https://www.youtube.com/results?search_query=PZ+Myers",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Lawrence Krauss",
-          "url": "https://www.youtube.com/results?search_query=Lawrence+Krauss"
+          "url": "https://www.youtube.com/results?search_query=Lawrence+Krauss",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Lord Martin Rees",
-          "url": "https://www.youtube.com/results?search_query=Lord+Martin+Rees"
+          "url": "https://www.youtube.com/results?search_query=Lord+Martin+Rees",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Jill Tarter",
-          "url": "https://www.youtube.com/results?search_query=Jill+Tarter"
+          "url": "https://www.youtube.com/results?search_query=Jill+Tarter",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Seth Shostak",
-          "url": "https://www.youtube.com/results?search_query=Seth+Shostak"
+          "url": "https://www.youtube.com/results?search_query=Seth+Shostak",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Alex Filippenko",
-          "url": "https://www.youtube.com/results?search_query=Alex+Filippenko"
+          "url": "https://www.youtube.com/results?search_query=Alex+Filippenko",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Sean Carroll",
-          "url": "https://www.youtube.com/results?search_query=Sean+Carroll"
+          "url": "https://www.youtube.com/results?search_query=Sean+Carroll",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Jared Diamond",
-          "url": "https://www.youtube.com/results?search_query=Jared+Diamond"
+          "url": "https://www.youtube.com/results?search_query=Jared+Diamond",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Howard Zinn",
-          "url": "https://www.youtube.com/results?search_query=Howard+Zinn"
+          "url": "https://www.youtube.com/results?search_query=Howard+Zinn",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3352,7 +3518,8 @@
       "links": [
         {
           "title": "Model Cities",
-          "url": "https://en.wikipedia.org/wiki/Model_Cities_Program"
+          "url": "https://en.wikipedia.org/wiki/Model_Cities_Program",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -3390,7 +3557,8 @@
       "links": [
         {
           "title": "We Are All Connected, by Symphony of Science",
-          "url": "https://www.youtube.com/watch?v=XGK84Poeynk"
+          "url": "https://www.youtube.com/watch?v=XGK84Poeynk",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3417,107 +3585,133 @@
       "links": [
         {
           "title": "Security Guards",
-          "url": "http://archive.cantonpl.org/observer/2000/02_Feb%202000/02-06-2000.pdf"
+          "url": "http://archive.cantonpl.org/observer/2000/02_Feb%202000/02-06-2000.pdf",
+          "hostname": "archive.cantonpl.org"
         },
         {
           "title": "statistics can't stick out",
-          "url": "https://www.youtube.com/watch?v=DzSnvxejenY"
+          "url": "https://www.youtube.com/watch?v=DzSnvxejenY",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Ben Orlin \"When Memorization Gets in the Way of Learning\" The Atlantic, September 9, 2013",
-          "url": "https://www.theatlantic.com/education/archive/2013/09/when-memorization-gets-in-the-way-of-learning/279425/"
+          "url": "https://www.theatlantic.com/education/archive/2013/09/when-memorization-gets-in-the-way-of-learning/279425/",
+          "hostname": "www.theatlantic.com"
         },
         {
           "title": "Ben Orlin \"When Memorization Gets in the Way of Learning\" The Atlantic, September 9, 2013",
-          "url": "https://www.theatlantic.com/education/archive/2013/09/when-memorization-gets-in-the-way-of-learning/279425/"
+          "url": "https://www.theatlantic.com/education/archive/2013/09/when-memorization-gets-in-the-way-of-learning/279425/",
+          "hostname": "www.theatlantic.com"
         },
         {
           "title": "De-Grading Education by Elizabeth Wissner-Gross",
-          "url": "https://www.youtube.com/watch?v=DzSnvxejenY"
+          "url": "https://www.youtube.com/watch?v=DzSnvxejenY",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "How America's public schools keep kids in poverty by Kandice Sumner",
-          "url": "https://www.ted.com/talks/kandice_sumner_how_america_s_public_schools_keep_kids_in_poverty"
+          "url": "https://www.ted.com/talks/kandice_sumner_how_america_s_public_schools_keep_kids_in_poverty",
+          "hostname": "www.ted.com"
         },
         {
           "title": "Erica Goldson's Graduation Speech",
-          "url": "https://www.youtube.com/watch?v=9M4tdMsg3ts"
+          "url": "https://www.youtube.com/watch?v=9M4tdMsg3ts",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Sir Ken Robinson",
-          "url": "https://www.youtube.com/results?search_query=Sir+Ken+Robinson"
+          "url": "https://www.youtube.com/results?search_query=Sir+Ken+Robinson",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Astra Taylor",
-          "url": "https://www.youtube.com/results?search_query=Astra+Taylor"
+          "url": "https://www.youtube.com/results?search_query=Astra+Taylor",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Bill Bryson",
-          "url": "https://www.youtube.com/results?search_query=Bill+Bryson"
+          "url": "https://www.youtube.com/results?search_query=Bill+Bryson",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Richard Dawkins",
-          "url": "https://www.youtube.com/results?search_query=Richard+Dawkins"
+          "url": "https://www.youtube.com/results?search_query=Richard+Dawkins",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Sam Harris",
-          "url": "https://www.youtube.com/results?search_query=Sam+Harris"
+          "url": "https://www.youtube.com/results?search_query=Sam+Harris",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "PZ Myers",
-          "url": "https://www.youtube.com/results?search_query=PZ+Myers"
+          "url": "https://www.youtube.com/results?search_query=PZ+Myers",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Lawrence Krauss",
-          "url": "https://www.youtube.com/results?search_query=Lawrence+Krauss"
+          "url": "https://www.youtube.com/results?search_query=Lawrence+Krauss",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Lord Martin Rees",
-          "url": "https://www.youtube.com/results?search_query=Lord+Martin+Rees"
+          "url": "https://www.youtube.com/results?search_query=Lord+Martin+Rees",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Jill Tarter",
-          "url": "https://www.youtube.com/results?search_query=Jill+Tarter"
+          "url": "https://www.youtube.com/results?search_query=Jill+Tarter",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Seth Shostak",
-          "url": "https://www.youtube.com/results?search_query=Seth+Shostak"
+          "url": "https://www.youtube.com/results?search_query=Seth+Shostak",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Alex Filippenko",
-          "url": "https://www.youtube.com/results?search_query=Alex+Filippenko"
+          "url": "https://www.youtube.com/results?search_query=Alex+Filippenko",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Sean Carroll",
-          "url": "https://www.youtube.com/results?search_query=Sean+Carroll"
+          "url": "https://www.youtube.com/results?search_query=Sean+Carroll",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Jared Diamond",
-          "url": "https://www.youtube.com/results?search_query=Jared+Diamond"
+          "url": "https://www.youtube.com/results?search_query=Jared+Diamond",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Howard Zinn",
-          "url": "https://www.youtube.com/results?search_query=Howard+Zinn"
+          "url": "https://www.youtube.com/results?search_query=Howard+Zinn",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Brené Brown",
-          "url": "https://www.youtube.com/results?search_query=Brene+Brown"
+          "url": "https://www.youtube.com/results?search_query=Brene+Brown",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Ayaan Hirsi Ali",
-          "url": "https://www.youtube.com/results?search_query=Ayaan+Hirsi+Ali"
+          "url": "https://www.youtube.com/results?search_query=Ayaan+Hirsi+Ali",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Dan Dennett",
-          "url": "https://www.youtube.com/results?search_query=Dan+Dennett"
+          "url": "https://www.youtube.com/results?search_query=Dan+Dennett",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Christopher Hitchens",
-          "url": "https://www.youtube.com/results?search_query=Christopher+Hitchens"
+          "url": "https://www.youtube.com/results?search_query=Christopher+Hitchens",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Noam Chomsky",
-          "url": "https://www.youtube.com/results?search_query=Noam+Chomsky"
+          "url": "https://www.youtube.com/results?search_query=Noam+Chomsky",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3566,19 +3760,23 @@
       "links": [
         {
           "title": "Appalachian Trail",
-          "url": "https://en.wikipedia.org/wiki/Appalachian_Trail"
+          "url": "https://en.wikipedia.org/wiki/Appalachian_Trail",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Pacific Crest Trail",
-          "url": "https://en.wikipedia.org/wiki/Pacific_Crest_Trail"
+          "url": "https://en.wikipedia.org/wiki/Pacific_Crest_Trail",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "El Camino de Santiago",
-          "url": "https://en.wikipedia.org/wiki/Camino_de_Santiago"
+          "url": "https://en.wikipedia.org/wiki/Camino_de_Santiago",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "Kom-Emine",
-          "url": "https://en.wikipedia.org/wiki/Kom%E2%80%93Emine"
+          "url": "https://en.wikipedia.org/wiki/Kom%E2%80%93Emine",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -3594,11 +3792,13 @@
       "links": [
         {
           "title": "Nurnberg Trailhead at W Nurnberg Rd, Free Soil, MI 49411",
-          "url": "https://goo.gl/maps/prdz2WJpRnd9mvU5A"
+          "url": "https://goo.gl/maps/prdz2WJpRnd9mvU5A",
+          "hostname": "goo.gl"
         },
         {
           "title": "your beautiful campsite",
-          "url": "https://goo.gl/maps/CR1N3rkverBXrVd19"
+          "url": "https://goo.gl/maps/CR1N3rkverBXrVd19",
+          "hostname": "goo.gl"
         }
       ]
     },
@@ -3636,23 +3836,28 @@
       "links": [
         {
           "title": "screams for him",
-          "url": "https://www.youtube.com/watch?v=xaPepCVepCg"
+          "url": "https://www.youtube.com/watch?v=xaPepCVepCg",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Spin Art",
-          "url": "https://www.youtube.com/watch?v=CQKZYcf0bH8"
+          "url": "https://www.youtube.com/watch?v=CQKZYcf0bH8",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "tilt-shift",
-          "url": "https://www.youtube.com/watch?v=QpeUEK_5Tb0"
+          "url": "https://www.youtube.com/watch?v=QpeUEK_5Tb0",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "macro photography",
-          "url": "https://www.youtube.com/watch?v=BV08rumiAnA"
+          "url": "https://www.youtube.com/watch?v=BV08rumiAnA",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Photomicrography",
-          "url": "https://www.youtube.com/watch?v=gjQfsDe1Q0o"
+          "url": "https://www.youtube.com/watch?v=gjQfsDe1Q0o",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3668,19 +3873,23 @@
       "links": [
         {
           "title": "couple commands",
-          "url": "https://www.raspberrypi.org/documentation/raspbian/applications/camera.md"
+          "url": "https://www.raspberrypi.org/documentation/raspbian/applications/camera.md",
+          "hostname": "www.raspberrypi.org"
         },
         {
           "title": "hunt down and eliminate the dead pixels",
-          "url": "https://astrofloyd.wordpress.com/2013/10/27/astrophotography-with-imagemagick/"
+          "url": "https://astrofloyd.wordpress.com/2013/10/27/astrophotography-with-imagemagick/",
+          "hostname": "astrofloyd.wordpress.com"
         },
         {
           "title": "Start with the $150 8GB Raspberry PI 4",
-          "url": "https://www.youtube.com/watch?v=sajBySPeYH0"
+          "url": "https://www.youtube.com/watch?v=sajBySPeYH0",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Raspberry Powered Telescope",
-          "url": "https://www.youtube.com/watch?v=yLoNKmoP8qY"
+          "url": "https://www.youtube.com/watch?v=yLoNKmoP8qY",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3705,7 +3914,8 @@
       "links": [
         {
           "title": "ZeroMQ",
-          "url": "https://en.wikipedia.org/wiki/ZeroMQ"
+          "url": "https://en.wikipedia.org/wiki/ZeroMQ",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -3721,23 +3931,28 @@
       "links": [
         {
           "title": "Melbourne Shuffle",
-          "url": "https://www.youtube.com/watch?v=1oTUupME0-M"
+          "url": "https://www.youtube.com/watch?v=1oTUupME0-M",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "just Drums, Bass, Chords, and Melodies",
-          "url": "https://learningmusic.ableton.com/"
+          "url": "https://learningmusic.ableton.com/",
+          "hostname": "learningmusic.ableton.com"
         },
         {
           "title": "LMMS",
-          "url": "https://www.youtube.com/watch?v=TrMTlpeSw8Y&list=PLqazFFzUAPc4K1To5JTtR3cskcdRifM1M"
+          "url": "https://www.youtube.com/watch?v=TrMTlpeSw8Y&list=PLqazFFzUAPc4K1To5JTtR3cskcdRifM1M",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "song you program can play forever",
-          "url": "https://www.youtube.com/watch?v=TK1mBqKvIyU"
+          "url": "https://www.youtube.com/watch?v=TK1mBqKvIyU",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "you can write a program",
-          "url": "https://www.youtube.com/watch?v=OLLwG_SN8oo"
+          "url": "https://www.youtube.com/watch?v=OLLwG_SN8oo",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3775,7 +3990,8 @@
       "links": [
         {
           "title": "cognitive biases",
-          "url": "https://en.wikipedia.org/wiki/List_of_cognitive_biases"
+          "url": "https://en.wikipedia.org/wiki/List_of_cognitive_biases",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -3791,11 +4007,13 @@
       "links": [
         {
           "title": "Little Duck Key",
-          "url": "https://goo.gl/maps/4Xzq7xhwWKGj4aW68"
+          "url": "https://goo.gl/maps/4Xzq7xhwWKGj4aW68",
+          "hostname": "goo.gl"
         },
         {
           "title": "a palm tree",
-          "url": "https://goo.gl/maps/uBv34hWHuhYoLEFs9"
+          "url": "https://goo.gl/maps/uBv34hWHuhYoLEFs9",
+          "hostname": "goo.gl"
         }
       ]
     },
@@ -3811,7 +4029,8 @@
       "links": [
         {
           "title": "building games",
-          "url": "https://www.raywenderlich.com/2736-trigonometry-for-game-programming-part-1-2"
+          "url": "https://www.raywenderlich.com/2736-trigonometry-for-game-programming-part-1-2",
+          "hostname": "www.raywenderlich.com"
         }
       ]
     },
@@ -3827,63 +4046,78 @@
       "links": [
         {
           "title": "Seth Shostak",
-          "url": "https://www.youtube.com/watch?v=_udY35m3SdE"
+          "url": "https://www.youtube.com/watch?v=_udY35m3SdE",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "4 x 8 RGB LED HAT",
-          "url": "https://duckduckgo.com/?q=Waveshare+RGB+LED+HAT+True+Color+Onboard+4+%C3%97+8+RGB+LED&t=ffab&ia=web"
+          "url": "https://duckduckgo.com/?q=Waveshare+RGB+LED+HAT+True+Color+Onboard+4+%C3%97+8+RGB+LED&t=ffab&ia=web",
+          "hostname": "duckduckgo.com"
         },
         {
           "title": "get a $30 kit",
-          "url": "https://duckduckgo.com/?t=ffab&q=Vilros+Raspberry+Pi+Zero+W+Basic+Starter+Kit&ia=web"
+          "url": "https://duckduckgo.com/?t=ffab&q=Vilros+Raspberry+Pi+Zero+W+Basic+Starter+Kit&ia=web",
+          "hostname": "duckduckgo.com"
         },
         {
           "title": "many tutorials",
-          "url": "https://www.youtube.com/results?search_query=raspberry+pi+terminal+command+line"
+          "url": "https://www.youtube.com/results?search_query=raspberry+pi+terminal+command+line",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "O'Reilly Bash Pocket Reference",
-          "url": "https://duckduckgo.com/?q=O%27Reilly+Bash+Pocket+Reference&t=ffab&ia=web"
+          "url": "https://duckduckgo.com/?q=O%27Reilly+Bash+Pocket+Reference&t=ffab&ia=web",
+          "hostname": "duckduckgo.com"
         },
         {
           "title": "Here are instructions",
-          "url": "https://www.raspberrypi.org/documentation/usage/audio/"
+          "url": "https://www.raspberrypi.org/documentation/usage/audio/",
+          "hostname": "www.raspberrypi.org"
         },
         {
           "title": "based on this tutorial",
-          "url": "https://www.waveshare.com/wiki/RGB_LED_HAT"
+          "url": "https://www.waveshare.com/wiki/RGB_LED_HAT",
+          "hostname": "www.waveshare.com"
         },
         {
           "title": "this instructable",
-          "url": "https://www.instructables.com/Control-LED-Using-Raspberry-Pi-GPIO/"
+          "url": "https://www.instructables.com/Control-LED-Using-Raspberry-Pi-GPIO/",
+          "hostname": "www.instructables.com"
         },
         {
           "title": "raspistill",
-          "url": "https://www.raspberrypi.org/documentation/usage/camera/raspicam/raspistill.md"
+          "url": "https://www.raspberrypi.org/documentation/usage/camera/raspicam/raspistill.md",
+          "hostname": "www.raspberrypi.org"
         },
         {
           "title": "all the other options",
-          "url": "https://www.raspberrypi.org/documentation/raspbian/applications/camera.md"
+          "url": "https://www.raspberrypi.org/documentation/raspbian/applications/camera.md",
+          "hostname": "www.raspberrypi.org"
         },
         {
           "title": "LCD screen",
-          "url": "https://duckduckgo.com/?q=Raspberry+Pi+7-Inch+LCD&t=ffab&ia=web"
+          "url": "https://duckduckgo.com/?q=Raspberry+Pi+7-Inch+LCD&t=ffab&ia=web",
+          "hostname": "duckduckgo.com"
         },
         {
           "title": "turn it into a tablet",
-          "url": "https://duckduckgo.com/?t=ffab&q=RS+Raspberry+Pi+7-Inch+LCD+Touch+Screen+Case%2C+Black+&ia=web"
+          "url": "https://duckduckgo.com/?t=ffab&q=RS+Raspberry+Pi+7-Inch+LCD+Touch+Screen+Case%2C+Black+&ia=web",
+          "hostname": "duckduckgo.com"
         },
         {
           "title": "Single-board computer",
-          "url": "https://en.wikipedia.org/wiki/Single-board_computer"
+          "url": "https://en.wikipedia.org/wiki/Single-board_computer",
+          "hostname": "en.wikipedia.org"
         },
         {
           "title": "PINE",
-          "url": "https://duckduckgo.com/?q=PINE+Single+Board+Computer+&t=ffab&ia=web"
+          "url": "https://duckduckgo.com/?q=PINE+Single+Board+Computer+&t=ffab&ia=web",
+          "hostname": "duckduckgo.com"
         },
         {
           "title": "Raspberry PI Drone",
-          "url": "https://www.youtube.com/results?search_query=Raspberry+PI+Drone"
+          "url": "https://www.youtube.com/results?search_query=Raspberry+PI+Drone",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -3910,11 +4144,13 @@
       "links": [
         {
           "title": "first camp site on the Orchid Loop",
-          "url": "https://goo.gl/maps/hEuvinvxzRRPLj7y7"
+          "url": "https://goo.gl/maps/hEuvinvxzRRPLj7y7",
+          "hostname": "goo.gl"
         },
         {
           "title": "just getting into the spirit of camping",
-          "url": "https://goo.gl/maps/qR39FpAkVJ5azPZQ6"
+          "url": "https://goo.gl/maps/qR39FpAkVJ5azPZQ6",
+          "hostname": "goo.gl"
         }
       ]
     },
@@ -3941,7 +4177,8 @@
       "links": [
         {
           "title": "Cognitive biases",
-          "url": "https://en.wikipedia.org/wiki/List_of_cognitive_biases"
+          "url": "https://en.wikipedia.org/wiki/List_of_cognitive_biases",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -3990,7 +4227,8 @@
       "links": [
         {
           "title": "highly recommended",
-          "url": "https://www.youtube.com/watch?v=hPSvdKTEZug"
+          "url": "https://www.youtube.com/watch?v=hPSvdKTEZug",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -4006,15 +4244,18 @@
       "links": [
         {
           "title": "The Four Horsemen Discussion",
-          "url": "https://www.youtube.com/watch?v=9DKhc1pcDFM"
+          "url": "https://www.youtube.com/watch?v=9DKhc1pcDFM",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "my office is there",
-          "url": "https://goo.gl/maps/EkQ991wM6qqLk7et8"
+          "url": "https://goo.gl/maps/EkQ991wM6qqLk7et8",
+          "hostname": "goo.gl"
         },
         {
           "title": "Nordhouse",
-          "url": "https://goo.gl/maps/wwegDL9VawQ1GFn5A"
+          "url": "https://goo.gl/maps/wwegDL9VawQ1GFn5A",
+          "hostname": "goo.gl"
         }
       ]
     },
@@ -4063,7 +4304,8 @@
       "links": [
         {
           "title": "Ohm's Law",
-          "url": "https://en.wikipedia.org/wiki/Ohm's_law"
+          "url": "https://en.wikipedia.org/wiki/Ohm's_law",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -4139,19 +4381,23 @@
       "links": [
         {
           "title": "fantastic out of place bench",
-          "url": "https://goo.gl/maps/W5kMcSEMvZp3hEK56"
+          "url": "https://goo.gl/maps/W5kMcSEMvZp3hEK56",
+          "hostname": "goo.gl"
         },
         {
           "title": "a water pump",
-          "url": "https://goo.gl/maps/JprRPGEXuuMNXfqn8"
+          "url": "https://goo.gl/maps/JprRPGEXuuMNXfqn8",
+          "hostname": "goo.gl"
         },
         {
           "title": "favorite spot",
-          "url": "https://goo.gl/maps/Sz1h1MygrHzHiXZq8"
+          "url": "https://goo.gl/maps/Sz1h1MygrHzHiXZq8",
+          "hostname": "goo.gl"
         },
         {
           "title": "gas station",
-          "url": "https://goo.gl/maps/6DHxRYzUvH8Fdgn3A"
+          "url": "https://goo.gl/maps/6DHxRYzUvH8Fdgn3A",
+          "hostname": "goo.gl"
         }
       ]
     },
@@ -4178,15 +4424,18 @@
       "links": [
         {
           "title": "opticks",
-          "url": "https://www.gutenberg.org/files/33504/33504-h/33504-h.htm"
+          "url": "https://www.gutenberg.org/files/33504/33504-h/33504-h.htm",
+          "hostname": "www.gutenberg.org"
         },
         {
           "title": "Spooky Action at a Distance",
-          "url": "https://www.youtube.com/watch?v=JFozGfxmi8A"
+          "url": "https://www.youtube.com/watch?v=JFozGfxmi8A",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Purcell The Fairy Queen, Z.629",
-          "url": "https://musopen.org/music/11140-the-fairy-queen-z629/"
+          "url": "https://musopen.org/music/11140-the-fairy-queen-z629/",
+          "hostname": "musopen.org"
         }
       ]
     },
@@ -4273,7 +4522,8 @@
       "links": [
         {
           "title": "IPFS",
-          "url": "https://en.wikipedia.org/wiki/InterPlanetary_File_System"
+          "url": "https://en.wikipedia.org/wiki/InterPlanetary_File_System",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -4289,23 +4539,28 @@
       "links": [
         {
           "title": "Richard Dawkins",
-          "url": "https://www.youtube.com/results?search_query=Richard+Dawkins"
+          "url": "https://www.youtube.com/results?search_query=Richard+Dawkins",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Erica Goldson",
-          "url": "https://www.youtube.com/watch?v=9M4tdMsg3ts"
+          "url": "https://www.youtube.com/watch?v=9M4tdMsg3ts",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Saintly Sir Ken Robinson",
-          "url": "https://www.youtube.com/results?search_query=Sir+Ken+Robinson"
+          "url": "https://www.youtube.com/results?search_query=Sir+Ken+Robinson",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "What if you're wrong?",
-          "url": "https://www.youtube.com/watch?v=6mmskXXetcg"
+          "url": "https://www.youtube.com/watch?v=6mmskXXetcg",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "children are being indoctrinated into the belief that Noah and his Ark are absolutely real",
-          "url": "https://youtu.be/uQ7GvwUsJ7w?t=3450"
+          "url": "https://youtu.be/uQ7GvwUsJ7w?t=3450",
+          "hostname": "youtu.be"
         }
       ]
     },
@@ -4464,7 +4719,8 @@
       "links": [
         {
           "title": "Mokele-mbembe",
-          "url": "https://en.wikipedia.org/wiki/Mokele-mbembe"
+          "url": "https://en.wikipedia.org/wiki/Mokele-mbembe",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -4557,7 +4813,8 @@
       "links": [
         {
           "title": "tyranny without tyrants",
-          "url": "https://www.youtube.com/watch?v=wkPR4Rcf4ww"
+          "url": "https://www.youtube.com/watch?v=wkPR4Rcf4ww",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -4628,7 +4885,8 @@
       "links": [
         {
           "title": "Haleakala Crater",
-          "url": "https://en.wikipedia.org/wiki/Haleakal%C4%81"
+          "url": "https://en.wikipedia.org/wiki/Haleakal%C4%81",
+          "hostname": "en.wikipedia.org"
         }
       ]
     },
@@ -4710,7 +4968,8 @@
       "links": [
         {
           "title": "elliptic curve cryptography",
-          "url": "https://www.youtube.com/watch?v=dCvB-mhkT0w"
+          "url": "https://www.youtube.com/watch?v=dCvB-mhkT0w",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -4726,11 +4985,13 @@
       "links": [
         {
           "title": "sacrifice",
-          "url": "https://www.youtube.com/watch?v=DzSnvxejenY"
+          "url": "https://www.youtube.com/watch?v=DzSnvxejenY",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Sir Ken Robinson",
-          "url": "https://www.youtube.com/results?search_query=sir+ken+robinson&sp=CAM%253D"
+          "url": "https://www.youtube.com/results?search_query=sir+ken+robinson&sp=CAM%253D",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -4768,11 +5029,13 @@
       "links": [
         {
           "title": "lmms",
-          "url": "https://www.youtube.com/watch?v=3qfa9hGJzoY"
+          "url": "https://www.youtube.com/watch?v=3qfa9hGJzoY",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "iPod Commercial",
-          "url": "https://www.youtube.com/watch?v=_dSgBsCVpqo"
+          "url": "https://www.youtube.com/watch?v=_dSgBsCVpqo",
+          "hostname": "www.youtube.com"
         }
       ]
     },
@@ -4799,11 +5062,13 @@
       "links": [
         {
           "title": "what it actually does",
-          "url": "https://github.com/Jam3/math-as-code"
+          "url": "https://github.com/Jam3/math-as-code",
+          "hostname": "github.com"
         },
         {
           "title": "Math As Code",
-          "url": "https://github.com/Jam3/math-as-code"
+          "url": "https://github.com/Jam3/math-as-code",
+          "hostname": "github.com"
         }
       ]
     },
@@ -4819,27 +5084,33 @@
       "links": [
         {
           "title": "Carl Sagan",
-          "url": "https://www.youtube.com/results?search_query=Carl+Sagan"
+          "url": "https://www.youtube.com/results?search_query=Carl+Sagan",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Neil deGrasse Tyson",
-          "url": "https://www.youtube.com/results?search_query=Neil+deGrasse+Tyson"
+          "url": "https://www.youtube.com/results?search_query=Neil+deGrasse+Tyson",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Seth Shostak",
-          "url": "https://www.youtube.com/results?search_query=Seth+Shostak"
+          "url": "https://www.youtube.com/results?search_query=Seth+Shostak",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "Alex Filippenko",
-          "url": "https://www.youtube.com/results?search_query=Alex+Filippenko"
+          "url": "https://www.youtube.com/results?search_query=Alex+Filippenko",
+          "hostname": "www.youtube.com"
         },
         {
           "title": "The Facility",
-          "url": "https://thecabininthewoods.fandom.com/wiki/The_Facility"
+          "url": "https://thecabininthewoods.fandom.com/wiki/The_Facility",
+          "hostname": "thecabininthewoods.fandom.com"
         },
         {
           "title": "MUD",
-          "url": "https://en.wikipedia.org/wiki/MUD"
+          "url": "https://en.wikipedia.org/wiki/MUD",
+          "hostname": "en.wikipedia.org"
         }
       ]
     }

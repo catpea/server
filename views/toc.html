@@ -27,10 +27,10 @@
         <div class="col-12 col-lg-5 my-2 bg-dark rounded shadow">
           <ul class="nav nav-pills nav-fill">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/<%= defaultSort %>"><i class="bi-book"></i> Book Home</a>
+              <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/<%= defaultSort %>"><i class="bi bi-book align-text-bottom"></i> Book Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/toc/<%= defaultSort %>"><i class="bi-card-list text-warning"></i> Contents</a>
+              <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/toc/<%= defaultSort %>"><i class="bi bi-card-list text-warning align-text-bottom"></i> Contents</a>
             </li>
           </ul>
        </div>
@@ -39,17 +39,17 @@
          <ul class="nav nav-pills nav-fill">
             <% if(currentSort == 'story'){ %>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/toc/story"><i class="bi-sort-numeric-down text-warning"></i> Story Mode</a>
+              <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/toc/story"><i class="bi bi-sort-numeric-down text-warning align-text-bottom"></i> Story Mode</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/book/<%= bookName %>/toc/latest"><i class="bi-sort-numeric-down-alt"></i> Latest First</a>
+              <a class="nav-link" href="/book/<%= bookName %>/toc/latest"><i class="bi bi-sort-numeric-down-alt align-text-bottom"></i> Latest First</a>
             </li>
             <% }else{ %>
             <li class="nav-item">
-              <a class="nav-link" href="/book/<%= bookName %>/toc/story"><i class="bi-sort-numeric-down"></i> Story Mode</a>
+              <a class="nav-link" href="/book/<%= bookName %>/toc/story"><i class="bi bi-sort-numeric-down align-text-bottom"></i> Story Mode</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/toc/latest"><i class="bi-sort-numeric-down-alt text-warning"></i> Latest First</a>
+              <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/toc/latest"><i class="bi bi-sort-numeric-down-alt text-warning align-text-bottom"></i> Latest First</a>
             </li>
             <% } %>
           </ul>
@@ -87,13 +87,13 @@
 
         </div>
         <div class="col-12 col-md-7 col-lg-9 text-light pb-3">
-          <h5 class="mb-1"><a href="/read/<%= post.bookName %>/<%= post.number %>" class="text-light text-decoration-none"><%= post.bookTitle %> #<%= post.number %>: <%= post.title %></a></h5>
+          <h5 class="mb-1"><a href="/read/<%= post.bookName %>/<%= post.number %>" class="text-light text-decoration-none">#<%= post.number %>: <%= post.title %></a></h5>
           <small class="mb-3 d-inline-block text-muted"><%= post.timestamp %></small>
           <p class="mb-1 small fw-light"><%= post.text %></p>
 
           <div class="py-2">
           <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="text-warning d-inline-block me-3">Listen</a><% } %>
-          <a href="/read/<%= post.bookName %>/<%= post.number %>" class="text-warning d-inline-block me-3">Read</a>
+          <a href="/read/<%= post.bookName %>/<%= post.number %>" class="text-warning d-inline-block me-3">View</a>
           </div>
 
           <% if(post.links.length){ %>
@@ -102,7 +102,7 @@
             <ul class="list-unstyled">
             <% post.links.forEach(function(link,index){ %>
               <li>
-                <a href="<%= link.url %>" class="text-muted small"><%= link.title %></a>
+                <a href="<%= link.url %>" class="text-muted small"><%= link.title %></a> <small class="text-muted">(<%= link.hostname %>)</small>
               </li>
             <% }); %>
           </ul>

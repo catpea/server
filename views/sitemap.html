@@ -16,28 +16,39 @@
 
 
         <% books.forEach(function(book,index){ %>
-          <div class="bg-dark rounded shadow p-2 mb-3">
+          <div class="bg-dark rounded shadow p-1 p-md-2 mb-3">
 
-
+          <h2 class="text-warning fw-light"><%= book.title %> Resources</h2>
           <ul>
 
-            <li><h2 class="text-warning fw-light"><%= book.title %> Resources</h2></li>
 
-            <li><a class="btn btn-link text-secondary" href="/book/<%= book.name %>/<%= book.order %>"><%= book.title %> Home Page &raquo;</a></li>
-            <li><a class="btn btn-link text-secondary" href="/book/<%= book.name %>/toc/<%= book.order %>">Table Of Contents &raquo;</a></li>
+
+            <li><a class="text-light text-decoration-none" href="/book/<%= book.name %>/<%= book.order %>"><%= book.title %> Home Page &raquo;</a></li>
+            <li><a class="text-light text-decoration-none" href="/book/<%= book.name %>/toc/<%= book.order %>">Table Of Contents &raquo;</a></li>
 
             <% for (const [name, url] of Object.entries(book.links)) { %>
-              <li><a class="btn btn-link text-secondary" href="<%= url %>"><%= name %> &#129109;</a></li>
+              <li><a class="text-light text-decoration-none" href="<%= url %>"><%= name %> <i class="bi bi-link-45deg text-warning align-text-bottom"></i></a></li>
             <% } %>
+          </ul>
 
+          <ul>
             <% data[book.name].story.posts.forEach(function(post,index){ %>
               <li>
-                <a href="/read/<%= post.bookName %>/<%= post.number %>" class="btn btn-link text-secondary d-inline-block me-3"><small>#<%= post.number %></small>: <%= post.title %></a>
-                <!-- <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="btn btn-link text-secondary d-inline-block me-3"><small>Listen</small></a><% } %> -->
+                <a href="/read/<%= post.bookName %>/<%= post.number %>" class="text-light text-decoration-none me-2 d-inline-block"><small>#<%= post.number %></small>: <%= post.title %></a>
+                <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="text-warning text-decoration-none me-1 d-inline-block small"><i class="bi bi-play-circle align-text-bottom"></i> <span style="display: inline-block; margin-top: 5px;"></span></a><% } %>
               </li>
-            <% }); %>
 
+              <% if(post.links.length){ %>
+                  <% post.links.forEach(function(link,index){ %>
+                    <li>
+                      <a href="<%= link.url %>" class="text-muted text-decoration-none small"><i class="bi bi-link-45deg text-warning align-text-bottom"></i> <span class="text-warning"><%= link.title %></span></a> <small class="text-muted">(<%= link.hostname %>)</small>
+                    </li>
+                  <% }); %>
+              <% } %>
+
+            <% }); %>
           </ul>
+
           </div>
           <% }) %>
 

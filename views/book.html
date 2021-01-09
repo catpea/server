@@ -40,10 +40,10 @@
       <div class="col-12 col-lg-5 my-2 bg-dark rounded shadow">
         <ul class="nav nav-pills nav-fill">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/<%= defaultSort %>"><i class="bi-book text-warning"></i> Book Home</a>
+            <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/<%= defaultSort %>"><i class="bi bi-book text-warning align-text-bottom"></i> Book Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/toc/<%= defaultSort %>"><i class="bi-card-list"></i> Contents</a>
+            <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/toc/<%= defaultSort %>"><i class="bi bi-card-list align-text-bottom"></i> Contents</a>
           </li>
         </ul>
      </div>
@@ -51,17 +51,17 @@
        <ul class="nav nav-pills nav-fill">
           <% if(currentSort == 'story'){ %>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/story"><i class="bi-sort-numeric-down text-warning"></i> Story Mode</a>
+            <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/story"><i class="bi bi-sort-numeric-down text-warning align-text-bottom"></i> Story Mode</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/book/<%= bookName %>/latest"><i class="bi-sort-numeric-down-alt"></i> Latest First</a>
+            <a class="nav-link" href="/book/<%= bookName %>/latest"><i class="bi bi-sort-numeric-down-alt align-text-bottom"></i> Latest First</a>
           </li>
           <% }else{ %>
           <li class="nav-item">
-            <a class="nav-link" href="/book/<%= bookName %>/story"><i class="bi-sort-numeric-down"></i> Story Mode</a>
+            <a class="nav-link" href="/book/<%= bookName %>/story"><i class="bi bi-sort-numeric-down align-text-bottom"></i> Story Mode</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/latest"><i class="bi-sort-numeric-down-alt text-warning"></i> Latest First</a>
+            <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/latest"><i class="bi bi-sort-numeric-down-alt text-warning align-text-bottom"></i> Latest First</a>
           </li>
           <% } %>
         </ul>
@@ -86,8 +86,8 @@
            <div class="card-body">
              <a href="/read/<%= post.bookName %>/<%= post.number %>" class="text-decoration-none"><h5 class="card-title text-warning">#<%= post.number %>: <%= post.title %></h5></a>
              <p class="card-text small"><%= post.text %></p>
-             <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="btn btn-warning">Listen</a><% } %>
-            <a href="/read/<%= post.bookName %>/<%= post.number %>" class="btn btn-outline-warning">Read</a>
+             <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="btn btn-warning"><i class="bi bi-play-circle align-text-bottom"></i> Listen</a><% } %>
+            <a href="/read/<%= post.bookName %>/<%= post.number %>" class="btn btn-outline-warning"><i class="bi bi-eye align-text-bottom"></i> View</a>
            </div>
            <div class="card-footer text-muted small">
              <%= post.timestamp %>
