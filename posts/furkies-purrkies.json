@@ -4806,6 +4806,42 @@
           "url": "https://github.com/Jam3/math-as-code"
         }
       ]
+    },
+    {
+      "title": "Lecture",
+      "date": "2021-01-09T03:22:54.995Z",
+      "image": "poetry-0314-illustration.jpg",
+      "audio": "poetry-0314.mp3",
+      "id": "poetry-0314",
+      "text": "The best lecture is one that you prepare yourself,\nout of documentaries, internet videos, audio books, info-graphics and visualizations.\n\nSometimes you get some hands on experience,\nlike a Raspberry PI Kit, with a bread board and a bunch of sensors to learn UNIX and soldering, for example.\n\nOther times, it turns out that all your materials fit in a backpack, or a day-pack,\nso you add a loaf of bread, some trail mix and water, and you are off.\n\nStudying Astrophysics with all the greats as you hike to your camp site,\nwhere upon your arrival you set up camp on top of ancient dune and wait for the stars to come out.\n\nIt is important to note, that falling asleep during your own lecture is amazing,\nwhen you wake up the Audio Book will still be playing, and Carl or Neil, or Seth, or Alex will surely be describing something awesome.\n\nRather than returning to the spot where you fell asleep,\nit is always better to just get to the end and keep re-listening the whole thing, until you can remember everything, and actually need a new audio book.\n\nYour own lectures, are much more authentic than anything a Professor can regurgitate out,\nreal lectures don't end after 12 classes, they last a lifetime, and when you return to the same books, it is such a pleasure.\n\nThe best advice I could give on the subject of lectures, is described with a single word:\nADVENTURE.\n\nEven if you are getting into circuit design or electronics, all you need to do is get some solar powered gear and a butane soldering iron,\nthen wire up a solar powered wireless network in a weather proof enclosure out the deepest part of the woods, and name it The Facility.\n\nReply to all HTTP requests with a creative login page,\nwhat better way to learn UNIX then to have outrageous fun with it.\n\nMight as well learn a programming language while you're at it,\nhow about creating a simple MUD with some snappy and convincing bots: \"Ballerina Dentata entered the chat, and started following you.\"\n\nIt should a rule that we take our education onto the Nature Trails,\nor places that challenge you, even if all they challenge you with, is fun and useless foolishness.\n\nIt won't take long before adventures become expeditions,\ndetecting supernovae from some mountain peak, tracking melting glaciers and climate data, or even reliably counting lighting bugs.\n\nIn school we tend to wait for a lecture to come to a resolution,\nbut in real life, a lecture is allowed to become its true self, it becomes a breathtaking gateway to explore and conquer the unknown.\n\n\n[Carl]: https://www.youtube.com/results?search_query=Carl+Sagan\n[Neil]: https://www.youtube.com/results?search_query=Neil+deGrasse+Tyson\n[Seth]: https://www.youtube.com/results?search_query=Seth+Shostak\n[Alex]: https://www.youtube.com/results?search_query=Alex+Filippenko\n[The Facility]: https://thecabininthewoods.fandom.com/wiki/The_Facility\n[MUD]: https://en.wikipedia.org/wiki/MUD",
+      "html": "<div class=\"section\">\n  <p>The best lecture is one that you prepare yourself,</p>\n  <p>out of documentaries, internet videos, audio books, info-graphics and visualizations.</p>\n</div>\n\n<div class=\"section\">\n  <p>Sometimes you get some hands on experience,</p>\n  <p>like a Raspberry PI Kit, with a bread board and a bunch of sensors to learn UNIX and soldering, for example.</p>\n</div>\n\n<div class=\"section\">\n  <p>Other times, it turns out that all your materials fit in a backpack, or a day-pack,</p>\n  <p>so you add a loaf of bread, some trail mix and water, and you are off.</p>\n</div>\n\n<div class=\"section\">\n  <p>Studying Astrophysics with all the greats as you hike to your camp site,</p>\n  <p>where upon your arrival you set up camp on top of ancient dune and wait for the stars to come out.</p>\n</div>\n\n<div class=\"section\">\n  <hr>\n</div>\n\n<div class=\"section\">\n  <p>It is important to note, that falling asleep during your own lecture is amazing,</p>\n  <p>when you wake up the Audio Book will still be playing, and <a href=\"https://www.youtube.com/results?search_query=Carl+Sagan\" title=\"Carl Sagan\">Carl</a> or <a href=\"https://www.youtube.com/results?search_query=Neil+deGrasse+Tyson\" title=\"Neil deGrasse Tyson\">Neil</a>, or <a href=\"https://www.youtube.com/results?search_query=Seth+Shostak\" title=\"Seth Shostak\">Seth</a>, or <a href=\"https://www.youtube.com/results?search_query=Alex+Filippenko\" title=\"Alex Filippenko\">Alex</a> will surely be describing something awesome.</p>\n</div>\n\n<div class=\"section\">\n  <p>Rather than returning to the spot where you fell asleep,</p>\n  <p>it is always better to just get to the end and keep re-listening the whole thing, until you can remember everything, and actually need a new audio book.</p>\n</div>\n\n<div class=\"section\">\n  <hr>\n</div>\n\n<div class=\"section\">\n  <p>Your own lectures, are much more authentic than anything a Professor can regurgitate out,</p>\n  <p>real lectures don&apos;t end after 12 classes, they last a lifetime, and when you return to the same books, it is such a pleasure.</p>\n</div>\n\n<div class=\"section\">\n  <p>The best advice I could give on the subject of lectures, is described with a single word:</p>\n  <p>ADVENTURE.</p>\n</div>\n\n<div class=\"section\">\n  <p>Even if you are getting into circuit design or electronics, all you need to do is get some solar powered gear and a butane soldering iron,</p>\n  <p>then wire up a solar powered wireless network in a weather proof enclosure out the deepest part of the woods, and name it <a href=\"https://thecabininthewoods.fandom.com/wiki/The_Facility\">The Facility</a>.</p>\n</div>\n\n<div class=\"section\">\n  <p>Reply to all HTTP requests with a creative login page,</p>\n  <p>what better way to learn UNIX then to have outrageous fun with it.</p>\n</div>\n\n<div class=\"section\">\n  <p>Might as well learn a programming language while you&apos;re at it,</p>\n  <p>how about creating a simple <a href=\"https://en.wikipedia.org/wiki/MUD\">MUD</a> with some snappy and convincing bots: &quot;Ballerina Dentata entered the chat, and started following you.&quot;</p>\n</div>\n\n<div class=\"section\">\n  <p>It should a rule that we take our education onto the Nature Trails,</p>\n  <p>or places that challenge you, even if all they challenge you with, is fun and useless foolishness.</p>\n</div>\n\n<div class=\"section\">\n  <hr>\n</div>\n\n<div class=\"section\">\n  <p>It won&apos;t take long before adventures become expeditions,</p>\n  <p>detecting supernovae from some mountain peak, tracking melting glaciers and climate data, or even reliably counting lighting bugs.</p>\n</div>\n\n<div class=\"section\">\n  <p>In school we tend to wait for a lecture to come to a resolution,</p>\n  <p>but in real life, a lecture is allowed to become its true self, it becomes a breathtaking gateway to explore and conquer the unknown.</p>\n</div>",
+      "images": [],
+      "links": [
+        {
+          "title": "Carl Sagan",
+          "url": "https://www.youtube.com/results?search_query=Carl+Sagan"
+        },
+        {
+          "title": "Neil deGrasse Tyson",
+          "url": "https://www.youtube.com/results?search_query=Neil+deGrasse+Tyson"
+        },
+        {
+          "title": "Seth Shostak",
+          "url": "https://www.youtube.com/results?search_query=Seth+Shostak"
+        },
+        {
+          "title": "Alex Filippenko",
+          "url": "https://www.youtube.com/results?search_query=Alex+Filippenko"
+        },
+        {
+          "title": "The Facility",
+          "url": "https://thecabininthewoods.fandom.com/wiki/The_Facility"
+        },
+        {
+          "title": "MUD",
+          "url": "https://en.wikipedia.org/wiki/MUD"
+        }
+      ]
     }
   ]
 }
