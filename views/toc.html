@@ -14,39 +14,103 @@
         <p class="lead">
           <%= pageDescription %>
         </p>
+        <p class="text-muted">
+          <%= bookTitle %> Table Of Contents<br>
+          <small><% if(currentSort == 'story'){ %> (entries ordered in story mode) <% }else{ %> (showing latest entries first) <% } %></small>
+        </p>
       </div>
     </div>
-
 
     <div class="container">
-      <div class="row my-3">
-        <div class="col text-end">
-          <span class="d-inline-block bg-dark rounded shadow">
-          <% if(currentSort == 'story'){ %>
-          <a class="btn btn-link text-warning text-decoration-none ml-0" aria-current="page" href="/book/<%= bookName %>/toc/story">Showing Author's Composition</a>
-          <a class="btn btn-link text-primary ml-0" href="/book/<%= bookName %>/toc/latest">Show Most Recent First</a>
-          <% }else{ %>
-            <a class="btn btn-link text-primary ml-0" aria-current="page" href="/book/<%= bookName %>/toc/story">Show Author's Arrangement</a>
-            <a class="btn btn-link text-warning text-decoration-none ml-0" href="/book/<%= bookName %>/toc/latest">Showing Most Recent First</a>
-          <% } %>
-          <a class="btn btn-link text-primary ml-0" href="/book/<%= bookName %>/<%= defaultSort %>">View Home Page</a>
-          </span>
+      <div class="row my-3 mx-1">
+
+        <div class="col-12 col-lg-5 my-2 bg-dark rounded shadow">
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/<%= defaultSort %>"><i class="bi-book"></i> Book Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/toc/<%= defaultSort %>"><i class="bi-card-list text-warning"></i> Contents</a>
+            </li>
+          </ul>
        </div>
+
+       <div class="col-12 col-lg-5  offset-lg-2 my-2 bg-dark rounded shadow">
+         <ul class="nav nav-pills nav-fill">
+            <% if(currentSort == 'story'){ %>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/toc/story"><i class="bi-sort-numeric-down text-warning"></i> Story Mode</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/book/<%= bookName %>/toc/latest"><i class="bi-sort-numeric-down-alt"></i> Latest First</a>
+            </li>
+            <% }else{ %>
+            <li class="nav-item">
+              <a class="nav-link" href="/book/<%= bookName %>/toc/story"><i class="bi-sort-numeric-down"></i> Story Mode</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/toc/latest"><i class="bi-sort-numeric-down-alt text-warning"></i> Latest First</a>
+            </li>
+            <% } %>
+          </ul>
+       </div>
+
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
 
   <main class="container">
       <% posts.forEach(function(post,index){ %>
         <div class="row mb-5 pt-3 rounded bg-dark mx-1">
         <div class="col-12 col-md-5 col-lg-3">
-          <% if(post.image){ %><a href="/read/<%= post.bookName %>/<%= post.number %>"><img src="/image/sm-<%= post.image %>" class="card-img-top mb-3" alt="<%= post.title %>"></a><% } %>
+
+          <div class=" mb-3">
+          <% if(post.image){ %><a href="/read/<%= post.bookName %>/<%= post.number %>"><img src="/image/sm-<%= post.image %>" class="card-img-top mb-2" alt="<%= post.title %>"></a><% } %>
+          <% if(post.images.length){ %>
+          <div class="mtmb-3">
+            <small class="d-block text-muted mb-1">Additional Images</small>
+            <% post.images.forEach(function(image,index){ %>
+              <a href="/image/xl-<%= image.url %>"><img src="/image/ss-<%= image.url %>" alt="<%= image.title %>" title="<%= image.title %>" style="width:64px; height: auto;" class="img-thumbnail bg-dark border-secondary"></a>
+            <% }); %>
+          </div>
+          <% } %>
+        </div>
+
         </div>
         <div class="col-12 col-md-7 col-lg-9 text-light pb-3">
           <h5 class="mb-1"><a href="/read/<%= post.bookName %>/<%= post.number %>" class="text-light text-decoration-none"><%= post.bookTitle %> #<%= post.number %>: <%= post.title %></a></h5>
           <small class="mb-3 d-inline-block text-muted"><%= post.timestamp %></small>
           <p class="mb-1 small fw-light"><%= post.text %></p>
+
+          <div class="py-2">
           <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="text-warning d-inline-block me-3">Listen</a><% } %>
           <a href="/read/<%= post.bookName %>/<%= post.number %>" class="text-warning d-inline-block me-3">Read</a>
+          </div>
+
+          <% if(post.links.length){ %>
+          <div class="py-2">
+            <small class="d-block text-muted mb-1">Content Links</small>
+            <ul class="list-unstyled">
+            <% post.links.forEach(function(link,index){ %>
+              <li>
+                <a href="<%= link.url %>" class="text-muted small"><%= link.title %></a>
+              </li>
+            <% }); %>
+          </ul>
+          </div>
+          <% } %>
+
+
+
         </div>
       </div>
       <% }); %>

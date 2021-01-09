@@ -14,26 +14,67 @@
         <p class="lead">
           <%= pageDescription %>
         </p>
+        <p class="text-muted">
+          <%= bookTitle %> Home Page<br>
+          <small><% if(currentSort == 'story'){ %> (entries ordered in story mode) <% }else{ %> (showing latest entries first) <% } %></small>
+        </p>
       </div>
     </div>
   <% } %>
 
+
+
+
+  <!-- <div class="container">
+    <div class="row my-3 mx-1">
+      <div class="col-12 my-2 bg-dark rounded shadow text-light fw-light small">
+        Reading Book
+        <% if(currentSort == 'story'){ %> in Story Mode. <% }else{ %> sorted Latest First. <% } %>
+     </div>
+    </div>
+  </div> -->
+
+
   <div class="container">
-    <div class="row my-3">
-      <div class="col text-end">
-        <span class="d-inline-block bg-dark rounded shadow">
-        <% if(currentSort == 'story'){ %>
-        <a class="btn btn-link text-warning text-decoration-none ml-0" aria-current="page" href="/book/<%= bookName %>/story">Showing Author's Composition</a>
-        <a class="btn btn-link text-primary ml-0" href="/book/<%= bookName %>/latest">Show Most Recent First</a>
-        <% }else{ %>
-          <a class="btn btn-link text-primary ml-0" aria-current="page" href="/book/<%= bookName %>/story">Show Author's Arrangement</a>
-          <a class="btn btn-link text-warning text-decoration-none ml-0" href="/book/<%= bookName %>/latest">Showing Most Recent First</a>
-        <% } %>
-        <a class="btn btn-link text-primary ml-0" href="/book/<%= bookName %>/toc/<%= defaultSort %>">View Table Of Contents</a>
-        </span>
+    <div class="row my-3 mx-1">
+      <div class="col-12 col-lg-5 my-2 bg-dark rounded shadow">
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/<%= defaultSort %>"><i class="bi-book text-warning"></i> Book Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/toc/<%= defaultSort %>"><i class="bi-card-list"></i> Contents</a>
+          </li>
+        </ul>
+     </div>
+     <div class="col-12 col-lg-5  offset-lg-2 my-2 bg-dark rounded shadow">
+       <ul class="nav nav-pills nav-fill">
+          <% if(currentSort == 'story'){ %>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/story"><i class="bi-sort-numeric-down text-warning"></i> Story Mode</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/book/<%= bookName %>/latest"><i class="bi-sort-numeric-down-alt"></i> Latest First</a>
+          </li>
+          <% }else{ %>
+          <li class="nav-item">
+            <a class="nav-link" href="/book/<%= bookName %>/story"><i class="bi-sort-numeric-down"></i> Story Mode</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/book/<%= bookName %>/latest"><i class="bi-sort-numeric-down-alt text-warning"></i> Latest First</a>
+          </li>
+          <% } %>
+        </ul>
      </div>
     </div>
   </div>
+
+
+
+
+
+
+
 
   <main class="container">
 

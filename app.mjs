@@ -107,6 +107,7 @@ async function book(ctx) {
   await ctx.render('book', {
 
     bookName:        meta.name,
+    bookTitle:        meta.title,
     pageName:        `${meta.title}: ${meta.subtitle}`,
     pageDescription: `${meta.description}`,
     currentSort:      order,
@@ -161,6 +162,7 @@ async function toc(ctx) {
 
   await ctx.render('toc', {
     bookName:        meta.name,
+    bookTitle:        meta.title,
     pageName:        `${meta.title}: ${meta.subtitle}`,
     pageDescription: `${meta.description}`,
 

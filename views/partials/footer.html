@@ -12,7 +12,7 @@
            <li><a class="link-primary fs-5 text-decoration-none" href="/book/<%= book.name %>/<%= book.order %>">Home Page &raquo;</a></li>
            <li><a class="link-secondary text-decoration-none" href="/book/<%= book.name %>/toc/<%= book.order %>">Table Of Contents &raquo;</a></li>
            <% for (const [name, url] of Object.entries(book.links)) { %>
-             <li><a class="link-secondary fs-6 text-decoration-none" href="<%= url %>"><%= name %> <span class="text-danger">&#129109;</span></a></li>
+             <li><a class="link-secondary fs-6 text-decoration-none" href="<%= url %>"><%= name %> <i class="bi bi-link-45deg text-warning"></i></a></li>
            <% } %>
          </ul>
        <% }) %>
@@ -25,7 +25,7 @@
        <small class="d-block mb-3 text-muted"><%= description %></small>
        <h5 class="text-warning">Social</h5>
        <ul class="list-unstyled text-small">
-         <li><a class="link-secondary" href="https://github.com/catpea">Cat Pea on Github <span class="text-danger">&#129109;</span></a></li>
+         <li><a class="link-secondary" href="https://github.com/catpea">Cat Pea on Github <i class="bi bi-link-45deg text-warning"></i></a></li>
        </ul>
 
      </div>
