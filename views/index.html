@@ -9,13 +9,35 @@
 
   <% if(pagination.pageFirst){ %>
     <div class="container mb-5">
-      <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-light">
-        <h1 class="display-4"><%= pageName %></h1>
-        <p class="lead">
+      <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 text-light"><%= pageName %></h1>
+        <p class="lead text-light">
           <%= pageDescription %>
+        </p>
+        <p class="text-muted">
+          <small>(showing a mix of all entries from all books merged into one, latest first)</small>
         </p>
       </div>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col p-4">
+
+          <div class="card text-secondary bg-dark mb-3">
+            <div class="card-header"><i class="bi bi-newspaper align-text-bottom"></i> News Bites</div>
+            <div class="card-body">
+              <p class="card-text small"><i class="bi bi-receipt align-text-bottom"></i> The <a href="/sitemap" class="text-reset">new sitemap</a> lists links in both poems and warrior's video pages now, <a href="/sitemap#westland-warrior-72" class="text-reset">The Cryptographer</a> is a nice example.</p>
+              <p class="card-text small"><i class="bi bi-receipt align-text-bottom"></i> <a href="/book/furkies-purrkies/toc/latest" class="text-reset">Table of Contents for Furkies Purrkies</a> shows both links and any extra images contained within the poem, <a href="/book/furkies-purrkies/toc/latest#25" class="text-reset">The Ballad of Meow</a> is a good example.</p>
+              <p class="card-text small"><i class="bi bi-receipt align-text-bottom"></i> Switched to showing 14 entries per page (from 8), so that the paging is not as distracting.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
   <% } %>
 
   <main class="container">
