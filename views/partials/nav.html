@@ -10,11 +10,11 @@
       <ul class="navbar-nav mr-auto mb-2 mb-md-0">
         <% books.forEach(function(book,index){ %>
           <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="/book/<%= book.name %>/<%= book.order %>"><i class="bi bi-<%= book.icon %> align-text-bottom"></i> <%= book.title %></a>
+            <a class="nav-link" aria-current="page" href="/book/<%= book.name %>/<%= book.order %>"><i class="bi bi-<%= book.icon %> align-text-bottom text-warning"></i> <%= book.title %></a>
           </li>
         <% }) %>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/sitemap"><i class="bi bi-globe"></i> Site Map</a>
+          <a class="nav-link" aria-current="page" href="/sitemap"><i class="bi bi-globe align-text-bottom text-warning"></i> Site Map</a>
         </li>
 
 
