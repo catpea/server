@@ -17,7 +17,7 @@
       <div class="row">
         <div class="col-12 col-md-10 col-lg-9">
           <% books.forEach(function(book,index){ %>
-            <a name="book-<%= index %>"></a>
+            <a name="<%= book.name %>"></a>
             <div class="card bg-warning text-dark mb-4" style="">
               <div class="card-body">
                 <h5 class="card-title"><%= book.title %> Resources</h5>
@@ -33,7 +33,7 @@
             </div>
 
             <% data[book.name].story.posts.forEach(function(post,index){ %>
-              <a name="<%= book.name %>-<%= post.number %>"></a>
+              <a name="<%= post.id %>"></a>
               <div class="card bg-dark text-warning mb-3 border border-2 border-start border-warning border-top-0 border-bottom-0 border-end-0" style="">
                 <div class="card-body">
                   <a href="/read/<%= post.bookName %>/<%= post.number %>" class="d-block text-reset text-decoration-none"><h4 class="card-title"><div class="text-secondary" style="font-size: .8rem;">#<%= post.number %>:</div> <span class="fw-light"><%= post.title %></span></h4></a>
@@ -64,7 +64,7 @@
         <div class="col-md-2 col-lg-3 d-none d-md-block">
           <div class="sticky-sm-top" style="top: 3rem;">
             <% books.forEach(function(book,index){ %>
-              <a href="#book-<%= index %>" class="btn btn-outline-warning btn-small mb-2 d-block"><i class="bi bi-<%= book.icon %> align-text-bottom"></i> <span class="d-none d-lg-inline"><%= book.title %></span></a>
+              <a href="#<%= book.name %>" class="btn btn-outline-warning btn-small mb-2 d-block"><i class="bi bi-<%= book.icon %> align-text-bottom"></i> <span class="d-none d-lg-inline"><%= book.title %></span></a>
             <% }); %>
             <a href="#top" class="btn btn-outline-warning btn-small mb-2 d-block"><i class="bi bi-arrow-90deg-up"></i> <span class="d-none d-lg-inline">Top</span></a>
 
