@@ -10,9 +10,9 @@
          <h4 class="text-warning"><a class="text-reset text-decoration-none" href="/book/<%= book.name %>/<%= book.order %>"><i class="bi bi-<%= book.icon %> align-text-top fs-5"></i> <%= book.title %>&nbsp;&raquo;</a></h4>
          <ul class="list-unstyled">
            <!-- <li><a class="link-primary fs-5 text-decoration-none" href="/book/<%= book.name %>/<%= book.order %>">Book Home&nbsp;&raquo;</a></li> -->
-           <li><a class="text-light text-decoration-none" href="/book/<%= book.name %>/toc/<%= book.order %>">Table Of Contents&nbsp;&raquo;</a></li>
+           <li><a class="fw-light text-light text-decoration-none" href="/book/<%= book.name %>/toc/<%= book.order %>">Table Of Contents&nbsp;&raquo;</a></li>
            <% for (const [name, url] of Object.entries(book.links)) { %>
-             <li><a class="text-light fs-6 text-decoration-none" href="<%= url %>"><%= name %> <i class="bi bi-link-45deg text-warning align-text-bottom"></i></a></li>
+             <li><a class="fw-light text-light text-decoration-none" href="<%= url %>"><%= name %> <i class="bi bi-link-45deg text-warning align-text-bottom"></i></a></li>
            <% } %>
          </ul>
        <% }) %>
@@ -21,19 +21,21 @@
 
 
      <div class="col-12 col-md-12 col-lg-5 pt-3">
-       <h5 class="text-warning"><%= title %></h5>
-       <small class="d-block text-muted"><%= description %></small>
+       <h5 class="text-warning mb-0"><%= title %></h5>
+       <small class="d-block text-muted mb-2"><%= description %></small>
 
        <ul class="list-unstyled text-small mb-3 ">
-         <li><a class="text-light text-decoration-none" href="/"><i class="bi bi-house-door text-warning align-text-bottom"></i> Cat Pea Home Page</a></li>
-         <li><a class="text-light text-decoration-none" href="/sitemap"><i class="bi bi-globe text-warning align-text-bottom"></i> Cat Pea Map</a></li>
+         <li><a class="fw-light text-light text-decoration-none" href="/"><i class="bi bi-house-door text-warning align-text-bottom"></i> Cat Pea Home Page</a></li>
+         <li><a class="fw-light text-light text-decoration-none" href="/sitemap"><i class="bi bi-globe text-warning align-text-bottom"></i> Cat Pea Map</a></li>
 
        </ul>
 
-       <h5 class="text-warning">Social</h5>
+       <h5 class="text-warning">Cat Pea Social</h5>
        <ul class="list-unstyled text-small">
-         <li><a class="text-light text-decoration-none" href="https://github.com/catpea">Cat Pea on Github <i class="bi bi-link-45deg text-warning align-text-bottom"></i></a></li>
-         <li><a class="text-light text-decoration-none" href="https://www.urbandictionary.com/author.php?author=Cat%20Pea">Cat Pea on Urban Dictionary <i class="bi bi-link-45deg text-warning align-text-bottom"></i></a></li>
+         <li><a class="fw-light text-light text-decoration-none" href="https://www.urbandictionary.com/author.php?author=Cat%20Pea">Urban Dictionary <i class="bi bi-link-45deg text-warning align-text-bottom"></i></a></li>
+         <li><a class="fw-light text-light text-decoration-none" href="https://dribbble.com/catpea">Dribbble <i class="bi bi-link-45deg text-warning align-text-bottom"></i></a></li>
+         <li><a class="fw-light text-light text-decoration-none" href="https://gitlab.com/catpea">GitLab <i class="bi bi-link-45deg text-warning align-text-bottom"></i></a></li>
+         <li><a class="fw-light text-light text-decoration-none" href="https://github.com/catpea">GitHub <i class="bi bi-link-45deg text-warning align-text-bottom"></i></a></li>
        </ul>
 
      </div>

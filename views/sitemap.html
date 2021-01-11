@@ -34,9 +34,9 @@
 
             <% data[book.name].story.posts.forEach(function(post,index){ %>
               <a name="<%= book.name %>-<%= post.number %>"></a>
-              <div class="card bg-dark text-warning mb-2" style="">
+              <div class="card bg-dark text-warning mb-3 border border-2 border-start border-warning border-top-0 border-bottom-0 border-end-0" style="">
                 <div class="card-body">
-                  <a href="/read/<%= post.bookName %>/<%= post.number %>" class="d-block text-reset text-decoration-none"><h4 class="card-title"><span class="text-secondary" style="font-size: .8rem;">#<%= post.number %>:</span> <span class="fw-light"><%= post.title %></span></h4></a>
+                  <a href="/read/<%= post.bookName %>/<%= post.number %>" class="d-block text-reset text-decoration-none"><h4 class="card-title"><div class="text-secondary" style="font-size: .8rem;">#<%= post.number %>:</div> <span class="fw-light"><%= post.title %></span></h4></a>
                   <div class="text-muted small">
                     <%= post.timestamp %>
                   </div>
