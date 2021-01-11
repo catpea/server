@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.html', {}); %>
+    <style>
+    body {
+      background: white;
+    }
+    </style>
+  </head>
+  <body>
+
+
+  <main class="container">
+
+    <div class="row">
+      <div class="col">
+       <div class="card border-0 my-5">
+
+
+         <div class="card-body">
+           <h1 class="card-title">#<%= post.number %>: <%= post.title %></h1>
+           <p class="card-text small">Written <%= post.timestamp %></p>
+         </div>
+
+         <% if(post.image){ %>
+         <img src="/image/md-<%= post.image %>" class="card-img-bottom" alt="<%= post.title %>">
+         <% } %>
+
+       </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+     <div class="col-12">
+       <div class="card border-0 mb-5">
+         <div class="card-body">
+           <div class="card-text pt-5 fs-3 text-center"><%- post.html %></div>
+         </div>
+       </div>
+     </div>
+
+    </div>
+
+
+
+
+  </main><!-- /.container -->
+
+
+  <%- include('partials/foot.html', {}); %>
+
+  </body>
+</html>
