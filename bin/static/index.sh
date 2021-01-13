@@ -6,4 +6,4 @@ rm -fr ./docs/
 mkdir -p docs
 
 wget --mirror --convert-links --html-extension --no-host-directories --directory-prefix ./docs/ http://black:7467
-cp ./docs/index.html ./docs/404.html
+cp ./views/404.html ./docs/404.html
