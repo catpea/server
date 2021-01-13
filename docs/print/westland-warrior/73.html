@@ -12,9 +12,26 @@
 <link href="../../css/custom.css" rel="stylesheet">
 
     <style>
-    body {
-      background: white;
+
+    *, *.card, .card.shadow {
+      border: none ! important;
+      box-shadow: none ! important;
+      background: none ! important;
+      color: black ! important;
     }
+
+    .card-text.card-stanza {
+      font-size:1rem ! important;
+      text-shadow: none ! important;
+    }
+
+    .card, .card-section, .paragraph, .card-body, .section-spacer {
+      margin:.1rem ! important;
+      padding:.1rem ! important;
+    }
+
+
+
     </style>
   </head>
   <body>
@@ -45,295 +62,234 @@
      <div class="col-12">
        <div class="card border-0 mb-5">
          <div class="card-body">
-           <div class="card-text pt-5 fs-3 text-center"><div class="section">
-    <header>
-      <h2>Quote by Carrie Anne</h2>
-    </header>
-    <blockquote>
-      <p>The Enigma was a tough cookie to crack</p>
-      <footer>
-        <cite title="Carrie Anne">Carrie Anne</cite>
-      </footer>
-    </blockquote>
+           <div class="card-text pt-5 fs-3 text-center"><div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">
+      Quote by Carrie Anne
+    </div>
+    <div class="card-body">
+      <div class="card-text">
+        <p>The Enigma was a tough cookie to crack</p>
+      </div>
+      <cite title="Carrie Anne">Carrie Anne</cite>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Cryptography: Crash Course Computer Science #33</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=jhXCTbFnK8o" class="no-tufte-underline" title="Cryptography: Crash Course Computer Science #33">
-        <img src="../../image/yid-jhXCTbFnK8o.jpg" alt="Cryptography: Crash Course Computer Science #33" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Cryptography: Crash Course Computer Science #33</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=jhXCTbFnK8o" title="Cryptography: Crash Course Computer Science #33">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Cryptography: Crash Course Computer Science #33</div>
+    <a href="https://www.youtube.com/watch?v=jhXCTbFnK8o" title="Cryptography: Crash Course Computer Science #33" alt="Cryptography: Crash Course Computer Science #33"><img src="../../image/yid-jhXCTbFnK8o.jpg" alt="Cryptography: Crash Course Computer Science #33" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Cryptography: Crash Course Computer Science #33</h5>
+      <a href="https://www.youtube.com/watch?v=jhXCTbFnK8o" title="Cryptography: Crash Course Computer Science #33" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Cryptography 101 - Substitution Ciphers</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=1P8Xpxm76e8" class="no-tufte-underline" title="Cryptography 101 - Substitution Ciphers">
-        <img src="../../image/yid-1P8Xpxm76e8.jpg" alt="Cryptography 101 - Substitution Ciphers" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Cryptography 101 - Substitution Ciphers</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=1P8Xpxm76e8" title="Cryptography 101 - Substitution Ciphers">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Cryptography 101 - Substitution Ciphers</div>
+    <a href="https://www.youtube.com/watch?v=1P8Xpxm76e8" title="Cryptography 101 - Substitution Ciphers" alt="Cryptography 101 - Substitution Ciphers"><img src="../../image/yid-1P8Xpxm76e8.jpg" alt="Cryptography 101 - Substitution Ciphers" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Cryptography 101 - Substitution Ciphers</h5>
+      <a href="https://www.youtube.com/watch?v=1P8Xpxm76e8" title="Cryptography 101 - Substitution Ciphers" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>How to use the Frequency Analysis Tool</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=mUoQhXWTKE0" class="no-tufte-underline" title="How to use the Frequency Analysis Tool">
-        <img src="../../image/yid-mUoQhXWTKE0.jpg" alt="How to use the Frequency Analysis Tool" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>How to use the Frequency Analysis Tool</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=mUoQhXWTKE0" title="How to use the Frequency Analysis Tool">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">How to use the Frequency Analysis Tool</div>
+    <a href="https://www.youtube.com/watch?v=mUoQhXWTKE0" title="How to use the Frequency Analysis Tool" alt="How to use the Frequency Analysis Tool"><img src="../../image/yid-mUoQhXWTKE0.jpg" alt="How to use the Frequency Analysis Tool" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">How to use the Frequency Analysis Tool</h5>
+      <a href="https://www.youtube.com/watch?v=mUoQhXWTKE0" title="How to use the Frequency Analysis Tool" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Cryptography: Transposition Cipher</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=sHsnH1u03e4" class="no-tufte-underline" title="Cryptography: Transposition Cipher">
-        <img src="../../image/yid-sHsnH1u03e4.jpg" alt="Cryptography: Transposition Cipher" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Cryptography: Transposition Cipher</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=sHsnH1u03e4" title="Cryptography: Transposition Cipher">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Cryptography: Transposition Cipher</div>
+    <a href="https://www.youtube.com/watch?v=sHsnH1u03e4" title="Cryptography: Transposition Cipher" alt="Cryptography: Transposition Cipher"><img src="../../image/yid-sHsnH1u03e4.jpg" alt="Cryptography: Transposition Cipher" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Cryptography: Transposition Cipher</h5>
+      <a href="https://www.youtube.com/watch?v=sHsnH1u03e4" title="Cryptography: Transposition Cipher" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Poles Escape With Secret of Enigma</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=mO0oET8TT5E" class="no-tufte-underline" title="Poles Escape With Secret of Enigma">
-        <img src="../../image/yid-mO0oET8TT5E.jpg" alt="Poles Escape With Secret of Enigma" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Poles Escape With Secret of Enigma</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=mO0oET8TT5E" title="Poles Escape With Secret of Enigma">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Poles Escape With Secret of Enigma</div>
+    <a href="https://www.youtube.com/watch?v=mO0oET8TT5E" title="Poles Escape With Secret of Enigma" alt="Poles Escape With Secret of Enigma"><img src="../../image/yid-mO0oET8TT5E.jpg" alt="Poles Escape With Secret of Enigma" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Poles Escape With Secret of Enigma</h5>
+      <a href="https://www.youtube.com/watch?v=mO0oET8TT5E" title="Poles Escape With Secret of Enigma" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Enigma Machine</h2>
-    </header>
-    <figure>
-      <img src="../../image/enigma-patent.png" alt="Enigma Machine" style="width: 100%; height: auto;">
-    </figure>
-    <p>Invented by <a href="https://en.wikipedia.org/wiki/Arthur_Scherbius">Arthur Scherbius</a> attacked by <a href="https://en.wikipedia.org/wiki/Biuro_Szyfr%C3%B3w">Polish Cipher Bureau</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <img src="../../image/enigma-patent.png" alt="Enigma Machine" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Enigma Machine</h5>
+      <div class="card-text">
+        <p>Invented by <a href="https://en.wikipedia.org/wiki/Arthur_Scherbius">Arthur Scherbius</a> attacked by <a href="https://en.wikipedia.org/wiki/Biuro_Szyfr%C3%B3w">Polish Cipher Bureau</a></p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Polish cryptologists and breaking of the Enigma</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=cpRhZaQxnhw" class="no-tufte-underline" title="Polish cryptologists and breaking of the Enigma">
-        <img src="../../image/yid-cpRhZaQxnhw.jpg" alt="Polish cryptologists and breaking of the Enigma" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Polish cryptologists and breaking of the Enigma</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=cpRhZaQxnhw" title="Polish cryptologists and breaking of the Enigma">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Polish cryptologists and breaking of the Enigma</div>
+    <a href="https://www.youtube.com/watch?v=cpRhZaQxnhw" title="Polish cryptologists and breaking of the Enigma" alt="Polish cryptologists and breaking of the Enigma"><img src="../../image/yid-cpRhZaQxnhw.jpg" alt="Polish cryptologists and breaking of the Enigma" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Polish cryptologists and breaking of the Enigma</h5>
+      <a href="https://www.youtube.com/watch?v=cpRhZaQxnhw" title="Polish cryptologists and breaking of the Enigma" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Enigma Machine - Numberphile</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=G2_Q9FoD-oQ" class="no-tufte-underline" title="Enigma Machine - Numberphile">
-        <img src="../../image/yid-G2_Q9FoD-oQ.jpg" alt="Enigma Machine - Numberphile" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Enigma Machine - Numberphile</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=G2_Q9FoD-oQ" title="Enigma Machine - Numberphile">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Enigma Machine - Numberphile</div>
+    <a href="https://www.youtube.com/watch?v=G2_Q9FoD-oQ" title="Enigma Machine - Numberphile" alt="Enigma Machine - Numberphile"><img src="../../image/yid-G2_Q9FoD-oQ.jpg" alt="Enigma Machine - Numberphile" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Enigma Machine - Numberphile</h5>
+      <a href="https://www.youtube.com/watch?v=G2_Q9FoD-oQ" title="Enigma Machine - Numberphile" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Flaw in the Enigma Code - Numberphile</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=V4V2bpZlqx8" class="no-tufte-underline" title="Flaw in the Enigma Code - Numberphile">
-        <img src="../../image/yid-V4V2bpZlqx8.jpg" alt="Flaw in the Enigma Code - Numberphile" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Flaw in the Enigma Code - Numberphile</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=V4V2bpZlqx8" title="Flaw in the Enigma Code - Numberphile">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Flaw in the Enigma Code - Numberphile</div>
+    <a href="https://www.youtube.com/watch?v=V4V2bpZlqx8" title="Flaw in the Enigma Code - Numberphile" alt="Flaw in the Enigma Code - Numberphile"><img src="../../image/yid-V4V2bpZlqx8.jpg" alt="Flaw in the Enigma Code - Numberphile" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Flaw in the Enigma Code - Numberphile</h5>
+      <a href="https://www.youtube.com/watch?v=V4V2bpZlqx8" title="Flaw in the Enigma Code - Numberphile" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Typex</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=dG09jv3c1sE" class="no-tufte-underline" title="Typex">
-        <img src="../../image/yid-dG09jv3c1sE.jpg" alt="Typex" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Typex</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=dG09jv3c1sE" title="Typex">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Typex</div>
+    <a href="https://www.youtube.com/watch?v=dG09jv3c1sE" title="Typex" alt="Typex"><img src="../../image/yid-dG09jv3c1sE.jpg" alt="Typex" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Typex</h5>
+      <a href="https://www.youtube.com/watch?v=dG09jv3c1sE" title="Typex" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>More on Wikipedia</h2>
-    </header>
-    <p><a href="https://en.wikipedia.org/wiki/Zygalski_sheets">Zygalski Sheets</a></p>
-    <p><a href="https://en.wikipedia.org/wiki/Bomba_(cryptography)">Bomba (Polish Machine)</a></p>
-    <p><a href="https://en.wikipedia.org/wiki/Bombe">Bombe (British Machine)</a></p>
-    <p><a href="https://en.wikipedia.org/wiki/Typex">Typex</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-body">
+      <h5 class="card-title">More on Wikipedia</h5>
+      <div class="card-text">
+        <p><a href="https://en.wikipedia.org/wiki/Zygalski_sheets">Zygalski Sheets</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Bomba_(cryptography)">Bomba (Polish Machine)</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Bombe">Bombe (British Machine)</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Typex">Typex</a></p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>DES encryption by hand (simple low level example at a bit view)</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=Sy0sXa73PZA" class="no-tufte-underline" title="DES encryption by hand (simple low level example at a bit view)">
-        <img src="../../image/yid-Sy0sXa73PZA.jpg" alt="DES encryption by hand (simple low level example at a bit view)" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>DES encryption by hand (simple low level example at a bit view)</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=Sy0sXa73PZA" title="DES encryption by hand (simple low level example at a bit view)">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">DES encryption by hand (simple low level example at a bit view)</div>
+    <a href="https://www.youtube.com/watch?v=Sy0sXa73PZA" title="DES encryption by hand (simple low level example at a bit view)" alt="DES encryption by hand (simple low level example at a bit view)"><img src="../../image/yid-Sy0sXa73PZA.jpg" alt="DES encryption by hand (simple low level example at a bit view)" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">DES encryption by hand (simple low level example at a bit view)</h5>
+      <a href="https://www.youtube.com/watch?v=Sy0sXa73PZA" title="DES encryption by hand (simple low level example at a bit view)" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>AES Explained (Advanced Encryption Standard) - Computerphile</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=O4xNJsjtN6E" class="no-tufte-underline" title="AES Explained (Advanced Encryption Standard) - Computerphile">
-        <img src="../../image/yid-O4xNJsjtN6E.jpg" alt="AES Explained (Advanced Encryption Standard) - Computerphile" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>AES Explained (Advanced Encryption Standard) - Computerphile</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=O4xNJsjtN6E" title="AES Explained (Advanced Encryption Standard) - Computerphile">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">AES Explained (Advanced Encryption Standard) - Computerphile</div>
+    <a href="https://www.youtube.com/watch?v=O4xNJsjtN6E" title="AES Explained (Advanced Encryption Standard) - Computerphile" alt="AES Explained (Advanced Encryption Standard) - Computerphile"><img src="../../image/yid-O4xNJsjtN6E.jpg" alt="AES Explained (Advanced Encryption Standard) - Computerphile" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">AES Explained (Advanced Encryption Standard) - Computerphile</h5>
+      <a href="https://www.youtube.com/watch?v=O4xNJsjtN6E" title="AES Explained (Advanced Encryption Standard) - Computerphile" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Symmetric and Asymmetric Encryption</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=pArLLJmgX10" class="no-tufte-underline" title="Symmetric and Asymmetric Encryption">
-        <img src="../../image/yid-pArLLJmgX10.jpg" alt="Symmetric and Asymmetric Encryption" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Symmetric and Asymmetric Encryption</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=pArLLJmgX10" title="Symmetric and Asymmetric Encryption">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Symmetric and Asymmetric Encryption</div>
+    <a href="https://www.youtube.com/watch?v=pArLLJmgX10" title="Symmetric and Asymmetric Encryption" alt="Symmetric and Asymmetric Encryption"><img src="../../image/yid-pArLLJmgX10.jpg" alt="Symmetric and Asymmetric Encryption" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Symmetric and Asymmetric Encryption</h5>
+      <a href="https://www.youtube.com/watch?v=pArLLJmgX10" title="Symmetric and Asymmetric Encryption" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Asymmetric encryption - Simply explained</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=AQDCe585Lnc" class="no-tufte-underline" title="Asymmetric encryption - Simply explained">
-        <img src="../../image/yid-AQDCe585Lnc.jpg" alt="Asymmetric encryption - Simply explained" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Asymmetric encryption - Simply explained</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=AQDCe585Lnc" title="Asymmetric encryption - Simply explained">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Asymmetric encryption - Simply explained</div>
+    <a href="https://www.youtube.com/watch?v=AQDCe585Lnc" title="Asymmetric encryption - Simply explained" alt="Asymmetric encryption - Simply explained"><img src="../../image/yid-AQDCe585Lnc.jpg" alt="Asymmetric encryption - Simply explained" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Asymmetric encryption - Simply explained</h5>
+      <a href="https://www.youtube.com/watch?v=AQDCe585Lnc" title="Asymmetric encryption - Simply explained" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Games</h2>
-    </header>
-    <p><a href="https://capturetheflag.withgoogle.com/#beginners/">Google Capture The Flag (CTF)</a></p>
-    <p><a href="https://cryptochallenge.io/">NSA CRYPTOCHALLENGE - Puzzle of the week</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-body">
+      <h5 class="card-title">Games</h5>
+      <div class="card-text">
+        <p><a href="https://capturetheflag.withgoogle.com/#beginners/">Google Capture The Flag (CTF)</a></p>
+        <p><a href="https://cryptochallenge.io/">NSA CRYPTOCHALLENGE - Puzzle of the week</a></p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Google CTF: Beginner Quest: OCR IS COOL!</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=j9xht4K-MBk" class="no-tufte-underline" title="Google CTF: Beginner Quest: OCR IS COOL!">
-        <img src="../../image/yid-j9xht4K-MBk.jpg" alt="Google CTF: Beginner Quest: OCR IS COOL!" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Google CTF: Beginner Quest: OCR IS COOL!</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=j9xht4K-MBk" title="Google CTF: Beginner Quest: OCR IS COOL!">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Google CTF: Beginner Quest: OCR IS COOL!</div>
+    <a href="https://www.youtube.com/watch?v=j9xht4K-MBk" title="Google CTF: Beginner Quest: OCR IS COOL!" alt="Google CTF: Beginner Quest: OCR IS COOL!"><img src="../../image/yid-j9xht4K-MBk.jpg" alt="Google CTF: Beginner Quest: OCR IS COOL!" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Google CTF: Beginner Quest: OCR IS COOL!</h5>
+      <a href="https://www.youtube.com/watch?v=j9xht4K-MBk" title="Google CTF: Beginner Quest: OCR IS COOL!" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Kryptos: The CIA&#x27;s Unsolved Secret Code</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=fPJoNYgXHnI" class="no-tufte-underline" title="Kryptos: The CIA&#x27;s Unsolved Secret Code">
-        <img src="../../image/yid-fPJoNYgXHnI.jpg" alt="Kryptos: The CIA&#x27;s Unsolved Secret Code" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Kryptos: The CIA&#x27;s Unsolved Secret Code</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=fPJoNYgXHnI" title="Kryptos: The CIA&#x27;s Unsolved Secret Code">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Kryptos: The CIA&#x27;s Unsolved Secret Code</div>
+    <a href="https://www.youtube.com/watch?v=fPJoNYgXHnI" title="Kryptos: The CIA&#x27;s Unsolved Secret Code" alt="Kryptos: The CIA&#x27;s Unsolved Secret Code"><img src="../../image/yid-fPJoNYgXHnI.jpg" alt="Kryptos: The CIA&#x27;s Unsolved Secret Code" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Kryptos: The CIA&#x27;s Unsolved Secret Code</h5>
+      <a href="https://www.youtube.com/watch?v=fPJoNYgXHnI" title="Kryptos: The CIA&#x27;s Unsolved Secret Code" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Kryptos</h2>
-    </header>
-    <p><a href="https://en.wikipedia.org/wiki/Kryptos">Kryptos On Wikipedia</a></p>
-    <p><a href="https://www.elonka.com/">Kryptos Transcription by Elonka Dunin</a></p>
-    <p><a href="https://www.elonka.com/UnsolvedCodes.html">Elonka&#39;s List of Famous Unsolved Codes and Ciphers</a></p>
-    <p><a href="https://www.elonka.com/kryptos/CyrillicProjectorAnnouncement.html">The Cyrillic Projector Code - Cracked!</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-body">
+      <h5 class="card-title">Kryptos</h5>
+      <div class="card-text">
+        <p><a href="https://en.wikipedia.org/wiki/Kryptos">Kryptos On Wikipedia</a></p>
+        <p><a href="https://www.elonka.com/">Kryptos Transcription by Elonka Dunin</a></p>
+        <p><a href="https://www.elonka.com/UnsolvedCodes.html">Elonka&#39;s List of Famous Unsolved Codes and Ciphers</a></p>
+        <p><a href="https://www.elonka.com/kryptos/CyrillicProjectorAnnouncement.html">The Cyrillic Projector Code - Cracked!</a></p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2></h2>
-    </header>
-    <figure>
-      <img src="../../image/kryptos.jpg" alt="" style="width: 100%; height: auto;">
-    </figure>
+  <div class="card card-section bg-dark text-warning shadow">
+    <img src="../../image/kryptos.jpg" alt="" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <div class="card-text"></div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Kryptos Transcription</h2>
-    </header>
-    <p>EMUFPHZLRFAXYUSDJKZLDKRNSHGNFIVJ YQTQUXQBQVYUVLLTREVJYQTMKYRDMFD
-      VFPJUDEEHZWETZYVGWHKKQETGFQJNCE GGWHKK?DQMCPFQZDQMMIAGPFXHQRLG
-      TIMVMZJANQLVKQEDAGDVFRPJUNGEUNA QZGZLECGYUXUEENJTBJLBQCRTBJDFHRR
-      YIZETKZEMVDUFKSJHKFWHKUWQLSZFTI HHDDDUVH?DWKBFUFPWNTDFIYCUQZERE
-      EVLDKFEZMOQQJLTTUGSYQPFEUNLAVIDX FLGGTEZ?FKZBSFDQVGOGIPUFXHHDRKF
-      FHQNTGPUAECNUVPDJMQCLQUMUNEDFQ ELZZVRRGKFFVOEEXBDMVPNFQXEZLGRE
-      DNQFMPNZGLFLPMRJQYALMGNUVPDXVKP DQUMEBEDMHDAFMJGZNUPLGEWJLLAETG </p>
-    <p> ABCDEFGHIJKLMNOPQRSTUVWXYZABCD AKRYPTOSABCDEFGHIJLMNQUVWXZKRYP
-      BRYPTOSABCDEFGHIJLMNQUVWXZKRYPT CYPTOSABCDEFGHIJLMNQUVWXZKRYPTO
-      DPTOSABCDEFGHIJLMNQUVWXZKRYPTOS ETOSABCDEFGHIJLMNQUVWXZKRYPTOSA
-      FOSABCDEFGHIJLMNQUVWXZKRYPTOSAB GSABCDEFGHIJLMNQUVWXZKRYPTOSABC
-      HABCDEFGHIJLMNQUVWXZKRYPTOSABCD IBCDEFGHIJLMNQUVWXZKRYPTOSABCDE
-      JCDEFGHIJLMNQUVWXZKRYPTOSABCDEF KDEFGHIJLMNQUVWXZKRYPTOSABCDEFG
-      LEFGHIJLMNQUVWXZKRYPTOSABCDEFGH MFGHIJLMNQUVWXZKRYPTOSABCDEFGHI </p>
-    <p>ENDYAHROHNLSRHEOCPTEOIBIDYSHNAIA CHTNREYULDSLLSLLNOHSNOSMRWXMNE
-      TPRNGATIHNRARPESLNNELEBLPIIACAE WMTWNDITEENRAHCTENEUDRETNHAEOE
-      TFOLSEDTIWENHAEIOYTEYQHEENCTAYCR EIFTBRSPAMHHEWENATAMATEGYEERLB
-      TEEFOASFIOTUETUAEOTOARMAEERTNRTI BSEDDNIAAHTTMSTEWPIEROAGRIEWFEB
-      AECTDDHILCEIHSITEGOEAOSDDRYDLORIT RKLMLEHAGTDHARDPNEOHMGFMFEUHE
-      ECDMRIPFEIMEHNLSSTTRTVDOHW?OBKR UOXOGHULBSOLIFBBWFLRVQQPRNGKSSO
-      TWTQSJQSSEKZZWATJKLUDIAWINFBNYP VTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR </p>
-    <p>NGHIJLMNQUVWXZKRYPTOSABCDEFGHIJL OHIJLMNQUVWXZKRYPTOSABCDEFGHIJL
-      PIJLMNQUVWXZKRYPTOSABCDEFGHIJLM QJLMNQUVWXZKRYPTOSABCDEFGHIJLMN
-      RLMNQUVWXZKRYPTOSABCDEFGHIJLMNQ SMNQUVWXZKRYPTOSABCDEFGHIJLMNQU
-      TNQUVWXZKRYPTOSABCDEFGHIJLMNQUV UQUVWXZKRYPTOSABCDEFGHIJLMNQUVW
-      VUVWXZKRYPTOSABCDEFGHIJLMNQUVWX WVWXZKRYPTOSABCDEFGHIJLMNQUVWXZ
-      XWXZKRYPTOSABCDEFGHIJLMNQUVWXZK YXZKRYPTOSABCDEFGHIJLMNQUVWXZKR
-      ZZKRYPTOSABCDEFGHIJLMNQUVWXZKRY  ABCDEFGHIJKLMNOPQRSTUVWXYZABCD</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-body">
+      <h5 class="card-title">Kryptos Transcription</h5>
+      <div class="card-text">
+        <p>EMUFPHZLRFAXYUSDJKZLDKRNSHGNFIVJ YQTQUXQBQVYUVLLTREVJYQTMKYRDMFD
+          VFPJUDEEHZWETZYVGWHKKQETGFQJNCE GGWHKK?DQMCPFQZDQMMIAGPFXHQRLG
+          TIMVMZJANQLVKQEDAGDVFRPJUNGEUNA QZGZLECGYUXUEENJTBJLBQCRTBJDFHRR
+          YIZETKZEMVDUFKSJHKFWHKUWQLSZFTI HHDDDUVH?DWKBFUFPWNTDFIYCUQZERE
+          EVLDKFEZMOQQJLTTUGSYQPFEUNLAVIDX FLGGTEZ?FKZBSFDQVGOGIPUFXHHDRKF
+          FHQNTGPUAECNUVPDJMQCLQUMUNEDFQ ELZZVRRGKFFVOEEXBDMVPNFQXEZLGRE
+          DNQFMPNZGLFLPMRJQYALMGNUVPDXVKP DQUMEBEDMHDAFMJGZNUPLGEWJLLAETG </p>
+        <p> ABCDEFGHIJKLMNOPQRSTUVWXYZABCD AKRYPTOSABCDEFGHIJLMNQUVWXZKRYP
+          BRYPTOSABCDEFGHIJLMNQUVWXZKRYPT CYPTOSABCDEFGHIJLMNQUVWXZKRYPTO
+          DPTOSABCDEFGHIJLMNQUVWXZKRYPTOS ETOSABCDEFGHIJLMNQUVWXZKRYPTOSA
+          FOSABCDEFGHIJLMNQUVWXZKRYPTOSAB GSABCDEFGHIJLMNQUVWXZKRYPTOSABC
+          HABCDEFGHIJLMNQUVWXZKRYPTOSABCD IBCDEFGHIJLMNQUVWXZKRYPTOSABCDE
+          JCDEFGHIJLMNQUVWXZKRYPTOSABCDEF KDEFGHIJLMNQUVWXZKRYPTOSABCDEFG
+          LEFGHIJLMNQUVWXZKRYPTOSABCDEFGH MFGHIJLMNQUVWXZKRYPTOSABCDEFGHI </p>
+        <p>ENDYAHROHNLSRHEOCPTEOIBIDYSHNAIA CHTNREYULDSLLSLLNOHSNOSMRWXMNE
+          TPRNGATIHNRARPESLNNELEBLPIIACAE WMTWNDITEENRAHCTENEUDRETNHAEOE
+          TFOLSEDTIWENHAEIOYTEYQHEENCTAYCR EIFTBRSPAMHHEWENATAMATEGYEERLB
+          TEEFOASFIOTUETUAEOTOARMAEERTNRTI BSEDDNIAAHTTMSTEWPIEROAGRIEWFEB
+          AECTDDHILCEIHSITEGOEAOSDDRYDLORIT RKLMLEHAGTDHARDPNEOHMGFMFEUHE
+          ECDMRIPFEIMEHNLSSTTRTVDOHW?OBKR UOXOGHULBSOLIFBBWFLRVQQPRNGKSSO
+          TWTQSJQSSEKZZWATJKLUDIAWINFBNYP VTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR </p>
+        <p>NGHIJLMNQUVWXZKRYPTOSABCDEFGHIJL OHIJLMNQUVWXZKRYPTOSABCDEFGHIJL
+          PIJLMNQUVWXZKRYPTOSABCDEFGHIJLM QJLMNQUVWXZKRYPTOSABCDEFGHIJLMN
+          RLMNQUVWXZKRYPTOSABCDEFGHIJLMNQ SMNQUVWXZKRYPTOSABCDEFGHIJLMNQU
+          TNQUVWXZKRYPTOSABCDEFGHIJLMNQUV UQUVWXZKRYPTOSABCDEFGHIJLMNQUVW
+          VUVWXZKRYPTOSABCDEFGHIJLMNQUVWX WVWXZKRYPTOSABCDEFGHIJLMNQUVWXZ
+          XWXZKRYPTOSABCDEFGHIJLMNQUVWXZK YXZKRYPTOSABCDEFGHIJLMNQUVWXZKR
+          ZZKRYPTOSABCDEFGHIJLMNQUVWXZKRY  ABCDEFGHIJKLMNOPQRSTUVWXYZABCD</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Ancient Codes and Hieroglyphs</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=r-76Smf2oMk" class="no-tufte-underline" title="Ancient Codes and Hieroglyphs">
-        <img src="../../image/yid-r-76Smf2oMk.jpg" alt="Ancient Codes and Hieroglyphs" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Ancient Codes and Hieroglyphs</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=r-76Smf2oMk" title="Ancient Codes and Hieroglyphs">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Ancient Codes and Hieroglyphs</div>
+    <a href="https://www.youtube.com/watch?v=r-76Smf2oMk" title="Ancient Codes and Hieroglyphs" alt="Ancient Codes and Hieroglyphs"><img src="../../image/yid-r-76Smf2oMk.jpg" alt="Ancient Codes and Hieroglyphs" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Ancient Codes and Hieroglyphs</h5>
+      <a href="https://www.youtube.com/watch?v=r-76Smf2oMk" title="Ancient Codes and Hieroglyphs" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Keeping Secrets: Cryptography In A Connected World</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=nVVF8dgKC38" class="no-tufte-underline" title="Keeping Secrets: Cryptography In A Connected World">
-        <img src="../../image/yid-nVVF8dgKC38.jpg" alt="Keeping Secrets: Cryptography In A Connected World" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Keeping Secrets: Cryptography In A Connected World</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=nVVF8dgKC38" title="Keeping Secrets: Cryptography In A Connected World">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Keeping Secrets: Cryptography In A Connected World</div>
+    <a href="https://www.youtube.com/watch?v=nVVF8dgKC38" title="Keeping Secrets: Cryptography In A Connected World" alt="Keeping Secrets: Cryptography In A Connected World"><img src="../../image/yid-nVVF8dgKC38.jpg" alt="Keeping Secrets: Cryptography In A Connected World" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Keeping Secrets: Cryptography In A Connected World</h5>
+      <a href="https://www.youtube.com/watch?v=nVVF8dgKC38" title="Keeping Secrets: Cryptography In A Connected World" class="btn btn-warning">Play Video</a>
+    </div>
   </div></div>
          </div>
        </div>

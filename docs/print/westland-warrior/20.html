@@ -12,9 +12,26 @@
 <link href="../../css/custom.css" rel="stylesheet">
 
     <style>
-    body {
-      background: white;
+
+    *, *.card, .card.shadow {
+      border: none ! important;
+      box-shadow: none ! important;
+      background: none ! important;
+      color: black ! important;
     }
+
+    .card-text.card-stanza {
+      font-size:1rem ! important;
+      text-shadow: none ! important;
+    }
+
+    .card, .card-section, .paragraph, .card-body, .section-spacer {
+      margin:.1rem ! important;
+      padding:.1rem ! important;
+    }
+
+
+
     </style>
   </head>
   <body>
@@ -45,227 +62,165 @@
      <div class="col-12">
        <div class="card border-0 mb-5">
          <div class="card-body">
-           <div class="card-text pt-5 fs-3 text-center"><div class="section">
-    <header>
-      <h2>Quote by Beverly Sills</h2>
-    </header>
-    <blockquote>
-      <p>There are no shortcuts to any place worth going.</p>
-      <footer>
-        <cite title="Beverly Sills"><a href="https://en.wikipedia.org/wiki/Beverly_Sills">Beverly Sills</a></cite>
-      </footer>
-    </blockquote>
+           <div class="card-text pt-5 fs-3 text-center"><div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">
+      Quote by Beverly Sills
+    </div>
+    <div class="card-body">
+      <div class="card-text">
+        <p>There are no shortcuts to any place worth going.</p>
+      </div>
+      <cite title="Beverly Sills"><a href="https://en.wikipedia.org/wiki/Beverly_Sills" class="card-link text-reset">Beverly Sills</a></cite>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>A journey through Henry David Thoreau&#x27;s Maine woods.</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=2197wgDecZk" class="no-tufte-underline" title="A journey through Henry David Thoreau&#x27;s Maine woods.">
-        <img src="../../image/yid-2197wgDecZk.jpg" alt="A journey through Henry David Thoreau&#x27;s Maine woods." style="width: 100%; height: auto;">
-      </a>
-      <figcaption>A journey through Henry David Thoreau&#x27;s Maine woods.</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=2197wgDecZk" title="A journey through Henry David Thoreau&#x27;s Maine woods.">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">A journey through Henry David Thoreau&#x27;s Maine woods.</div>
+    <a href="https://www.youtube.com/watch?v=2197wgDecZk" title="A journey through Henry David Thoreau&#x27;s Maine woods." alt="A journey through Henry David Thoreau&#x27;s Maine woods."><img src="../../image/yid-2197wgDecZk.jpg" alt="A journey through Henry David Thoreau&#x27;s Maine woods." class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">A journey through Henry David Thoreau&#x27;s Maine woods.</h5>
+      <a href="https://www.youtube.com/watch?v=2197wgDecZk" title="A journey through Henry David Thoreau&#x27;s Maine woods." class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Appalachian Trail Thru Hike 2015: KATAHDIN!</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=SNxm2zkViKQ" class="no-tufte-underline" title="Appalachian Trail Thru Hike 2015: KATAHDIN!">
-        <img src="../../image/yid-SNxm2zkViKQ.jpg" alt="Appalachian Trail Thru Hike 2015: KATAHDIN!" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Appalachian Trail Thru Hike 2015: KATAHDIN!</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=SNxm2zkViKQ" title="Appalachian Trail Thru Hike 2015: KATAHDIN!">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Appalachian Trail Thru Hike 2015: KATAHDIN!</div>
+    <a href="https://www.youtube.com/watch?v=SNxm2zkViKQ" title="Appalachian Trail Thru Hike 2015: KATAHDIN!" alt="Appalachian Trail Thru Hike 2015: KATAHDIN!"><img src="../../image/yid-SNxm2zkViKQ.jpg" alt="Appalachian Trail Thru Hike 2015: KATAHDIN!" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Appalachian Trail Thru Hike 2015: KATAHDIN!</h5>
+      <a href="https://www.youtube.com/watch?v=SNxm2zkViKQ" title="Appalachian Trail Thru Hike 2015: KATAHDIN!" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Thoreau&#x27;s simple life at Walden</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=_8FUPrd5ra0" class="no-tufte-underline" title="Thoreau&#x27;s simple life at Walden">
-        <img src="../../image/yid-_8FUPrd5ra0.jpg" alt="Thoreau&#x27;s simple life at Walden" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Thoreau&#x27;s simple life at Walden</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=_8FUPrd5ra0" title="Thoreau&#x27;s simple life at Walden">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Thoreau&#x27;s simple life at Walden</div>
+    <a href="https://www.youtube.com/watch?v=_8FUPrd5ra0" title="Thoreau&#x27;s simple life at Walden" alt="Thoreau&#x27;s simple life at Walden"><img src="../../image/yid-_8FUPrd5ra0.jpg" alt="Thoreau&#x27;s simple life at Walden" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Thoreau&#x27;s simple life at Walden</h5>
+      <a href="https://www.youtube.com/watch?v=_8FUPrd5ra0" title="Thoreau&#x27;s simple life at Walden" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Political theory: Henry David Thoreau</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=JJL9S0J8-4k" class="no-tufte-underline" title="Political theory: Henry David Thoreau">
-        <img src="../../image/yid-JJL9S0J8-4k.jpg" alt="Political theory: Henry David Thoreau" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Political theory: Henry David Thoreau</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=JJL9S0J8-4k" title="Political theory: Henry David Thoreau">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Political theory: Henry David Thoreau</div>
+    <a href="https://www.youtube.com/watch?v=JJL9S0J8-4k" title="Political theory: Henry David Thoreau" alt="Political theory: Henry David Thoreau"><img src="../../image/yid-JJL9S0J8-4k.jpg" alt="Political theory: Henry David Thoreau" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Political theory: Henry David Thoreau</h5>
+      <a href="https://www.youtube.com/watch?v=JJL9S0J8-4k" title="Political theory: Henry David Thoreau" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Review: Walden by Henry David Thoreau</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=bAqIkEZbVhI" class="no-tufte-underline" title="Review: Walden by Henry David Thoreau">
-        <img src="../../image/yid-bAqIkEZbVhI.jpg" alt="Review: Walden by Henry David Thoreau" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Review: Walden by Henry David Thoreau</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=bAqIkEZbVhI" title="Review: Walden by Henry David Thoreau">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Review: Walden by Henry David Thoreau</div>
+    <a href="https://www.youtube.com/watch?v=bAqIkEZbVhI" title="Review: Walden by Henry David Thoreau" alt="Review: Walden by Henry David Thoreau"><img src="../../image/yid-bAqIkEZbVhI.jpg" alt="Review: Walden by Henry David Thoreau" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Review: Walden by Henry David Thoreau</h5>
+      <a href="https://www.youtube.com/watch?v=bAqIkEZbVhI" title="Review: Walden by Henry David Thoreau" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Walden, Public Domain Audiobook</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=VaME4iHUhSE" class="no-tufte-underline" title="Walden, Public Domain Audiobook">
-        <img src="../../image/yid-VaME4iHUhSE.jpg" alt="Walden, Public Domain Audiobook" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Walden, Public Domain Audiobook</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=VaME4iHUhSE" title="Walden, Public Domain Audiobook">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Walden, Public Domain Audiobook</div>
+    <a href="https://www.youtube.com/watch?v=VaME4iHUhSE" title="Walden, Public Domain Audiobook" alt="Walden, Public Domain Audiobook"><img src="../../image/yid-VaME4iHUhSE.jpg" alt="Walden, Public Domain Audiobook" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Walden, Public Domain Audiobook</h5>
+      <a href="https://www.youtube.com/watch?v=VaME4iHUhSE" title="Walden, Public Domain Audiobook" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Owl Banding at Whitefish Point, Michigan</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=6gFyH_cKWjk" class="no-tufte-underline" title="Owl Banding at Whitefish Point, Michigan">
-        <img src="../../image/yid-6gFyH_cKWjk.jpg" alt="Owl Banding at Whitefish Point, Michigan" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Owl Banding at Whitefish Point, Michigan</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=6gFyH_cKWjk" title="Owl Banding at Whitefish Point, Michigan">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Owl Banding at Whitefish Point, Michigan</div>
+    <a href="https://www.youtube.com/watch?v=6gFyH_cKWjk" title="Owl Banding at Whitefish Point, Michigan" alt="Owl Banding at Whitefish Point, Michigan"><img src="../../image/yid-6gFyH_cKWjk.jpg" alt="Owl Banding at Whitefish Point, Michigan" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Owl Banding at Whitefish Point, Michigan</h5>
+      <a href="https://www.youtube.com/watch?v=6gFyH_cKWjk" title="Owl Banding at Whitefish Point, Michigan" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Wild Things - Wildlife in Bialowieza, Poland (English)</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=HgOJ0aShUuc" class="no-tufte-underline" title="Wild Things - Wildlife in Bialowieza, Poland (English)">
-        <img src="../../image/yid-HgOJ0aShUuc.jpg" alt="Wild Things - Wildlife in Bialowieza, Poland (English)" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Wild Things - Wildlife in Bialowieza, Poland (English)</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=HgOJ0aShUuc" title="Wild Things - Wildlife in Bialowieza, Poland (English)">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Wild Things - Wildlife in Bialowieza, Poland (English)</div>
+    <a href="https://www.youtube.com/watch?v=HgOJ0aShUuc" title="Wild Things - Wildlife in Bialowieza, Poland (English)" alt="Wild Things - Wildlife in Bialowieza, Poland (English)"><img src="../../image/yid-HgOJ0aShUuc.jpg" alt="Wild Things - Wildlife in Bialowieza, Poland (English)" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Wild Things - Wildlife in Bialowieza, Poland (English)</h5>
+      <a href="https://www.youtube.com/watch?v=HgOJ0aShUuc" title="Wild Things - Wildlife in Bialowieza, Poland (English)" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Bialowieza primeval forest part 1/2</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=1czqejkbvO8" class="no-tufte-underline" title="Bialowieza primeval forest part 1/2">
-        <img src="../../image/yid-1czqejkbvO8.jpg" alt="Bialowieza primeval forest part 1/2" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Bialowieza primeval forest part 1/2</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=1czqejkbvO8" title="Bialowieza primeval forest part 1/2">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Bialowieza primeval forest part 1/2</div>
+    <a href="https://www.youtube.com/watch?v=1czqejkbvO8" title="Bialowieza primeval forest part 1/2" alt="Bialowieza primeval forest part 1/2"><img src="../../image/yid-1czqejkbvO8.jpg" alt="Bialowieza primeval forest part 1/2" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Bialowieza primeval forest part 1/2</h5>
+      <a href="https://www.youtube.com/watch?v=1czqejkbvO8" title="Bialowieza primeval forest part 1/2" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Bialowieza primeval forest part 2/2</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=-v7wqo-CHPI" class="no-tufte-underline" title="Bialowieza primeval forest part 2/2">
-        <img src="../../image/yid--v7wqo-CHPI.jpg" alt="Bialowieza primeval forest part 2/2" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Bialowieza primeval forest part 2/2</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=-v7wqo-CHPI" title="Bialowieza primeval forest part 2/2">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Bialowieza primeval forest part 2/2</div>
+    <a href="https://www.youtube.com/watch?v=-v7wqo-CHPI" title="Bialowieza primeval forest part 2/2" alt="Bialowieza primeval forest part 2/2"><img src="../../image/yid--v7wqo-CHPI.jpg" alt="Bialowieza primeval forest part 2/2" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Bialowieza primeval forest part 2/2</h5>
+      <a href="https://www.youtube.com/watch?v=-v7wqo-CHPI" title="Bialowieza primeval forest part 2/2" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Forest Birds Singing</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=2G8LAiHSCAs" class="no-tufte-underline" title="Forest Birds Singing">
-        <img src="../../image/yid-2G8LAiHSCAs.jpg" alt="Forest Birds Singing" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Forest Birds Singing</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=2G8LAiHSCAs" title="Forest Birds Singing">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Forest Birds Singing</div>
+    <a href="https://www.youtube.com/watch?v=2G8LAiHSCAs" title="Forest Birds Singing" alt="Forest Birds Singing"><img src="../../image/yid-2G8LAiHSCAs.jpg" alt="Forest Birds Singing" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Forest Birds Singing</h5>
+      <a href="https://www.youtube.com/watch?v=2G8LAiHSCAs" title="Forest Birds Singing" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Crickets, Owls, Rain, and Wind</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=ko_GQ9ImAvE" class="no-tufte-underline" title="Crickets, Owls, Rain, and Wind">
-        <img src="../../image/yid-ko_GQ9ImAvE.jpg" alt="Crickets, Owls, Rain, and Wind" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Crickets, Owls, Rain, and Wind</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=ko_GQ9ImAvE" title="Crickets, Owls, Rain, and Wind">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Crickets, Owls, Rain, and Wind</div>
+    <a href="https://www.youtube.com/watch?v=ko_GQ9ImAvE" title="Crickets, Owls, Rain, and Wind" alt="Crickets, Owls, Rain, and Wind"><img src="../../image/yid-ko_GQ9ImAvE.jpg" alt="Crickets, Owls, Rain, and Wind" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Crickets, Owls, Rain, and Wind</h5>
+      <a href="https://www.youtube.com/watch?v=ko_GQ9ImAvE" title="Crickets, Owls, Rain, and Wind" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Ocean Sounds</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=vPhg6sc1Mk4" class="no-tufte-underline" title="Ocean Sounds">
-        <img src="../../image/yid-vPhg6sc1Mk4.jpg" alt="Ocean Sounds" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Ocean Sounds</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=vPhg6sc1Mk4" title="Ocean Sounds">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Ocean Sounds</div>
+    <a href="https://www.youtube.com/watch?v=vPhg6sc1Mk4" title="Ocean Sounds" alt="Ocean Sounds"><img src="../../image/yid-vPhg6sc1Mk4.jpg" alt="Ocean Sounds" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Ocean Sounds</h5>
+      <a href="https://www.youtube.com/watch?v=vPhg6sc1Mk4" title="Ocean Sounds" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Groundhog Day</h2>
-    </header>
-    <p><a href="https://en.wikipedia.org/wiki/Groundhog_Day">Groundhog Day</a> is a popular tradition celebrated in Canada and the United States on February 2nd. It derives from the Pennsylvania Dutch superstition that if a groundhog emerging from its burrow on this day sees its shadow due to clear weather, it will retreat to its den and winter will persist for six more weeks, and if it does not see its shadow because of cloudiness, spring will arrive early.</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-body">
+      <h5 class="card-title">Groundhog Day</h5>
+      <div class="card-text">
+        <p><a href="https://en.wikipedia.org/wiki/Groundhog_Day">Groundhog Day</a> is a popular tradition celebrated in Canada and the United States on February 2nd. It derives from the Pennsylvania Dutch superstition that if a groundhog emerging from its burrow on this day sees its shadow due to clear weather, it will retreat to its den and winter will persist for six more weeks, and if it does not see its shadow because of cloudiness, spring will arrive early.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Why Groundhogs Supposedly Predict The Weather On Groundhog Day</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=FDFy7_DM_qQ" class="no-tufte-underline" title="Why Groundhogs Supposedly Predict The Weather On Groundhog Day">
-        <img src="../../image/yid-FDFy7_DM_qQ.jpg" alt="Why Groundhogs Supposedly Predict The Weather On Groundhog Day" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Why Groundhogs Supposedly Predict The Weather On Groundhog Day</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=FDFy7_DM_qQ" title="Why Groundhogs Supposedly Predict The Weather On Groundhog Day">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Why Groundhogs Supposedly Predict The Weather On Groundhog Day</div>
+    <a href="https://www.youtube.com/watch?v=FDFy7_DM_qQ" title="Why Groundhogs Supposedly Predict The Weather On Groundhog Day" alt="Why Groundhogs Supposedly Predict The Weather On Groundhog Day"><img src="../../image/yid-FDFy7_DM_qQ.jpg" alt="Why Groundhogs Supposedly Predict The Weather On Groundhog Day" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Why Groundhogs Supposedly Predict The Weather On Groundhog Day</h5>
+      <a href="https://www.youtube.com/watch?v=FDFy7_DM_qQ" title="Why Groundhogs Supposedly Predict The Weather On Groundhog Day" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Quote by Phil Connors (Bill Murray)</h2>
-    </header>
-    <blockquote>
-      <p>There is no way that this winter is ever going to end as long as this
-        groundhog keeps seeing his shadow. I don&#39;t see any other way out. He&#39;s got
-        to be stopped. And I have to stop him.</p>
-      <footer>
-        <cite title="Phil Connors (Bill Murray)">Phil Connors (Bill Murray)</cite>
-      </footer>
-    </blockquote>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">
+      Quote by Phil Connors (Bill Murray)
+    </div>
+    <div class="card-body">
+      <div class="card-text">
+        <p>There is no way that this winter is ever going to end as long as this
+          groundhog keeps seeing his shadow. I don&#39;t see any other way out. He&#39;s got
+          to be stopped. And I have to stop him.</p>
+      </div>
+      <cite title="Phil Connors (Bill Murray)">Phil Connors (Bill Murray)</cite>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Jimmy the Groundhog takes a nibble of Wisconsin mayor</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=oLqLpVLE8R0" class="no-tufte-underline" title="Jimmy the Groundhog takes a nibble of Wisconsin mayor">
-        <img src="../../image/yid-oLqLpVLE8R0.jpg" alt="Jimmy the Groundhog takes a nibble of Wisconsin mayor" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Jimmy the Groundhog takes a nibble of Wisconsin mayor</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=oLqLpVLE8R0" title="Jimmy the Groundhog takes a nibble of Wisconsin mayor">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Jimmy the Groundhog takes a nibble of Wisconsin mayor</div>
+    <a href="https://www.youtube.com/watch?v=oLqLpVLE8R0" title="Jimmy the Groundhog takes a nibble of Wisconsin mayor" alt="Jimmy the Groundhog takes a nibble of Wisconsin mayor"><img src="../../image/yid-oLqLpVLE8R0.jpg" alt="Jimmy the Groundhog takes a nibble of Wisconsin mayor" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Jimmy the Groundhog takes a nibble of Wisconsin mayor</h5>
+      <a href="https://www.youtube.com/watch?v=oLqLpVLE8R0" title="Jimmy the Groundhog takes a nibble of Wisconsin mayor" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Pennsylvania Polka</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=p3Qnlu9Nfj8" class="no-tufte-underline" title="Pennsylvania Polka">
-        <img src="../../image/yid-p3Qnlu9Nfj8.jpg" alt="Pennsylvania Polka" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Pennsylvania Polka</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=p3Qnlu9Nfj8" title="Pennsylvania Polka">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Pennsylvania Polka</div>
+    <a href="https://www.youtube.com/watch?v=p3Qnlu9Nfj8" title="Pennsylvania Polka" alt="Pennsylvania Polka"><img src="../../image/yid-p3Qnlu9Nfj8.jpg" alt="Pennsylvania Polka" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Pennsylvania Polka</h5>
+      <a href="https://www.youtube.com/watch?v=p3Qnlu9Nfj8" title="Pennsylvania Polka" class="btn btn-warning">Play Video</a>
+    </div>
   </div></div>
          </div>
        </div>

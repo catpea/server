@@ -12,9 +12,26 @@
 <link href="../../css/custom.css" rel="stylesheet">
 
     <style>
-    body {
-      background: white;
+
+    *, *.card, .card.shadow {
+      border: none ! important;
+      box-shadow: none ! important;
+      background: none ! important;
+      color: black ! important;
     }
+
+    .card-text.card-stanza {
+      font-size:1rem ! important;
+      text-shadow: none ! important;
+    }
+
+    .card, .card-section, .paragraph, .card-body, .section-spacer {
+      margin:.1rem ! important;
+      padding:.1rem ! important;
+    }
+
+
+
     </style>
   </head>
   <body>
@@ -45,19 +62,30 @@
      <div class="col-12">
        <div class="card border-0 mb-5">
          <div class="card-body">
-           <div class="card-text pt-5 fs-3 text-center"><div class="section">
-  <p>People grow old only by deserting their ideals, MacArthur had written.</p>
-  <p>Years may wrinkle the skin, but to give up interest wrinkles the soul.</p>
-  <p>You are as young as your faith, as old as your doubt; as young as your self-confidence, as old as your fear; as young as your hope as old as your despair.</p>
-</div>
-<div class="section">
-  <p>In the central place of every heart there is a recording chamber.</p>
-  <p>So long as it receives messages of beauty, hope, cheer and courage, so long are you young.</p>
-  <p>When your heart is covered with the snows of pessimism and the ice of cynicism, then, and then only, are you grown old.</p>
-</div>
-<div class="section">
-  <p>And then, indeed as the ballad says, you just fade away.</p>
-</div></div>
+           <div class="card-text pt-5 fs-3 text-center"><html>
+  <head></head>
+  <body>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">People grow old only by deserting their ideals, MacArthur had written.</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">Years may wrinkle the skin, but to give up interest wrinkles the soul.</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">You are as young as your faith, as old as your doubt; as young as your self-confidence, as old as your fear; as young as your hope as old as your despair.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">In the central place of every heart there is a recording chamber.</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">So long as it receives messages of beauty, hope, cheer and courage, so long are you young.</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">When your heart is covered with the snows of pessimism and the ice of cynicism, then, and then only, are you grown old.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">And then, indeed as the ballad says, you just fade away.</div>
+      </div>
+    </div>
+  </body>
+</html></div>
          </div>
        </div>
      </div>

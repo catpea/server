@@ -12,9 +12,26 @@
 <link href="../../css/custom.css" rel="stylesheet">
 
     <style>
-    body {
-      background: white;
+
+    *, *.card, .card.shadow {
+      border: none ! important;
+      box-shadow: none ! important;
+      background: none ! important;
+      color: black ! important;
     }
+
+    .card-text.card-stanza {
+      font-size:1rem ! important;
+      text-shadow: none ! important;
+    }
+
+    .card, .card-section, .paragraph, .card-body, .section-spacer {
+      margin:.1rem ! important;
+      padding:.1rem ! important;
+    }
+
+
+
     </style>
   </head>
   <body>
@@ -45,337 +62,287 @@
      <div class="col-12">
        <div class="card border-0 mb-5">
          <div class="card-body">
-           <div class="card-text pt-5 fs-3 text-center"><div class="section">
-    <header>
-      <h2>Quote by Frida Kahlo</h2>
-    </header>
-    <blockquote>
-      <p>I never paint dreams or nightmares. I paint my own reality.</p>
-      <footer>
-        <cite title="Frida Kahlo"><a href="https://en.wikipedia.org/wiki/Frida_Kahlo">Frida Kahlo</a></cite>
-      </footer>
-    </blockquote>
+           <div class="card-text pt-5 fs-3 text-center"><div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">
+      Quote by Frida Kahlo
+    </div>
+    <div class="card-body">
+      <div class="card-text">
+        <p>I never paint dreams or nightmares. I paint my own reality.</p>
+      </div>
+      <cite title="Frida Kahlo"><a href="https://en.wikipedia.org/wiki/Frida_Kahlo" class="card-link text-reset">Frida Kahlo</a></cite>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Tracing Paper</h2>
-    </header>
-    <p>Tracing paper does not need batteries, just a pencil.</p>
-    <p>Anybody can trace a printout of something they like with tracing paper.
-      What many don&#39;t understand is that after tracing, you need to black out the
-      opposite side of your trace to create a home made, Transfer Paper.</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-body">
+      <h5 class="card-title">Tracing Paper</h5>
+      <div class="card-text">
+        <p>Tracing paper does not need batteries, just a pencil.</p>
+        <p>Anybody can trace a printout of something they like with tracing paper.
+          What many don&#39;t understand is that after tracing, you need to black out the
+          opposite side of your trace to create a home made, Transfer Paper.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>How to Transfer an Image Using Tracing Paper</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=JW5PYVbc6ho" class="no-tufte-underline" title="How to Transfer an Image Using Tracing Paper">
-        <img src="../../image/yid-JW5PYVbc6ho.jpg" alt="How to Transfer an Image Using Tracing Paper" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>How to Transfer an Image Using Tracing Paper</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=JW5PYVbc6ho" title="How to Transfer an Image Using Tracing Paper">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">How to Transfer an Image Using Tracing Paper</div>
+    <a href="https://www.youtube.com/watch?v=JW5PYVbc6ho" title="How to Transfer an Image Using Tracing Paper" alt="How to Transfer an Image Using Tracing Paper"><img src="../../image/yid-JW5PYVbc6ho.jpg" alt="How to Transfer an Image Using Tracing Paper" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">How to Transfer an Image Using Tracing Paper</h5>
+      <a href="https://www.youtube.com/watch?v=JW5PYVbc6ho" title="How to Transfer an Image Using Tracing Paper" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Tracing Paper</h2>
-    </header>
-    <p>On the front you have your trace. On the back you deposit as much graphite
-      as needed.</p>
-    <p>Then you place your trace on proper Drawing Paper. Then, go over your trace
-      one more time, the graphite on the back will now transfer to your drawing
-      paper.</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-body">
+      <h5 class="card-title">Tracing Paper</h5>
+      <div class="card-text">
+        <p>On the front you have your trace. On the back you deposit as much graphite
+          as needed.</p>
+        <p>Then you place your trace on proper Drawing Paper. Then, go over your trace
+          one more time, the graphite on the back will now transfer to your drawing
+          paper.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Graphite Paper</h2>
-    </header>
-    <figure>
-      <img src="../../image/graphite-paper.jpg" alt="Graphite Paper" style="width: 100%; height: auto;">
-    </figure>
-    <p>By blacking out the back of your trace you create Graphite Paper.</p>
-    <p>You can skip this step by buying pre-made Graphite Paper. (Pre-made
-      Graphite Paper is a <strong>lot</strong> darker and sharper. If you trace something that
-      has a lot of small details, you should use Graphite Paper.)</p>
-    <p>Now you will place Graphite Paper over your Drawing paper, and then put
-      your trace on top, and then go over it with a pencil.</p>
-    <p><a href="https://www.amazon.com/graphite-paper/s?k=graphite+paper">Graphite Paper on Amazon</a>.</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <img src="../../image/graphite-paper.jpg" alt="Graphite Paper" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Graphite Paper</h5>
+      <div class="card-text">
+        <p>By blacking out the back of your trace you create Graphite Paper.</p>
+        <p>You can skip this step by buying pre-made Graphite Paper. (Pre-made
+          Graphite Paper is a <strong>lot</strong> darker and sharper. If you trace something that
+          has a lot of small details, you should use Graphite Paper.)</p>
+        <p>Now you will place Graphite Paper over your Drawing paper, and then put
+          your trace on top, and then go over it with a pencil.</p>
+        <p><a href="https://www.amazon.com/graphite-paper/s?k=graphite+paper">Graphite Paper on Amazon</a>.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Getting Started: Three Ways to Transfer an Image to Watercolor Paper</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=fN-VtUBC7Ys" class="no-tufte-underline" title="Getting Started: Three Ways to Transfer an Image to Watercolor Paper">
-        <img src="../../image/yid-fN-VtUBC7Ys.jpg" alt="Getting Started: Three Ways to Transfer an Image to Watercolor Paper" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Getting Started: Three Ways to Transfer an Image to Watercolor Paper</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=fN-VtUBC7Ys" title="Getting Started: Three Ways to Transfer an Image to Watercolor Paper">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Getting Started: Three Ways to Transfer an Image to Watercolor Paper</div>
+    <a href="https://www.youtube.com/watch?v=fN-VtUBC7Ys" title="Getting Started: Three Ways to Transfer an Image to Watercolor Paper" alt="Getting Started: Three Ways to Transfer an Image to Watercolor Paper"><img src="../../image/yid-fN-VtUBC7Ys.jpg" alt="Getting Started: Three Ways to Transfer an Image to Watercolor Paper" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Getting Started: Three Ways to Transfer an Image to Watercolor Paper</h5>
+      <a href="https://www.youtube.com/watch?v=fN-VtUBC7Ys" title="Getting Started: Three Ways to Transfer an Image to Watercolor Paper" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Light Box</h2>
-    </header>
-    <figure>
-      <img src="../../image/lightbox.jpg" alt="Light Box" style="width: 100%; height: auto;">
-    </figure>
-    <p>Lightbox will help you with tracing and creation of new designs.</p>
-    <p>A light box is an interesting addition to the process of tracing, it does
-      need batteries, or a USB port. When buying an inexpensive light box ($25),
-      you might want to consider getting a tiny battery powered <a href="https://www.amazon.com/s?k=Mini+Projector&amp;ref=nb_sb_noss_2">projector</a>
-      ($75) as well.</p>
-    <p><a href="https://www.amazon.com/s?k=Light+Box+Tracing&amp;ref=nb_sb_noss_2">Light Boxes Paper on Amazon</a>.</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <img src="../../image/lightbox.jpg" alt="Light Box" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Light Box</h5>
+      <div class="card-text">
+        <p>Lightbox will help you with tracing and creation of new designs.</p>
+        <p>A light box is an interesting addition to the process of tracing, it does
+          need batteries, or a USB port. When buying an inexpensive light box ($25),
+          you might want to consider getting a tiny battery powered <a href="https://www.amazon.com/s?k=Mini+Projector&amp;ref=nb_sb_noss_2">projector</a>
+          ($75) as well.</p>
+        <p><a href="https://www.amazon.com/s?k=Light+Box+Tracing&amp;ref=nb_sb_noss_2">Light Boxes Paper on Amazon</a>.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>How to trace a picture.</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=cQGeOMCGh0U" class="no-tufte-underline" title="How to trace a picture.">
-        <img src="../../image/yid-cQGeOMCGh0U.jpg" alt="How to trace a picture." style="width: 100%; height: auto;">
-      </a>
-      <figcaption>How to trace a picture.</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=cQGeOMCGh0U" title="How to trace a picture.">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">How to trace a picture.</div>
+    <a href="https://www.youtube.com/watch?v=cQGeOMCGh0U" title="How to trace a picture." alt="How to trace a picture."><img src="../../image/yid-cQGeOMCGh0U.jpg" alt="How to trace a picture." class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">How to trace a picture.</h5>
+      <a href="https://www.youtube.com/watch?v=cQGeOMCGh0U" title="How to trace a picture." class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Digital Projector</h2>
-    </header>
-    <figure>
-      <img src="../../image/projector.jpg" alt="Digital Projector" style="width: 100%; height: auto;">
-    </figure>
-    <p>Digital projectors ($100 - $400) are the fastest way to create murals and
-      paintings.</p>
-    <p><a href="https://www.amazon.com/Digital-Projectors/s?k=Digital+Projectors">Digital Projectors on Amazon</a>.</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <img src="../../image/projector.jpg" alt="Digital Projector" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Digital Projector</h5>
+      <div class="card-text">
+        <p>Digital projectors ($100 - $400) are the fastest way to create murals and
+          paintings.</p>
+        <p><a href="https://www.amazon.com/Digital-Projectors/s?k=Digital+Projectors">Digital Projectors on Amazon</a>.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Home Wall Painting Using projector - DIY</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=iGDfa4T9yTE" class="no-tufte-underline" title="Home Wall Painting Using projector - DIY">
-        <img src="../../image/yid-iGDfa4T9yTE.jpg" alt="Home Wall Painting Using projector - DIY" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Home Wall Painting Using projector - DIY</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=iGDfa4T9yTE" title="Home Wall Painting Using projector - DIY">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Home Wall Painting Using projector - DIY</div>
+    <a href="https://www.youtube.com/watch?v=iGDfa4T9yTE" title="Home Wall Painting Using projector - DIY" alt="Home Wall Painting Using projector - DIY"><img src="../../image/yid-iGDfa4T9yTE.jpg" alt="Home Wall Painting Using projector - DIY" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Home Wall Painting Using projector - DIY</h5>
+      <a href="https://www.youtube.com/watch?v=iGDfa4T9yTE" title="Home Wall Painting Using projector - DIY" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Digital Projector</h2>
-    </header>
-    <figure>
-      <img src="../../image/projector-phone.jpg" alt="Digital Projector" style="width: 100%; height: auto;">
-    </figure>
-    <p>You can take a selfie, connect your phone to the projector, and begin
-      painting.</p>
-    <p>Even better you can connect your Raspberry PI, or Laptop and use a program
-      like <a href="https://www.gimp.org/">GIMP</a> where you can manipulate your source material to reveal
-      edges, colors, or adjust contrast while painting to reveal the brightest
-      parts of your source material.</p>
-    <p>Tip: Consider putting registration marks in your image and on your canvas,
-      it is easier to resume your work after you bump the projector or call it a
-      night.</p>
-    <p>Idea: Record your painting progress and upload a sped up movie to YouTube.</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <img src="../../image/projector-phone.jpg" alt="Digital Projector" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Digital Projector</h5>
+      <div class="card-text">
+        <p>You can take a selfie, connect your phone to the projector, and begin
+          painting.</p>
+        <p>Even better you can connect your Raspberry PI, or Laptop and use a program
+          like <a href="https://www.gimp.org/">GIMP</a> where you can manipulate your source material to reveal
+          edges, colors, or adjust contrast while painting to reveal the brightest
+          parts of your source material.</p>
+        <p>Tip: Consider putting registration marks in your image and on your canvas,
+          it is easier to resume your work after you bump the projector or call it a
+          night.</p>
+        <p>Idea: Record your painting progress and upload a sped up movie to YouTube.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Mona Lisa</h2>
-    </header>
-    <figure>
-      <img src="../../image/mona1.jpg" alt="Mona Lisa" style="width: 100%; height: auto;">
-    </figure>
-    <p>Using the Mona Lisa to show what you can get by connecting your projector
-      to your laptop, and using a program like <a href="https://www.gimp.org/">GIMP</a>.</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <img src="../../image/mona1.jpg" alt="Mona Lisa" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Mona Lisa</h5>
+      <div class="card-text">
+        <p>Using the Mona Lisa to show what you can get by connecting your projector
+          to your laptop, and using a program like <a href="https://www.gimp.org/">GIMP</a>.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Mona Lisa Edge Detection</h2>
-    </header>
-    <figure>
-      <img src="../../image/mona2.jpg" alt="Mona Lisa Edge Detection" style="width: 100%; height: auto;">
-    </figure>
-    <p>Discover all the hard edges where color changes abruptly.</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <img src="../../image/mona2.jpg" alt="Mona Lisa Edge Detection" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Mona Lisa Edge Detection</h5>
+      <div class="card-text">
+        <p>Discover all the hard edges where color changes abruptly.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Mona Lisa Simplified Color Palette</h2>
-    </header>
-    <figure>
-      <img src="../../image/mona3.jpg" alt="Mona Lisa Simplified Color Palette" style="width: 100%; height: auto;">
-    </figure>
-    <p>Show the color palette.</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <img src="../../image/mona3.jpg" alt="Mona Lisa Simplified Color Palette" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Mona Lisa Simplified Color Palette</h5>
+      <div class="card-text">
+        <p>Show the color palette.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Mona Lisa Highlights</h2>
-    </header>
-    <figure>
-      <img src="../../image/mona4.jpg" alt="Mona Lisa Highlights" style="width: 100%; height: auto;">
-    </figure>
-    <p>Reveal the brightest parts (highlights) in Mona Lisa.</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <img src="../../image/mona4.jpg" alt="Mona Lisa Highlights" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Mona Lisa Highlights</h5>
+      <div class="card-text">
+        <p>Reveal the brightest parts (highlights) in Mona Lisa.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>How to use GIMP for beginners tutorial</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=7LXyClky6A8" class="no-tufte-underline" title="How to use GIMP for beginners tutorial">
-        <img src="../../image/yid-7LXyClky6A8.jpg" alt="How to use GIMP for beginners tutorial" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>How to use GIMP for beginners tutorial</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=7LXyClky6A8" title="How to use GIMP for beginners tutorial">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">How to use GIMP for beginners tutorial</div>
+    <a href="https://www.youtube.com/watch?v=7LXyClky6A8" title="How to use GIMP for beginners tutorial" alt="How to use GIMP for beginners tutorial"><img src="../../image/yid-7LXyClky6A8.jpg" alt="How to use GIMP for beginners tutorial" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">How to use GIMP for beginners tutorial</h5>
+      <a href="https://www.youtube.com/watch?v=7LXyClky6A8" title="How to use GIMP for beginners tutorial" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Learn GIMP in 30 minutes, Complete Tutorial for Beginners</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=IeABb8cwdUg" class="no-tufte-underline" title="Learn GIMP in 30 minutes, Complete Tutorial for Beginners">
-        <img src="../../image/yid-IeABb8cwdUg.jpg" alt="Learn GIMP in 30 minutes, Complete Tutorial for Beginners" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Learn GIMP in 30 minutes, Complete Tutorial for Beginners</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=IeABb8cwdUg" title="Learn GIMP in 30 minutes, Complete Tutorial for Beginners">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Learn GIMP in 30 minutes, Complete Tutorial for Beginners</div>
+    <a href="https://www.youtube.com/watch?v=IeABb8cwdUg" title="Learn GIMP in 30 minutes, Complete Tutorial for Beginners" alt="Learn GIMP in 30 minutes, Complete Tutorial for Beginners"><img src="../../image/yid-IeABb8cwdUg.jpg" alt="Learn GIMP in 30 minutes, Complete Tutorial for Beginners" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Learn GIMP in 30 minutes, Complete Tutorial for Beginners</h5>
+      <a href="https://www.youtube.com/watch?v=IeABb8cwdUg" title="Learn GIMP in 30 minutes, Complete Tutorial for Beginners" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Working With Filters - GIMP Tutorials</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=BB6LM9IYcco" class="no-tufte-underline" title="Working With Filters - GIMP Tutorials">
-        <img src="../../image/yid-BB6LM9IYcco.jpg" alt="Working With Filters - GIMP Tutorials" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Working With Filters - GIMP Tutorials</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=BB6LM9IYcco" title="Working With Filters - GIMP Tutorials">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Working With Filters - GIMP Tutorials</div>
+    <a href="https://www.youtube.com/watch?v=BB6LM9IYcco" title="Working With Filters - GIMP Tutorials" alt="Working With Filters - GIMP Tutorials"><img src="../../image/yid-BB6LM9IYcco.jpg" alt="Working With Filters - GIMP Tutorials" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Working With Filters - GIMP Tutorials</h5>
+      <a href="https://www.youtube.com/watch?v=BB6LM9IYcco" title="Working With Filters - GIMP Tutorials" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Sfumato, Unione, Chiaroscuro, Cangiante</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=Rp4G1pXx-cs" class="no-tufte-underline" title="Sfumato, Unione, Chiaroscuro, Cangiante">
-        <img src="../../image/yid-Rp4G1pXx-cs.jpg" alt="Sfumato, Unione, Chiaroscuro, Cangiante" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Sfumato, Unione, Chiaroscuro, Cangiante</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=Rp4G1pXx-cs" title="Sfumato, Unione, Chiaroscuro, Cangiante">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Sfumato, Unione, Chiaroscuro, Cangiante</div>
+    <a href="https://www.youtube.com/watch?v=Rp4G1pXx-cs" title="Sfumato, Unione, Chiaroscuro, Cangiante" alt="Sfumato, Unione, Chiaroscuro, Cangiante"><img src="../../image/yid-Rp4G1pXx-cs.jpg" alt="Sfumato, Unione, Chiaroscuro, Cangiante" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Sfumato, Unione, Chiaroscuro, Cangiante</h5>
+      <a href="https://www.youtube.com/watch?v=Rp4G1pXx-cs" title="Sfumato, Unione, Chiaroscuro, Cangiante" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Painting the Portrait: The Grisaille Method in Oil Part 1/2</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=1183SVMyJVI" class="no-tufte-underline" title="Painting the Portrait: The Grisaille Method in Oil Part 1/2">
-        <img src="../../image/yid-1183SVMyJVI.jpg" alt="Painting the Portrait: The Grisaille Method in Oil Part 1/2" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Painting the Portrait: The Grisaille Method in Oil Part 1/2</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=1183SVMyJVI" title="Painting the Portrait: The Grisaille Method in Oil Part 1/2">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Painting the Portrait: The Grisaille Method in Oil Part 1/2</div>
+    <a href="https://www.youtube.com/watch?v=1183SVMyJVI" title="Painting the Portrait: The Grisaille Method in Oil Part 1/2" alt="Painting the Portrait: The Grisaille Method in Oil Part 1/2"><img src="../../image/yid-1183SVMyJVI.jpg" alt="Painting the Portrait: The Grisaille Method in Oil Part 1/2" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Painting the Portrait: The Grisaille Method in Oil Part 1/2</h5>
+      <a href="https://www.youtube.com/watch?v=1183SVMyJVI" title="Painting the Portrait: The Grisaille Method in Oil Part 1/2" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Painting the Portrait: The Grisaille Method in Oil Part 2/2</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=vN6aZSSGKGs" class="no-tufte-underline" title="Painting the Portrait: The Grisaille Method in Oil Part 2/2">
-        <img src="../../image/yid-vN6aZSSGKGs.jpg" alt="Painting the Portrait: The Grisaille Method in Oil Part 2/2" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Painting the Portrait: The Grisaille Method in Oil Part 2/2</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=vN6aZSSGKGs" title="Painting the Portrait: The Grisaille Method in Oil Part 2/2">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Painting the Portrait: The Grisaille Method in Oil Part 2/2</div>
+    <a href="https://www.youtube.com/watch?v=vN6aZSSGKGs" title="Painting the Portrait: The Grisaille Method in Oil Part 2/2" alt="Painting the Portrait: The Grisaille Method in Oil Part 2/2"><img src="../../image/yid-vN6aZSSGKGs.jpg" alt="Painting the Portrait: The Grisaille Method in Oil Part 2/2" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Painting the Portrait: The Grisaille Method in Oil Part 2/2</h5>
+      <a href="https://www.youtube.com/watch?v=vN6aZSSGKGs" title="Painting the Portrait: The Grisaille Method in Oil Part 2/2" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Grisaille Method with Jon deMartin</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=JPar_nzAEL0" class="no-tufte-underline" title="Grisaille Method with Jon deMartin">
-        <img src="../../image/yid-JPar_nzAEL0.jpg" alt="Grisaille Method with Jon deMartin" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Grisaille Method with Jon deMartin</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=JPar_nzAEL0" title="Grisaille Method with Jon deMartin">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Grisaille Method with Jon deMartin</div>
+    <a href="https://www.youtube.com/watch?v=JPar_nzAEL0" title="Grisaille Method with Jon deMartin" alt="Grisaille Method with Jon deMartin"><img src="../../image/yid-JPar_nzAEL0.jpg" alt="Grisaille Method with Jon deMartin" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Grisaille Method with Jon deMartin</h5>
+      <a href="https://www.youtube.com/watch?v=JPar_nzAEL0" title="Grisaille Method with Jon deMartin" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Business Practice: Brianna Schretlen and her Fur Kids</h2>
-    </header>
-    <figure>
-      <img src="../../image/bri.jpg" alt="Brianna Schretlen and her Fur Kids" style="width: 100%; height: auto;">
-    </figure>
-    <p>&quot;I&#39;m a professional graphic designer and illustrator with a soft spot for
-      fur kids. I&#39;ve always loved painting and drawing animals. Our pets are like
-      family, and I truly enjoy working on tributes to these silly, lovable,
-      trusting and loyal creatures. In addition to Bri Pet Portraits, I am also
-      on Etsy under the shop Bri Baby Art - a shop featuring custom artworks for
-      nurseries and kids room decor.&quot; (from <a href="https://www.etsy.com/shop/BriPetPortraits">BriPetPortraits on Etsy</a>)</p>
-    <p>Custom Pet Portraits. Online business where people upload an image, and you
-      create a large canvas painting, or drawing. It looks like the price is
-      about $50 per portrait. Throw in a bonus, record a time lapse video of the
-      painting for advertising, portfolio, and internet points.</p>
+  <div class="card card-section bg-dark text-warning border-warning shadow">
+    <img src="../../image/bri.jpg" alt="Brianna Schretlen and her Fur Kids" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Business Practice: Brianna Schretlen and her Fur Kids</h5>
+      <div class="card-text">
+        <p>&quot;I&#39;m a professional graphic designer and illustrator with a soft spot for
+          fur kids. I&#39;ve always loved painting and drawing animals. Our pets are like
+          family, and I truly enjoy working on tributes to these silly, lovable,
+          trusting and loyal creatures. In addition to Bri Pet Portraits, I am also
+          on Etsy under the shop Bri Baby Art - a shop featuring custom artworks for
+          nurseries and kids room decor.&quot; (from <a href="https://www.etsy.com/shop/BriPetPortraits">BriPetPortraits on Etsy</a>)</p>
+        <p>Custom Pet Portraits. Online business where people upload an image, and you
+          create a large canvas painting, or drawing. It looks like the price is
+          about $50 per portrait. Throw in a bonus, record a time lapse video of the
+          painting for advertising, portfolio, and internet points.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Pet portrait time-lapse.</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=Aqn363Z1f5A" class="no-tufte-underline" title="Pet portrait time-lapse.">
-        <img src="../../image/yid-Aqn363Z1f5A.jpg" alt="Pet portrait time-lapse." style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Pet portrait time-lapse.</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=Aqn363Z1f5A" title="Pet portrait time-lapse.">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Pet portrait time-lapse.</div>
+    <a href="https://www.youtube.com/watch?v=Aqn363Z1f5A" title="Pet portrait time-lapse." alt="Pet portrait time-lapse."><img src="../../image/yid-Aqn363Z1f5A.jpg" alt="Pet portrait time-lapse." class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Pet portrait time-lapse.</h5>
+      <a href="https://www.youtube.com/watch?v=Aqn363Z1f5A" title="Pet portrait time-lapse." class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Quote by Henri Matisse</h2>
-    </header>
-    <blockquote>
-      <p>Creativity takes courage.</p>
-      <footer>
-        <cite title="Henri Matisse"><a href="https://en.wikipedia.org/wiki/Henri_Matisse">Henri Matisse</a></cite>
-      </footer>
-    </blockquote>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">
+      Quote by Henri Matisse
+    </div>
+    <div class="card-body">
+      <div class="card-text">
+        <p>Creativity takes courage.</p>
+      </div>
+      <cite title="Henri Matisse"><a href="https://en.wikipedia.org/wiki/Henri_Matisse" class="card-link text-reset">Henri Matisse</a></cite>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Please, never draw alone.</h2>
-    </header>
-    <p>If you are going to draw with pencils make sure to use blending stumps and
-      smudge the graphite to give it a photo-realistic look. Get an <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Darts-crafts&amp;field-keywords=Sketch+Tote+Drawing+">art
-        board</a>, Drawing Paper (not Sketching Paper), <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Doffice-products&amp;field-keywords=Staedtler+Lumograph+Graphite+Drawing">tin of pencils</a>,
-      battery powered eraser and eraser shield, and head for the <a href="https://www.dia.org/">DIA</a>, or a
-      Museum, or even a Coffee Shop.</p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-body">
+      <h5 class="card-title">Please, never draw alone.</h5>
+      <div class="card-text">
+        <p>If you are going to draw with pencils make sure to use blending stumps and
+          smudge the graphite to give it a photo-realistic look. Get an <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Darts-crafts&amp;field-keywords=Sketch+Tote+Drawing+">art
+            board</a>, Drawing Paper (not Sketching Paper), <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Doffice-products&amp;field-keywords=Staedtler+Lumograph+Graphite+Drawing">tin of pencils</a>,
+          battery powered eraser and eraser shield, and head for the <a href="https://www.dia.org/">DIA</a>, or a
+          Museum, or even a Coffee Shop.</p>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>Blending Stumps for Beginners</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=zHiaJMf7m9Y" class="no-tufte-underline" title="Blending Stumps for Beginners">
-        <img src="../../image/yid-zHiaJMf7m9Y.jpg" alt="Blending Stumps for Beginners" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>Blending Stumps for Beginners</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=zHiaJMf7m9Y" title="Blending Stumps for Beginners">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">Blending Stumps for Beginners</div>
+    <a href="https://www.youtube.com/watch?v=zHiaJMf7m9Y" title="Blending Stumps for Beginners" alt="Blending Stumps for Beginners"><img src="../../image/yid-zHiaJMf7m9Y.jpg" alt="Blending Stumps for Beginners" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">Blending Stumps for Beginners</h5>
+      <a href="https://www.youtube.com/watch?v=zHiaJMf7m9Y" title="Blending Stumps for Beginners" class="btn btn-warning">Play Video</a>
+    </div>
   </div>
-  <div class="section">
-    <header>
-      <h2>What&#x27;s an Eraser Shield?</h2>
-    </header>
-    <figure>
-      <a href="https://www.youtube.com/watch?v=bluffx6sB04" class="no-tufte-underline" title="What&#x27;s an Eraser Shield?">
-        <img src="../../image/yid-bluffx6sB04.jpg" alt="What&#x27;s an Eraser Shield?" style="width: 100%; height: auto;">
-      </a>
-      <figcaption>What&#x27;s an Eraser Shield?</figcaption>
-    </figure>
-    <p><a href="https://www.youtube.com/watch?v=bluffx6sB04" title="What&#x27;s an Eraser Shield?">Play Video</a></p>
+  <div class="card card-section bg-dark text-warning shadow">
+    <div class="card-header">What&#x27;s an Eraser Shield?</div>
+    <a href="https://www.youtube.com/watch?v=bluffx6sB04" title="What&#x27;s an Eraser Shield?" alt="What&#x27;s an Eraser Shield?"><img src="../../image/yid-bluffx6sB04.jpg" alt="What&#x27;s an Eraser Shield?" class="card-img"></a>
+    <div class="card-body">
+      <h5 class="card-title">What&#x27;s an Eraser Shield?</h5>
+      <a href="https://www.youtube.com/watch?v=bluffx6sB04" title="What&#x27;s an Eraser Shield?" class="btn btn-warning">Play Video</a>
+    </div>
   </div></div>
          </div>
        </div>

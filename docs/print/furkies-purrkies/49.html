@@ -12,9 +12,26 @@
 <link href="../../css/custom.css" rel="stylesheet">
 
     <style>
-    body {
-      background: white;
+
+    *, *.card, .card.shadow {
+      border: none ! important;
+      box-shadow: none ! important;
+      background: none ! important;
+      color: black ! important;
     }
+
+    .card-text.card-stanza {
+      font-size:1rem ! important;
+      text-shadow: none ! important;
+    }
+
+    .card, .card-section, .paragraph, .card-body, .section-spacer {
+      margin:.1rem ! important;
+      padding:.1rem ! important;
+    }
+
+
+
     </style>
   </head>
   <body>
@@ -45,26 +62,41 @@
      <div class="col-12">
        <div class="card border-0 mb-5">
          <div class="card-body">
-           <div class="card-text pt-5 fs-3 text-center"><div class="section">
-  <p>Don&apos;t let them put you on a school bus.</p>
-  <p>Tell you parents, school is crazy!</p>
-</div>
-<div class="section">
-  <p>And anyway,</p>
-  <p>they shouldn&apos;t be so lazy.</p>
-</div>
-<div class="section">
-  <p>You will need all the games,</p>
-  <p>and you memorize <em>no</em> presidential names.</p>
-</div>
-<div class="section">
-  <p>You demand a trip to every national park.</p>
-  <p>because you will not spend you life in the dark.</p>
-</div>
-<div class="section">
-  <p>You will need every audio-book ever made,</p>
-  <p>and only then will you go through life unafraid.</p>
-</div></div>
+           <div class="card-text pt-5 fs-3 text-center"><html>
+  <head></head>
+  <body>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">Don't let them put you on a school bus.</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">Tell you parents, school is crazy!</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">And anyway,</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">they shouldn't be so lazy.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">You will need all the games,</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">and you memorize <em>no</em> presidential names.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">You demand a trip to every national park.</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">because you will not spend you life in the dark.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">You will need every audio-book ever made,</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">and only then will you go through life unafraid.</div>
+      </div>
+    </div>
+  </body>
+</html></div>
          </div>
        </div>
      </div>

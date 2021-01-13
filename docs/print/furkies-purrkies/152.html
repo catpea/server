@@ -12,9 +12,26 @@
 <link href="../../css/custom.css" rel="stylesheet">
 
     <style>
-    body {
-      background: white;
+
+    *, *.card, .card.shadow {
+      border: none ! important;
+      box-shadow: none ! important;
+      background: none ! important;
+      color: black ! important;
     }
+
+    .card-text.card-stanza {
+      font-size:1rem ! important;
+      text-shadow: none ! important;
+    }
+
+    .card, .card-section, .paragraph, .card-body, .section-spacer {
+      margin:.1rem ! important;
+      padding:.1rem ! important;
+    }
+
+
+
     </style>
   </head>
   <body>
@@ -45,25 +62,44 @@
      <div class="col-12">
        <div class="card border-0 mb-5">
          <div class="card-body">
-           <div class="card-text pt-5 fs-3 text-center"><div class="section">
-  <p>Goooolly, what a beautiful day today was,</p>
-  <p>I rode around shirtless breaking all the laws.</p>
-</div>
-<div class="section"><img src="../../image/md-poetry-0152-cloudy.jpg" alt="Cloudy Skies"></div>
-<div class="section">
-  <p>I woke up this morning and noticed how cloudy,</p>
-  <p>I looked at my bicycle and said &quot;Howdy!&quot;</p>
-</div>
-<div class="section"><img src="../../image/md-poetry-0152-the-end.jpg" alt="End Of Trail"></div>
-<div class="section">
-  <p>I&apos;ve decided to ride all the way to the end of the trail,</p>
-  <p>and it took two hours as I rode at the pace of a speedy snail.</p>
-</div>
-<div class="section"><img src="../../image/md-poetry-0152-end-sign.jpg" alt="Location Map"></div>
-<div class="section">
-  <p>Once I finally got to the end and glanced the map,</p>
-  <p>it said &quot;You are here!&quot; and I said &quot;Yup!&quot;</p>
-</div></div>
+           <div class="card-text pt-5 fs-3 text-center"><html>
+  <head></head>
+  <body>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">Goooolly, what a beautiful day today was,</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">I rode around shirtless breaking all the laws.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2"><img src="../../image/md-poetry-0152-cloudy.jpg" alt="Cloudy Skies" class="w-100"></div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">I woke up this morning and noticed how cloudy,</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">I looked at my bicycle and said "Howdy!"</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2"><img src="../../image/md-poetry-0152-the-end.jpg" alt="End Of Trail" class="w-100"></div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">I've decided to ride all the way to the end of the trail,</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">and it took two hours as I rode at the pace of a speedy snail.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2"><img src="../../image/md-poetry-0152-end-sign.jpg" alt="Location Map" class="w-100"></div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">Once I finally got to the end and glanced the map,</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">it said "You are here!" and I said "Yup!"</div>
+      </div>
+    </div>
+  </body>
+</html></div>
          </div>
        </div>
      </div>

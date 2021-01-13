@@ -127,58 +127,6 @@ async function book(ctx) {
 
 
 
-function neato(object){
-
-  const $ = cheerio.load(object.html);
-
-  /// Normalize
-
-  $('div.section > hr').each(function (i, elem) {
-    $(this).parent().replaceWith(`<div class="mb-5">&nbsp;</div>`)
-  });
-
-
-
-  $('div.section > p').each(function (i, elem) {
-    this.tagName = 'div';
-    $(this).addClass('paragraph');
-  });
-
-  $('div.section').each(function (i, elem) {
-    $(this).wrap(`<div class="card bg-dark text-warning shadow mb-3"></div>`)
-  });
-
-  $('div.section').each(function (i, elem) {
-      $(this).addClass('card-body mb-0 my-2');
-  });
-
-  $('div.section > div.paragraph').each(function (i, elem) {
-    $(this).addClass('card-text fs-3 my-5 text-center');
-    $(this).attr('style', `text-shadow: 3px 2px 2px rgba(0,0,0,1);`);
-  });
-
-  /// Rebuild
-
-
-
-
-
-
-  /// FIX
-  $('div.section > img').each(function (i, elem) {
-    $(this).addClass('w-100')
-  });
-
-
-
-
-
-
-
-  return $.html();
-
-}
-
 
 
 
@@ -193,7 +141,7 @@ async function read(ctx) {
   if (!post) ctx.throw(404, 'invalid post id');
 
 
-  const html = neato(post);
+ 
 
   await ctx.render('read', {
     pageName: post.title,
@@ -201,7 +149,6 @@ async function read(ctx) {
 
     books: data.meta.books,
     post,
-    html,
   });
 }
 

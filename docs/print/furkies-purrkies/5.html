@@ -12,9 +12,26 @@
 <link href="../../css/custom.css" rel="stylesheet">
 
     <style>
-    body {
-      background: white;
+
+    *, *.card, .card.shadow {
+      border: none ! important;
+      box-shadow: none ! important;
+      background: none ! important;
+      color: black ! important;
     }
+
+    .card-text.card-stanza {
+      font-size:1rem ! important;
+      text-shadow: none ! important;
+    }
+
+    .card, .card-section, .paragraph, .card-body, .section-spacer {
+      margin:.1rem ! important;
+      padding:.1rem ! important;
+    }
+
+
+
     </style>
   </head>
   <body>
@@ -45,14 +62,21 @@
      <div class="col-12">
        <div class="card border-0 mb-5">
          <div class="card-body">
-           <div class="card-text pt-5 fs-3 text-center"><div class="section">
-  <p>Grow strong, my comrade &#x2026; that you may stand</p>
-  <p>Unshaken when I fall; that I may know</p>
-  <p>The shattered fragments of my song will come</p>
-  <p>At last to finer melody in you;</p>
-  <p>That I may tell my heart that you begin</p>
-  <p>Where passing I leave off, and fathom more.&#x201D;</p>
-</div></div>
+           <div class="card-text pt-5 fs-3 text-center"><html>
+  <head></head>
+  <body>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">Grow strong, my comrade &#x2026; that you may stand</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">Unshaken when I fall; that I may know</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">The shattered fragments of my song will come</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">At last to finer melody in you;</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">That I may tell my heart that you begin</div>
+        <div class="paragraph card-text card-stanza my-5 text-center">Where passing I leave off, and fathom more.&#x201D;</div>
+      </div>
+    </div>
+  </body>
+</html></div>
          </div>
        </div>
      </div>

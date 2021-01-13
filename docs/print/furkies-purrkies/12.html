@@ -12,9 +12,26 @@
 <link href="../../css/custom.css" rel="stylesheet">
 
     <style>
-    body {
-      background: white;
+
+    *, *.card, .card.shadow {
+      border: none ! important;
+      box-shadow: none ! important;
+      background: none ! important;
+      color: black ! important;
     }
+
+    .card-text.card-stanza {
+      font-size:1rem ! important;
+      text-shadow: none ! important;
+    }
+
+    .card, .card-section, .paragraph, .card-body, .section-spacer {
+      margin:.1rem ! important;
+      padding:.1rem ! important;
+    }
+
+
+
     </style>
   </head>
   <body>
@@ -45,18 +62,31 @@
      <div class="col-12">
        <div class="card border-0 mb-5">
          <div class="card-body">
-           <div class="card-text pt-5 fs-3 text-center"><div class="section">
-  <p>I Went To The Woods</p>
-</div>
-<div class="section">
-  <p>I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.</p>
-</div>
-<div class="section">
-  <p>I did not wish to live what was not life, living is so dear; nor did I wish to practise resignation, unless it was quite necessary.</p>
-</div>
-<div class="section">
-  <p>I wanted to live deep and suck out all the marrow of life, to live so sturdily and Spartan-like as to put to rout all that was not life, to cut a broad swath and shave close, to drive life into a corner, and reduce it to its lowest terms...</p>
-</div></div>
+           <div class="card-text pt-5 fs-3 text-center"><html>
+  <head></head>
+  <body>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">I Went To The Woods</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">I did not wish to live what was not life, living is so dear; nor did I wish to practise resignation, unless it was quite necessary.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">I wanted to live deep and suck out all the marrow of life, to live so sturdily and Spartan-like as to put to rout all that was not life, to cut a broad swath and shave close, to drive life into a corner, and reduce it to its lowest terms...</div>
+      </div>
+    </div>
+  </body>
+</html></div>
          </div>
        </div>
      </div>

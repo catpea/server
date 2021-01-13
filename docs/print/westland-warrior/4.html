@@ -12,9 +12,26 @@
 <link href="../../css/custom.css" rel="stylesheet">
 
     <style>
-    body {
-      background: white;
+
+    *, *.card, .card.shadow {
+      border: none ! important;
+      box-shadow: none ! important;
+      background: none ! important;
+      color: black ! important;
     }
+
+    .card-text.card-stanza {
+      font-size:1rem ! important;
+      text-shadow: none ! important;
+    }
+
+    .card, .card-section, .paragraph, .card-body, .section-spacer {
+      margin:.1rem ! important;
+      padding:.1rem ! important;
+    }
+
+
+
     </style>
   </head>
   <body>
@@ -45,112 +62,107 @@
      <div class="col-12">
        <div class="card border-0 mb-5">
          <div class="card-body">
-           <div class="card-text pt-5 fs-3 text-center"><div class="section">
-  <header>
-    <h2>Nordhouse Dunes: Backpacking in a Snowstorm on Lake Michigan</h2>
-  </header>
-  <figure>
-    <a href="https://www.youtube.com/watch?v=68jy3_ABvRo" class="no-tufte-underline" title="Nordhouse Dunes: Backpacking in a Snowstorm on Lake Michigan">
-      <img src="../../image/yid-68jy3_ABvRo.jpg" alt="Nordhouse Dunes: Backpacking in a Snowstorm on Lake Michigan" style="width: 100%; height: auto;">
-    </a>
-    <figcaption>Nordhouse Dunes: Backpacking in a Snowstorm on Lake Michigan</figcaption>
-  </figure>
-  <p><a href="https://www.youtube.com/watch?v=68jy3_ABvRo" title="Nordhouse Dunes: Backpacking in a Snowstorm on Lake Michigan">Play Video</a></p>
+           <div class="card-text pt-5 fs-3 text-center"><div class="card card-section bg-dark text-warning shadow">
+  <div class="card-header">Nordhouse Dunes: Backpacking in a Snowstorm on Lake Michigan</div>
+  <a href="https://www.youtube.com/watch?v=68jy3_ABvRo" title="Nordhouse Dunes: Backpacking in a Snowstorm on Lake Michigan" alt="Nordhouse Dunes: Backpacking in a Snowstorm on Lake Michigan"><img src="../../image/yid-68jy3_ABvRo.jpg" alt="Nordhouse Dunes: Backpacking in a Snowstorm on Lake Michigan" class="card-img"></a>
+  <div class="card-body">
+    <h5 class="card-title">Nordhouse Dunes: Backpacking in a Snowstorm on Lake Michigan</h5>
+    <a href="https://www.youtube.com/watch?v=68jy3_ABvRo" title="Nordhouse Dunes: Backpacking in a Snowstorm on Lake Michigan" class="btn btn-warning">Play Video</a>
+  </div>
 </div>
-<div class="section">
-  <header>
-    <h2>Endless Horizons</h2>
-  </header>
-  <p>In moving. In endless horizons, and mountains, and the sea; we learn to
-    break away, and find our own paths. And there is a slope to each adventure
-    that follows, and the adventurer knows that slope must increase, and the
-    challenges must grow also.</p>
+<div class="card card-section bg-dark text-warning shadow">
+  <div class="card-body">
+    <h5 class="card-title">Endless Horizons</h5>
+    <div class="card-text">
+      <p>In moving. In endless horizons, and mountains, and the sea; we learn to
+        break away, and find our own paths. And there is a slope to each adventure
+        that follows, and the adventurer knows that slope must increase, and the
+        challenges must grow also.</p>
+    </div>
+  </div>
 </div>
-<div class="section">
-  <header>
-    <h2>Quote by Kristen Jongen</h2>
-  </header>
-  <blockquote>
-    <p>Strength does not reside in having never been broken, but in the courage
-      required to grow strong in the broken places.</p>
-    <footer>
-      <cite title="Kristen Jongen">Kristen Jongen</cite>
-    </footer>
-  </blockquote>
+<div class="card card-section bg-dark text-warning shadow">
+  <div class="card-header">
+    Quote by Kristen Jongen
+  </div>
+  <div class="card-body">
+    <div class="card-text">
+      <p>Strength does not reside in having never been broken, but in the courage
+        required to grow strong in the broken places.</p>
+    </div>
+    <cite title="Kristen Jongen">Kristen Jongen</cite>
+  </div>
 </div>
-<div class="section">
-  <header>
-    <h2>Alex</h2>
-  </header>
-  <figure>
-    <img src="../../image/chris-mccandless.png" alt="Alex" style="width: 100%; height: auto;">
-  </figure>
+<div class="card card-section bg-dark text-warning shadow">
+  <img src="../../image/chris-mccandless.png" alt="Alex" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">Alex</h5>
+    <div class="card-text"></div>
+  </div>
 </div>
-<div class="section">
-  <header>
-    <h2>Endless Horizons</h2>
-  </header>
-  <p><a href="https://en.wikipedia.org/wiki/Chris_McCandless">Christopher Johnson McCandless, aka Alexander Supertramp, aka Alex</a> teaches us important lessons about the unbreakability of the human spirit, the danger of loneliness, and about the nearly irresistible beauty of the call to the wild.</p>
-  <p><a href="https://www.audible.com/author/Jon-Krakauer/B000AQ8WPY">Jon Krakauer</a> wrote a book about Alex entitled <a href="https://www.audible.com/pd/Into-the-Wild-Audiobook/B002V1NYEK">Into the Wild</a>, and there is also a <a href="https://www.youtube.com/watch?v=g7ArZ7VD-QQ">movie</a>.</p>
+<div class="card card-section bg-dark text-warning shadow">
+  <div class="card-body">
+    <h5 class="card-title">Endless Horizons</h5>
+    <div class="card-text">
+      <p><a href="https://en.wikipedia.org/wiki/Chris_McCandless">Christopher Johnson McCandless, aka Alexander Supertramp, aka Alex</a> teaches us important lessons about the unbreakability of the human spirit, the danger of loneliness, and about the nearly irresistible beauty of the call to the wild.</p>
+      <p><a href="https://www.audible.com/author/Jon-Krakauer/B000AQ8WPY">Jon Krakauer</a> wrote a book about Alex entitled <a href="https://www.audible.com/pd/Into-the-Wild-Audiobook/B002V1NYEK">Into the Wild</a>, and there is also a <a href="https://www.youtube.com/watch?v=g7ArZ7VD-QQ">movie</a>.</p>
+    </div>
+  </div>
 </div>
-<div class="section">
-  <header>
-    <h2>Eddie Vedder - Guaranteed</h2>
-  </header>
-  <figure>
-    <a href="https://www.youtube.com/watch?v=Mwx3RvDWvDM" class="no-tufte-underline" title="Eddie Vedder - Guaranteed">
-      <img src="../../image/yid-Mwx3RvDWvDM.jpg" alt="Eddie Vedder - Guaranteed" style="width: 100%; height: auto;">
-    </a>
-    <figcaption>Eddie Vedder - Guaranteed</figcaption>
-  </figure>
-  <p><a href="https://www.youtube.com/watch?v=Mwx3RvDWvDM" title="Eddie Vedder - Guaranteed">Play Video</a></p>
+<div class="card card-section bg-dark text-warning shadow">
+  <div class="card-header">Eddie Vedder - Guaranteed</div>
+  <a href="https://www.youtube.com/watch?v=Mwx3RvDWvDM" title="Eddie Vedder - Guaranteed" alt="Eddie Vedder - Guaranteed"><img src="../../image/yid-Mwx3RvDWvDM.jpg" alt="Eddie Vedder - Guaranteed" class="card-img"></a>
+  <div class="card-body">
+    <h5 class="card-title">Eddie Vedder - Guaranteed</h5>
+    <a href="https://www.youtube.com/watch?v=Mwx3RvDWvDM" title="Eddie Vedder - Guaranteed" class="btn btn-warning">Play Video</a>
+  </div>
 </div>
-<div class="section">
-  <header>
-    <h2>Courage</h2>
-  </header>
-  <p>No matter how dark our origins. No matter where we stand, and where we are
-    headed. We are each charged with becoming a great being, by growing up, by
-    growing all the way up.</p>
-  <p>On a wounded knee, is no way to be free. Wherever we come from,
-    Authenticity is our candle in the dark.</p>
-  <p>Carine McCandless, Christopher’s sister, explains a lot more about his
-    journey.</p>
+<div class="card card-section bg-dark text-warning shadow">
+  <div class="card-body">
+    <h5 class="card-title">Courage</h5>
+    <div class="card-text">
+      <p>No matter how dark our origins. No matter where we stand, and where we are
+        headed. We are each charged with becoming a great being, by growing up, by
+        growing all the way up.</p>
+      <p>On a wounded knee, is no way to be free. Wherever we come from,
+        Authenticity is our candle in the dark.</p>
+      <p>Carine McCandless, Christopher’s sister, explains a lot more about his
+        journey.</p>
+    </div>
+  </div>
 </div>
-<div class="section">
-  <header>
-    <h2>Carine McCandless</h2>
-  </header>
-  <figure>
-    <a href="https://www.youtube.com/watch?v=DJXM8HjyVSo" class="no-tufte-underline" title="Carine McCandless">
-      <img src="../../image/yid-DJXM8HjyVSo.jpg" alt="Carine McCandless" style="width: 100%; height: auto;">
-    </a>
-    <figcaption>Carine McCandless</figcaption>
-  </figure>
-  <p><a href="https://www.youtube.com/watch?v=DJXM8HjyVSo" title="Carine McCandless">Play Video</a></p>
+<div class="card card-section bg-dark text-warning shadow">
+  <div class="card-header">Carine McCandless</div>
+  <a href="https://www.youtube.com/watch?v=DJXM8HjyVSo" title="Carine McCandless" alt="Carine McCandless"><img src="../../image/yid-DJXM8HjyVSo.jpg" alt="Carine McCandless" class="card-img"></a>
+  <div class="card-body">
+    <h5 class="card-title">Carine McCandless</h5>
+    <a href="https://www.youtube.com/watch?v=DJXM8HjyVSo" title="Carine McCandless" class="btn btn-warning">Play Video</a>
+  </div>
 </div>
-<div class="section">
-  <header>
-    <h2>Quote by Robinson Jeffers</h2>
-  </header>
-  <blockquote>
-    <p>To die having made Something more equal to the centuries Than muscle and
-      bone, is mostly to shed weakness.</p>
-    <footer>
-      <cite title="Robinson Jeffers">Robinson Jeffers</cite>
-    </footer>
-  </blockquote>
+<div class="card card-section bg-dark text-warning shadow">
+  <div class="card-header">
+    Quote by Robinson Jeffers
+  </div>
+  <div class="card-body">
+    <div class="card-text">
+      <p>To die having made Something more equal to the centuries Than muscle and
+        bone, is mostly to shed weakness.</p>
+    </div>
+    <cite title="Robinson Jeffers">Robinson Jeffers</cite>
+  </div>
 </div>
-<div class="section">
-  <header>
-    <h2>Inextinguishable Wisdom</h2>
-  </header>
-  <p>Our search for wisdom, as well as our climb onto the shoulders of giants,
-    is just the first part of our story. When we learn to push ourselves to
-    travel the hardest slopes, our shoulders will become strong enough to
-    support the countless adventurers that are sure to follow. Long after we
-    depart, our hard earned wisdom will retain the momentum of our hardest
-    slopes, to serve as an inextinguishable candle in the dark.</p>
+<div class="card card-section bg-dark text-warning shadow">
+  <div class="card-body">
+    <h5 class="card-title">Inextinguishable Wisdom</h5>
+    <div class="card-text">
+      <p>Our search for wisdom, as well as our climb onto the shoulders of giants,
+        is just the first part of our story. When we learn to push ourselves to
+        travel the hardest slopes, our shoulders will become strong enough to
+        support the countless adventurers that are sure to follow. Long after we
+        depart, our hard earned wisdom will retain the momentum of our hardest
+        slopes, to serve as an inextinguishable candle in the dark.</p>
+    </div>
+  </div>
 </div></div>
          </div>
        </div>

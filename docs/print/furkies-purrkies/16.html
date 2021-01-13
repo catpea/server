@@ -12,9 +12,26 @@
 <link href="../../css/custom.css" rel="stylesheet">
 
     <style>
-    body {
-      background: white;
+
+    *, *.card, .card.shadow {
+      border: none ! important;
+      box-shadow: none ! important;
+      background: none ! important;
+      color: black ! important;
     }
+
+    .card-text.card-stanza {
+      font-size:1rem ! important;
+      text-shadow: none ! important;
+    }
+
+    .card, .card-section, .paragraph, .card-body, .section-spacer {
+      margin:.1rem ! important;
+      padding:.1rem ! important;
+    }
+
+
+
     </style>
   </head>
   <body>
@@ -45,21 +62,36 @@
      <div class="col-12">
        <div class="card border-0 mb-5">
          <div class="card-body">
-           <div class="card-text pt-5 fs-3 text-center"><div class="section">
-  <p>Captain&apos;s Log, Day Twelve of Quarantine.</p>
-</div>
-<div class="section">
-  <p>I ordered some trail-mix from the internet, mailman dropped it off by the door.</p>
-</div>
-<div class="section">
-  <p>And all the local Squirrels I&apos;ve been feeding came over.</p>
-</div>
-<div class="section">
-  <p>They ripped the box open, and ate it all without me.</p>
-</div>
-<div class="section">
-  <p>How rude, I probably shouldn&apos;t have been feeding them all this time.</p>
-</div></div>
+           <div class="card-text pt-5 fs-3 text-center"><html>
+  <head></head>
+  <body>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">Captain's Log, Day Twelve of Quarantine.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">I ordered some trail-mix from the internet, mailman dropped it off by the door.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">And all the local Squirrels I've been feeding came over.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">They ripped the box open, and ate it all without me.</div>
+      </div>
+    </div>
+    <div class="card card-section bg-dark text-warning shadow">
+      <div class="section card-body mb-0 my-2">
+        <div class="paragraph card-text card-stanza my-5 text-center">How rude, I probably shouldn't have been feeding them all this time.</div>
+      </div>
+    </div>
+  </body>
+</html></div>
          </div>
        </div>
      </div>
