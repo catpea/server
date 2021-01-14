@@ -17,9 +17,11 @@
 
   <div class="title-page break-after" style="padding-bottom: 5rem;">
 
-    <div style="padding-bottom: 5rem;">
-      <small>Written <%= post.timestamp %></small>
+    <% if(!post.title.match(/ by /)){ %>
+    <!-- <div style="padding-bottom: 5rem;">
+      <small><%= post.timestamp %></small>
     </div>
+    <% } %> -->
 
     <% if(post.image){ %>
     <img style="display: inline;" src="/image/md-<%= post.image %>" alt="<%= post.title %>" title="<%= post.title %>">
@@ -29,8 +31,10 @@
 
 
     <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-      <div class="paragraph"><%= post.title %></div>
-      <div class="paragraph"><small>Written <%= post.timestamp %></small></div>
+      <div class="paragraph" style="font-weight: bold;"><%= post.title %></div>
+      <!-- <% if(!post.title.match(/ by /)){ %>
+      <div class="paragraph"><small><%= post.timestamp %></small></div>
+      <% } %> -->
     </div>
 
     <%- post.print %>
