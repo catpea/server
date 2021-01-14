@@ -15,26 +15,14 @@
   <main>
     <h1><%= post.title %></h1>
 
-  <div class="title-page break-after" style="padding-bottom: 5rem;">
-
-    <% if(!post.title.match(/ by /)){ %>
-    <!-- <div style="padding-bottom: 5rem;">
-      <small><%= post.timestamp %></small>
+    <div class="title-page break-after" style="padding-bottom: 5rem;">
+      <% if(post.image){ %>
+      <img style="display: inline;" src="/image/md-<%= post.image %>" alt="<%= post.title %>" title="<%= post.title %>">
+      <% } %>
     </div>
-    <% } %> -->
-
-    <% if(post.image){ %>
-    <img style="display: inline;" src="/image/md-<%= post.image %>" alt="<%= post.title %>" title="<%= post.title %>">
-    <% } %>
-  </div>
-
-
 
     <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
       <div class="paragraph" style="font-weight: bold;"><%= post.title %></div>
-      <!-- <% if(!post.title.match(/ by /)){ %>
-      <div class="paragraph"><small><%= post.timestamp %></small></div>
-      <% } %> -->
     </div>
 
     <%- post.print %>
