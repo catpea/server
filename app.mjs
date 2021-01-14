@@ -49,7 +49,7 @@ const data = datasource(options);
 
 // middleware
 
-app.use(logger());
+//app.use(logger());
 
 app.use(render);
 
@@ -141,7 +141,7 @@ async function read(ctx) {
   if (!post) ctx.throw(404, 'invalid post id');
 
 
- 
+
 
   await ctx.render('read', {
     pageName: post.title,
@@ -200,7 +200,7 @@ async function toc(ctx) {
 
 
 async function sitemap(ctx) {
-  console.log(data);
+  //console.log(data);
   await ctx.render('sitemap', {
     books: data.meta.books,
     data,
@@ -249,7 +249,7 @@ async function list(ctx) {
 
 // listen
 app.listen(7467);
-console.log('Server Ready');
+  console.log('Server Ready');
 }
 
 main();
