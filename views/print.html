@@ -1,72 +1,40 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <%- include('partials/head.html', {}); %>
-    <style>
-
-    *, *.card, .card.shadow {
-      border: none ! important;
-      box-shadow: none ! important;
-      background: none ! important;
-      color: black ! important;
+<head>
+  <link media="print" rel="stylesheet" href="/print/gutenberg.css">
+  <link media="print" rel="stylesheet" href="/print/themes/modern.css"> <!-- optional -->
+  <style media="print">
+    /* fixes for the gutenberg.css */
+    body { text-align: initial; }
+    .title-page {
+      text-align: center;
     }
+  </style>
+</head>
+<body>
+  <main>
+    <h1><%= post.title %></h1>
 
-    .card-text.card-stanza {
-      font-size:1rem ! important;
-      text-shadow: none ! important;
-    }
+  <div class="title-page break-after" style="padding-bottom: 5rem;">
 
-    .card, .card-section, .paragraph, .card-body, .section-spacer {
-      margin:.1rem ! important;
-      padding:.1rem ! important;
-    }
-
-
-
-    </style>
-  </head>
-  <body>
-
-
-  <main class="container">
-
-    <div class="row">
-      <div class="col">
-       <div class="card border-0 my-5">
-
-
-         <div class="card-body">
-           <h1 class="card-title">#<%= post.number %>: <%= post.title %></h1>
-           <p class="card-text small">Written <%= post.timestamp %></p>
-         </div>
-
-         <% if(post.image){ %>
-         <img src="/image/md-<%= post.image %>" class="card-img-bottom" alt="<%= post.title %>">
-         <% } %>
-
-       </div>
-      </div>
+    <div style="padding-bottom: 5rem;">
+      <small>Written <%= post.timestamp %></small>
     </div>
 
+    <% if(post.image){ %>
+    <img style="display: inline;" src="/image/md-<%= post.image %>" alt="<%= post.title %>" title="<%= post.title %>">
+    <% } %>
+  </div>
 
-    <div class="row">
-     <div class="col-12">
-       <div class="card border-0 mb-5">
-         <div class="card-body">
-           <div class="card-text pt-5 fs-3"><%- post.html %></div>
-         </div>
-       </div>
-     </div>
 
+
+    <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+      <div class="paragraph"><%= post.title %></div>
+      <div class="paragraph"><small>Written <%= post.timestamp %></small></div>
     </div>
 
+    <%- post.print %>
 
-
-
-  </main><!-- /.container -->
-
-
-  <%- include('partials/foot.html', {}); %>
-
-  </body>
+  </main>
+</body>
 </html>
