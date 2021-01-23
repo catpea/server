@@ -14,9 +14,8 @@
         <p class="lead">
           <%= pageDescription %>
         </p>
-        <p class="text-muted">
-          <%= bookTitle %> Table Of Contents<br>
-          <small><% if(currentSort == 'story'){ %> (entries ordered in story mode) <% }else{ %> (showing latest entries first) <% } %></small>
+        <p class="text-info">
+          <small><i class="bi bi-info-circle-fill align-text-bottom"></i> <%= bookTitle %> Table Of Contents, <% if(currentSort == 'story'){ %> entries ordered to tell a story. <% }else{ %> showing latest entries first. <% } %></small>
         </p>
       </div>
     </div>

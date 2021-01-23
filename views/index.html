@@ -4,57 +4,17 @@
     <%- include('partials/head.html', {}); %>
   </head>
   <body>
-
   <%- include('partials/nav.html', {}); %>
 
   <% if(pagination.pageFirst){ %>
     <div class="container mb-5">
       <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h1 class="display-4 text-light"><%= pageName %></h1>
-        <p class="lead text-light">
+        <p class="small text-light fw-light">
           <%= pageDescription %>
-        </p>
-        <p class="text-muted">
-          <small>(showing a mix of all entries from all books merged into one, latest first)</small>
         </p>
       </div>
     </div>
-
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col p-4">
-
-          <div class="card text-info bg-dark mb-3">
-            <div class="card-header"><i class="bi bi-newspaper align-text-bottom"></i> Temporary News Bites</div>
-            <div class="card-body">
-
-
-              <p class="card-text small"><i class="bi bi-receipt align-text-bottom text-light"></i>
-                The Printer Friendly pages for poetry work nicely now, there is a cover page and a link references page that will always print separately so that the texts of my long-winded poems are stand-alone.
-                But it makes no sense to print out video pages, it can be done as an art project, perhaps printing out film-strips of videos, but printing video-pages won't be so useful, in reality.
-                <br>
-                <br>
-                The real poetry print layout is only available for viewing in print-preview/print-to-file.
-                Even though it is a page meant for printing, it still has to be styled for the browser, as it looks ugly when styled for the printer and shown on the screen.
-                So, even though it looks all white and text friendly, it is still made for the browser, and the pretty print layout is seen in print preview and on paper.
-                It wasn't hard to make, but it is not as simple as stripping-off colors and graphics.
-                <br>
-                <br>
-                As to links, I still wanted to display them when printing on paper, somehow. So I borrowed the Wikipedia way, I marked all the links with numbers, and then made a little lookup table on the bottom.
-                Printing the web addresses next to the links was distracting and messed with layout.
-                You can take a look at the link rich <a href="/print/furkies-purrkies/42" class="text-reset">I Miss Old Programming Languages</a> for a worst possible scenario (note the link-mess on the bottom).
-                And check out <a href="/print/furkies-purrkies/318" class="text-reset">By Subtle Analogy</a> and <a href="/print/furkies-purrkies/60" class="text-reset">Big Things</a> for something more reasonable.
-              </p>
-
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </div> -->
-
-
   <% } %>
 
   <main class="container">
@@ -64,12 +24,18 @@
         <div class="col">
          <div class="card bg-dark text-white shadow mb-5">
            <% if(post.image){ %><a href="/read/<%= post.bookName %>/<%= post.number %>"><img src="/image/lg-<%= post.image %>" class="card-img-top" alt="<%= post.title %>"></a><% } %>
+
            <div class="card-body">
              <a href="/read/<%= post.bookName %>/<%= post.number %>" class="text-decoration-none"><h5 class="card-title text-warning"><%= post.bookTitle %> #<%= post.number %>: <%= post.title %></h5></a>
              <p class="card-text small"><%= post.text %></p>
-             <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="btn btn-warning"><i class="bi bi-play-circle align-text-bottom"></i> Listen</a><% } %>
-            <a href="/read/<%= post.bookName %>/<%= post.number %>" class="btn btn-outline-warning"><i class="bi bi-eye align-text-bottom"></i> View</a>
            </div>
+
+           <div class="card-body">
+             <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="btn btn-warning"><i class="bi bi-play-circle align-text-bottom"></i> Listen</a><% } %>
+             <a href="/read/<%= post.bookName %>/<%= post.number %>" class="btn btn-outline-warning"><i class="bi bi-eye align-text-bottom"></i> View</a>
+              <% if(post.links.length){ %><a href="/read/<%= post.bookName %>/<%= post.number %>#references" title="Contains Links or References" class="btn btn-outline-info float-end"><i class="bi bi-link-45deg"></i> <span class="badge bg-info text-dark"><%= post.links.length %></span></a><% } %>
+           </div>
+
            <div class="card-footer text-muted small">
              <%= post.timestamp %>
            </div>
@@ -78,18 +44,34 @@
       <% }); %>
     </div>
 
-    <div class="row my-5">
-      <div class="col">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination pagination-lg">
-            <% if(!pagination.pageLast){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.pageOlder %>">&laquo;&nbsp;Older</a></li><% } %>
-            <% if(!pagination.pageFirst){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.pageNewer %>">Newer&nbsp;&raquo;</a></li><% } %>
-          </ul>
-        </nav>
+  </main><!-- /.container -->
+
+  <% if(pagination.pageFirst){ %>
+    <div class="container mb-5">
+      <div class="row my-5">
+        <div class="col">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-lg">
+              <% if(!pagination.pageLast){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.pageOlder %>">&laquo;&nbsp;Older</a></li><% } %>
+              <% if(!pagination.pageFirst){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.pageNewer %>">Newer&nbsp;&raquo;</a></li><% } %>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
+  <% } %>
 
-  </main><!-- /.container -->
+
+  <% if(pagination.pageFirst){ %>
+    <div class="container mb-5">
+      <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <p class="text-info">
+          <small><i class="bi bi-info-circle-fill align-text-bottom"></i> Home Page shows a mix of all entries from all books, latest first.</small>
+        </p>
+      </div>
+    </div>
+  <% } %>
+
 
   <%- include('partials/footer.html', {}); %>
   <%- include('partials/foot.html', {}); %>
