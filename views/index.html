@@ -46,20 +46,20 @@
 
   </main><!-- /.container -->
 
-  <% if(pagination.pageFirst){ %>
-    <div class="container mb-5">
-      <div class="row my-5">
-        <div class="col">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination pagination-lg">
-              <% if(!pagination.pageLast){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.pageOlder %>">&laquo;&nbsp;Older</a></li><% } %>
-              <% if(!pagination.pageFirst){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.pageNewer %>">Newer&nbsp;&raquo;</a></li><% } %>
-            </ul>
-          </nav>
-        </div>
+
+  <div class="container mb-5">
+    <div class="row my-5">
+      <div class="col">
+        <nav aria-label="Page Navigation">
+          <ul class="pagination pagination-lg">
+            <% if(!pagination.pageLast){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.pageOlder %>">&laquo;&nbsp;Older</a></li><% } %>
+            <% if(!pagination.pageFirst){ %><li class="page-item"><a class="page-link bg-dark text-white border-warning" href="/browse/<%= pagination.pageNewer %>">Newer&nbsp;&raquo;</a></li><% } %>
+          </ul>
+        </nav>
       </div>
     </div>
-  <% } %>
+  </div>
+
 
 
   <% if(pagination.pageFirst){ %>
