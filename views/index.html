@@ -33,7 +33,7 @@
            <div class="card-body">
              <% if(post.audio){ %><a href="/audio/<%= post.audio %>" class="btn btn-warning"><i class="bi bi-play-circle align-text-bottom"></i> Listen</a><% } %>
              <a href="/read/<%= post.bookName %>/<%= post.number %>" class="btn btn-outline-warning"><i class="bi bi-eye align-text-bottom"></i> View</a>
-              <% if(post.links.length){ %><a href="/read/<%= post.bookName %>/<%= post.number %>#references" title="Contains Links or References" class="btn btn-outline-info float-end"><i class="bi bi-link-45deg"></i> <span class="badge bg-info text-dark"><%= post.links.length %></span></a><% } %>
+              <% if(post.links.length){ %><a href="/read/<%= post.bookName %>/<%= post.number %>#references" title="Contains Links or References" class="btn btn-outline-info float-end"><i class="bi bi-info-circle-fill"></i> <span class="badge bg-info text-dark"><i class="bi bi-link-45deg"></i> <%= post.links.length %></span></a><% } %>
            </div>
 
            <div class="card-footer text-muted small">
