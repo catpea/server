@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link media="print" rel="stylesheet" href="../gutenberg.css">
+  <link media="print" rel="stylesheet" href="../themes/modern.css"> <!-- optional -->
+  <style media="print">
+    /* fixes for the gutenberg.css */
+    body { text-align: initial; }
+    .title-page {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Programming Tutorial: Connecting All The Program Pieces Together With An Event Emitter</h1>
+
+    <div class="title-page break-after" style="padding-bottom: 5rem;">
+      
+      <img style="display: inline;" src="../../image/md-poetry-0420-illustration.jpg" alt="Programming Tutorial: Connecting All The Program Pieces Together With An Event Emitter" title="Programming Tutorial: Connecting All The Program Pieces Together With An Event Emitter">
+      
+    </div>
+
+    <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+      <div class="paragraph" style="font-weight: bold;">Programming Tutorial: Connecting All The Program Pieces Together With An Event Emitter</div>
+    </div>
+
+    <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Normally,</div>
+  <div class="paragraph">you want to go as simple as possible.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">So the main file to your program should not be the program it self,</div>
+  <div class="paragraph">but rather a kind of an index of all the things that you are calling.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">It should be written for your <span>Rubber Duck<sup>[1]</sup></span>,</div>
+  <div class="paragraph">for your tired self few years down the road.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">The opening file to your program,</div>
+  <div class="paragraph">ties everything together, reveals the structure of the whole thing.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">It should be basic if/then statements,</div>
+  <div class="paragraph">and calls to functions that do the actual work.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">If you ever change your mind about something in your program,</div>
+  <div class="paragraph">you will only have to edit that simple main file to make the changes.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">But, as you can imagine, some programs can get really complex,</div>
+  <div class="paragraph">even a simple chat application can turn a simple program into non sequential madness.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Where things jump out of the server at you,</div>
+  <div class="paragraph">when for example someone sends you a private message.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">All of a sudden, your program can't have a starting point,</div>
+  <div class="paragraph">can't to things in a sequence.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">It is no longer like the music roll in a player piano,</div>
+  <div class="paragraph">but more like a telegraph, a radio, or a phone.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">It first has to listen,</div>
+  <div class="paragraph">and only then can it execute its functions.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">So there is this programming pattern, or a strategy called Event Emitter,</div>
+  <div class="paragraph">and it only really has two things, it is part of its beauty.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">The event emitter can listen to events,</div>
+  <div class="paragraph">and it can emit events.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">In a chat program,</div>
+  <div class="paragraph">it would listen for an event named "incoming-message".</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">The thing that it would listen to is is the web server,</div>
+  <div class="paragraph">you need a hosting company that will sell you a server for about $5 per month.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Once you install the chat program, and someone connects to it,</div>
+  <div class="paragraph">and types something in, and hits send...</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">They will be emitting an event to the server,</div>
+  <div class="paragraph">let us call this event "outgoing-message".</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">So the stranger presses the send button,</div>
+  <div class="paragraph">and the now-standard-program attached to the "outgoing-message" event...</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Will grab the text that the stranger typed in,</div>
+  <div class="paragraph">create a data object and then send it to the server.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">The server will then send the object to all the users in the chat,</div>
+  <div class="paragraph">and that will be represented as the "incoming-message" event...</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Here the event handler will take the text out of the object,</div>
+  <div class="paragraph">and stick it into the chat window.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">All this requires maybe 20 lines of code,</div>
+  <div class="paragraph">it is a very simple program, as an example, it is just two events, "incoming-message" and "outgoing-message",</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Both of those events have very simple programs attached to them,</div>
+  <div class="paragraph">these programs are just five line functions, and the correct term for them is event handler.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Once an event is received by the event emitter,</div>
+  <div class="paragraph">it will trigger the event handler.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">And yes the event handlers can also emit events,</div>
+  <div class="paragraph">making the entire program come to life.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">And that is it,</div>
+  <div class="paragraph">Event Emitter can listen for events, or emit them.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph"><span>My most recent use of the EventEmitter, was just about a week ago<sup>[2]</sup></span>,</div>
+  <div class="paragraph">I had to say, once the server has started, then begin downloading its files.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">I wanted to create a very simple abstraction,</div>
+  <div class="paragraph">and not need to worry about what server I will end up using, or how long it will take for it to start.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">One of my most favorite ways of perceiving the event emitter,</div>
+  <div class="paragraph">is to see it as a command system, instead of thinking about emitting an event, I think about executing a command.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">And my most colorful use of the Event Emitter,</div>
+  <div class="paragraph">was for a MUD program, an interactive Text Adventure Game.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">I made a world that consisted of locations like room, palace, woods,</div>
+  <div class="paragraph">and then send a Golden Snitch from Harry Potter Movies through it.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">The Golden Snitch, when opening doors,</div>
+  <div class="paragraph">would actually trigger the Open Door event and i9nteract with the environment.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">(I don't know what a Golden Snitch does in Harry Potter's books,</div>
+  <div class="paragraph">I am a fan of Twilight, I never had time for Harry Potter, but maybe some day.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">One time after a long programming session for a charity event,</div>
+  <div class="paragraph">my teammates and I were asked to to step out for a photo.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">And the day was so ridiculous bright that I before I could stop myself I said,</div>
+  <div class="paragraph">if I step into that sun I am going to sparkle like a vampire from Twilight.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">This was a weekend long programming session,</div>
+  <div class="paragraph">and I really didn't like the idea of mixing PHP with JavaScript when node.js was already around.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">I was wearing my superman shirt, one one programmer, was fool enough to say "Hey Superman",</div>
+  <div class="paragraph">to which I quickly replied *Good morning Lois* in the most Clark Kent voice I could muster.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">I am pretty sure nobody liked me there,</div>
+  <div class="paragraph">I was justifying to be funny.)</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Anyway, the Golden Snitch led me to a new appreciation for the Event Emitter,</div>
+  <div class="paragraph">it makes creating virtual worlds very simple, and very fun, I called it Thought Programming, because of how little work needs to get done.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">And since it does not matter if it is a Non Playable Character or a User moving through an environment,</div>
+  <div class="paragraph">it is fun to watch things happening all on their own when just the bots are bumping into each other.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">As a side note, I once connected two chat bots together over a network,</div>
+  <div class="paragraph">and they started chatting to one another, and asking and sometimes answering each other's questions, that is a perfect job for the emitter, it was like 15 lines of code.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">In closing, the Event Emitter makes complicated things simple,</div>
+  <div class="paragraph">and if you stick to structuring your entire program out of events, you can create a beautiful diagram of it.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Even without a computer, armed with just an... arm and a pencil, you can start sketching complicated multi-input/multi-user programs,</div>
+  <div class="paragraph">with multiple things creating ordered chaos.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">If you are just starting out with programming,</div>
+  <div class="paragraph">try to imagine how you would create a program you like, by just listening to, and emitting events.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">And if there is ever a program that is confusing you,</div>
+  <div class="paragraph">try wrapping it in an Event Emitter, and giving it a simpler front-end.</div>
+</div>
+<div class="break-after">&#xA0;</div>
+<div>
+  <div class="section" style="padding-bottom: 1rem;">Programming Tutorial: Connecting All The Program Pieces Together With An Event Emitter References</div>
+  <div>[1]: https://www.youtube.com/watch?v=IHJd-vk5x7k</div>
+  <div>[2]: https://github.com/catpea/bowel/blob/507c8e00eef06a7ba72a2d9105025e749cb94cbe/src/compiler/plugins/create-website/index.mjs#L28</div>
+</div>
+
+  </main>
+</body>
+</html>
