@@ -30,54 +30,93 @@
   <div class="paragraph">start someplace easy and neat.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">Modern web is a mix of several technologies</div>
-  <div class="paragraph">and each _can_ be overwhelming, not to mention all together.</div>
+  <div class="paragraph"><span>Modern web<sup>[1]</sup></span> is a <span>mix of several technologies<sup>[2]</sup></span>,</div>
+  <div class="paragraph">and each _can_ be <span>very overwhelming<sup>[3]</sup></span>, not to mention all together.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">But the web is tough for all,</div>
+  <div class="paragraph">But the <span>web is unfortunately tough on all<sup>[4]</sup></span>,</div>
   <div class="paragraph">even hardcore programmers.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">As a programmer, you don't actually have to know a programming language,</div>
-  <div class="paragraph">managing the creation of a program, is far more powerful than writing it yourself.</div>
+  <div class="paragraph">As a lead programmer, <span>you don't actually have to know a programming language<sup>[5]</sup></span>,</div>
+  <div class="paragraph"><span>managing the creation of your program<sup>[6]</sup></span>, is <span>far more powerful than writing it yourself<sup>[7]</sup></span>.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
   <br>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">Programming on the web is a lot of trouble,</div>
-  <div class="paragraph">you probably don't want to rely on any company providing specific services.</div>
+  <div class="paragraph"><span>Hosting on the web can involve a lot of complexity<sup>[8]</sup></span>,</div>
+  <div class="paragraph">and you probably don't want to rely on any company providing application-specific services...</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">With the exception of the operating system you pick,</div>
-  <div class="paragraph">and the hosting company that is good-enough for now.</div>
+  <div class="paragraph">With the exception of the <span>operating system you pick<sup>[9]</sup></span>,</div>
+  <div class="paragraph">and the <span>hosting company<sup>[10]</sup></span>.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">And even with that, you already committed to owning a web server,</div>
-  <div class="paragraph">the moment your server goes online, there will be automated tools scanning it for exploits, and trying to guess the password.</div>
+  <div class="paragraph">And even with that, you already committed to <span>owning a web server<sup>[11]</sup></span>,</div>
+  <div class="paragraph">the moment your server goes online, there will be <span>automated tools scanning it for exploits<sup>[12]</sup></span>, and trying to guess the password.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
   <br>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">The computers trying to break into your server, by the way,</div>
+  <div class="paragraph">The computers <span>scanning<sup>[13]</sup></span> or trying to break into your server, by the way,</div>
   <div class="paragraph">are hacked, they are the ones that the automated hacking programs already broke into.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">Any other traffic will be coming from Tor or vpn networks,</div>
+  <div class="paragraph">Any other traffic will be coming from <span>Tor or VPN<sup>[14]</sup></span> networks,</div>
   <div class="paragraph">often times the location of the hacked server is obscured.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
   <div class="paragraph">There is nothing you can do,</div>
-  <div class="paragraph">nobody cares that their server is hacked.</div>
+  <div class="paragraph">often there is nobody to care that their server got hacked.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
   <div class="paragraph">The moment one gets shut down,</div>
   <div class="paragraph">couple more will get hacked elsewhere,</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">Unless you want to run a <span>honeypot<sup>[1]</sup></span> tracking those servers,</div>
+  <div class="paragraph">Unless you want to run a <span>honeypot<sup>[15]</sup></span> tracking those servers,</div>
   <div class="paragraph">you probably don't want to program web applications unless it is something big.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph"><span>As far as web goes, you may wish to start with serverless functions<sup>[16]</sup></span>,</div>
+  <div class="paragraph">if you application is small, then you are going to be somewhat worried about performance.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">But the serverless pattern is hard to beat,</div>
+  <div class="paragraph">when it comes to worrying about growth.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">And it is actually a nice way to start programming,</div>
+  <div class="paragraph">because you just create simple functions.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">These functions are executed as needed by nameless, random servers,</div>
+  <div class="paragraph">once you start noticing that you are running out of servers, you simply add more.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">These servers can be though of as workers in your company,</div>
+  <div class="paragraph">and during development you will probably only need one.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">And one neat thing about those servers is that,</div>
+  <div class="paragraph">is that there is nothing special running on them, so you can just reset them.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">All the functions that you and your users need to have executed, <span>go into a task queue<sup>[17]</sup></span>,</div>
+  <div class="paragraph">and then these poor nameless servers, start executing those functions.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">On the internet every millisecond counts,</div>
+  <div class="paragraph">but it is interesting to have your worker-servers at home just to envision the process.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Normally, I wouldn't mention this, but <span>this is how the modern CPU works<sup>[18]</sup></span>,</div>
+  <div class="paragraph">you need to have multiple workers even in your smallest programs on your own workstation to take advantage of the CPU.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
   <br>
@@ -102,8 +141,8 @@
   <br>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">But as far as complex Graphic User Interface applications go,</div>
-  <div class="paragraph">I say, put them on the desktop.</div>
+  <div class="paragraph">But as far as complex <span>Graphic User Interface<sup>[19]</sup></span> applications go,</div>
+  <div class="paragraph">put them on the desktop, at least at first.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
   <div class="paragraph">Even with the crazy restrictions that popular Desktop Operating Systems created,</div>
@@ -117,41 +156,45 @@
   <div class="paragraph">it is not going to be instantly attacked by hacked computers.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">And if it is a good idea, like <span>HyperCard<sup>[2]</sup></span> was,</div>
-  <div class="paragraph">you can sell it f9or a good price.</div>
+  <div class="paragraph">And if it is a good idea, like <span>HyperCard<sup>[20]</sup></span> was,</div>
+  <div class="paragraph">you can sell it for a good price.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
   <br>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">When developing for the Desktop should use a base like <span>electron<sup>[3]</sup></span>,</div>
-  <div class="paragraph">or <span>NW.js<sup>[4]</sup></span>.</div>
+  <div class="paragraph">When developing for the Desktop should use a base like <span>electron<sup>[21]</sup></span>,</div>
+  <div class="paragraph">or <span>NW.js<sup>[22]</sup></span>.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
   <div class="paragraph">The big weakness of desktops,</div>
-  <div class="paragraph">is that there are three incompatible operating systems, electron and NW.js, are actually cross platform and repair that problem.</div>
+  <div class="paragraph">is that there are three incompatible operating systems, electron and NW.js, are actually <span>cross platform<sup>[23]</sup></span> and repair that problem.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
   <div class="paragraph">You don't have to start Developing your application User Interface First,</div>
   <div class="paragraph">learning programming relies on good ideas, not just what is possible, but also, what is good.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">For example <span>Smalltalk<sup>[5]</sup></span> has a very consistent user interface that requires very little GUI programming,</div>
+  <div class="paragraph">For example <span>Smalltalk<sup>[24]</sup></span> has a very consistent user interface that requires very little GUI programming,</div>
   <div class="paragraph">it is a good idea to write the non-GUI core of your program first, at the very least, to make it easily testable.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">If you do like complex architecture, a well thought out <span>Object Oriented Programming<sup>[6]</sup></span> language can be useful,</div>
-  <div class="paragraph">even better if you use <span>Behavior Driven Development<sup>[7]</sup></span> that describes your program core in a readable subset of English.</div>
+  <div class="paragraph">If you do like complex architecture, a well thought out <span>Object Oriented Programming<sup>[25]</sup></span> language can be useful,</div>
+  <div class="paragraph">even better if you use <span>Behavior Driven Development<sup>[26]</sup></span> that describes your program core in a readable subset of English.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">This is a good place to mention <span>MobX and Redux<sup>[27]</sup></span> and similar application state based approaches,</div>
+  <div class="paragraph">where high level actions modify a non GUI model of your application.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
   <br>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
   <div class="paragraph">You shouldn't let programming become complicated, though,</div>
-  <div class="paragraph">look at Apple's Siri, it is just chat; or filling out forms one line at a time.</div>
+  <div class="paragraph">look at <span>Apple's Siri<sup>[28]</sup></span>, it is just chat; or filling out forms one line at a time.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
-  <div class="paragraph">Siri combined with a program like <span>MUD<sup>[8]</sup></span>,</div>
+  <div class="paragraph">Siri combined with a program like <span>MUD<sup>[29]</sup></span>,</div>
   <div class="paragraph">can start keeping track of context of conversations and learn and become more intelligent.</div>
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
@@ -171,20 +214,41 @@
 </div>
 <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
   <div class="paragraph">This way you can upgrade your program, one board at a time,</div>
-  <div class="paragraph">like the <span>Ship of Theseus<sup>[9]</sup></span>.</div>
+  <div class="paragraph">like the <span>Ship of Theseus<sup>[30]</sup></span>.</div>
 </div>
 <div class="break-after">&#xA0;</div>
 <div>
   <div class="section" style="padding-bottom: 1rem;">Programming Is Not That Scary References</div>
-  <div>[1]: https://www.youtube.com/watch?v=0WUaI2pNiPI</div>
-  <div>[2]: https://www.youtube.com/watch?v=FquNpWdf9vg</div>
-  <div>[3]: https://www.youtube.com/watch?v=8YP_nOCO-4Q</div>
-  <div>[4]: https://www.youtube.com/watch?v=5UsGnjPYxLU</div>
-  <div>[5]: https://www.youtube.com/watch?v=JLPiMl8XUKU</div>
-  <div>[6]: https://www.youtube.com/watch?v=T-HGdc8L-7w</div>
-  <div>[7]: https://www.youtube.com/watch?v=JuWEQsE7Hlo</div>
-  <div>[8]: https://www.youtube.com/watch?v=QzvqSVgc2t4</div>
-  <div>[9]: https://www.youtube.com/watch?v=iVlIZJTwgyQ</div>
+  <div>[1]: https://www.youtube.com/watch?v=6ffUHK7o5yI</div>
+  <div>[2]: https://www.youtube.com/watch?v=gT0Lh1eYk78</div>
+  <div>[3]: https://www.youtube.com/watch?v=s-pCNqqUbfI</div>
+  <div>[4]: https://www.youtube.com/results?search_query=programmer+burnout</div>
+  <div>[5]: https://www.youtube.com/watch?v=wwbM63-LFD4</div>
+  <div>[6]: https://www.youtube.com/results?search_query=how+to+become+a+program+manager</div>
+  <div>[7]: https://www.fiverr.com/categories/programming-tech/web-programming-services/web-application?source=category_filters</div>
+  <div>[8]: https://www.youtube.com/watch?v=H8K-Rg_7Tbo</div>
+  <div>[9]: https://www.youtube.com/watch?v=iox7fr7p5Hc</div>
+  <div>[10]: https://www.youtube.com/user/LinodeCloudHosting</div>
+  <div>[11]: https://www.youtube.com/watch?v=wsh64rjnRas</div>
+  <div>[12]: https://www.youtube.com/watch?v=7pJKBL9x6bY</div>
+  <div>[13]: https://www.youtube.com/watch?v=4imIIKEK5gc</div>
+  <div>[14]: https://www.youtube.com/watch?v=U8pCRMrbSl4</div>
+  <div>[15]: https://www.youtube.com/watch?v=0WUaI2pNiPI</div>
+  <div>[16]: https://www.youtube.com/watch?v=wWEID0d6wfo</div>
+  <div>[17]: https://www.youtube.com/watch?v=HAj7F37SfG8</div>
+  <div>[18]: https://www.youtube.com/watch?v=Iz0MFOKmmDY</div>
+  <div>[19]: https://www.youtube.com/watch?v=XIGSJshYb90</div>
+  <div>[20]: https://www.youtube.com/watch?v=FquNpWdf9vg</div>
+  <div>[21]: https://www.youtube.com/watch?v=8YP_nOCO-4Q</div>
+  <div>[22]: https://www.youtube.com/watch?v=5UsGnjPYxLU</div>
+  <div>[23]: https://www.youtube.com/watch?v=TWFUSxqMJic</div>
+  <div>[24]: https://www.youtube.com/watch?v=JLPiMl8XUKU</div>
+  <div>[25]: https://www.youtube.com/watch?v=T-HGdc8L-7w</div>
+  <div>[26]: https://www.youtube.com/watch?v=JuWEQsE7Hlo</div>
+  <div>[27]: https://www.youtube.com/watch?v=83v8cdvGfeA</div>
+  <div>[28]: https://www.youtube.com/watch?v=OIn5DZU_NoA</div>
+  <div>[29]: https://www.youtube.com/watch?v=QzvqSVgc2t4</div>
+  <div>[30]: https://www.youtube.com/watch?v=iVlIZJTwgyQ</div>
 </div>
 
   </main>
